@@ -15,4 +15,14 @@
     <string name="complain">Complain</string>
     <string name="feedback">Feed back</string>
     <string name="service">Services</string>
+    <string name="quote">Please fill following fields</string>
+    <string name="btn_submit">Submit</string>
+
+
+    <!--Place holders-->
+    <string name="phone_place_holder">Enter your phone number</string>
+    <string name="message_place_holder">Message</string>
+    <string name="address_place_holder">Enter your address</string>
+    <string name="name_place_holder">Enter your name
+    </string>
 </resources>

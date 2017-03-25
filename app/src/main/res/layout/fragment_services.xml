@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.wassa_000.technician.ServiceFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_margin="15sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quote"
+            style="@style/et_style"
+            android:gravity="center"
+            android:layout_margin="10sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/et_style"
+            android:id="@+id/et_name"
+            android:hint="@string/name_place_holder"
+            android:background="@drawable/et_search"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/et_style"
+            android:id="@+id/et_address"
+            android:hint="@string/address_place_holder"
+            android:background="@drawable/et_search"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/et_style"
+            android:id="@+id/et_phone"
+            android:hint="@string/phone_place_holder"
+            android:background="@drawable/et_search"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:id="@+id/sp_services"
+            />
+
+        <android.inputmethodservice.ExtractEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/et_style"
+            android:hint="@string/message_place_holder"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_submit"
+            style="@style/et_style"
+            android:textColor="@color/windowBackground"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
