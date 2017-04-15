@@ -80,8 +80,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/et_style"
+            android:minLines="4"
+            android:gravity="start"
+            android:scrollbars="vertical"
             android:hint="@string/message_place_holder"/>
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
