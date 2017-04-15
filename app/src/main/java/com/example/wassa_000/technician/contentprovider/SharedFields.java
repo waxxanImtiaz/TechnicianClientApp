@@ -7,8 +7,6 @@ import android.content.SharedPreferences;
  */
 public class SharedFields {
     public static SharedPreferences.Editor editor;
-    public final String SHARED_PREFERENCES = "technician";
-    public static SharedPreferences sharedPreferences;
 
 
 }
