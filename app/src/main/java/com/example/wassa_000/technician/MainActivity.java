@@ -1,5 +1,6 @@
 package com.example.wassa_000.technician;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.sign_in) {
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
             return true;
         }
 
