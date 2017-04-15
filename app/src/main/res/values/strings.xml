@@ -47,4 +47,31 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!--sign up hints-->
+    <string name="full_name">Full Name</string>
+    <string name="enter_addresss">Enter Your Address</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="contact_number_hint">Contact Number</string>
+    <string name="gender_hint">Gender</string>
+    <string name="customer_area_hint">Customer Area</string>
+    <string name="address_hint">Address</string>
+    <string name="shipping_address_hint">Shipping Address</string>
+
+    <!--Sign up-->
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="email_hint">Email</string>
+    <string name="dob">Birthday</string>
+    <string name="password">Password:</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="contact_number">Contact Number:</string>
+    <string name="gender">Gender:</string>
+    <string name="selected_area">Your Selected Area</string>
+    <string name="customer_area">Customer Area:</string>
+    <string name="address">Address:</string>
+    <string name="shipping_address">Shipping Address:</string>
+
+
 </resources>

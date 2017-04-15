@@ -14,10 +14,14 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.example.wassa_000.technician.contentprovider.PreferencesFactory;
+import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
 import com.example.wassa_000.technician.customclass.CustomViewPager;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private CustomViewPager viewPager;
     private TabLayout tabLayout;
+    private File sharedPrefFile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,10 +124,41 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this,LoginActivity.class));
             return true;
         }
+        else if (id == R.id.sign_up) {
+            startActivity(new Intent(MainActivity.this,SignUp.class));
+            return true;
+        }else if(id == R.id.sign_out){
+
+            if(sharedPrefFile.exists())
+                sharedPrefFile.delete();
+
+            Intent intent  = new Intent(this, LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+
+            finish();
+        }
 
         return super.onOptionsItemSelected(item);
     }
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
 
+        menu.clear();
+
+        MenuInflater myMenuInflater = getMenuInflater();
+
+        sharedPrefFile = PreferencesFactory.preferenceFileExist(this);
+
+        if (!sharedPrefFile.exists())
+        {
+            SharedPreferencesDataLoader.getCustomer(this);
+            myMenuInflater.inflate(R.menu.main, menu);
+        }else
+            myMenuInflater.inflate(R.menu.logged_in_menu, menu);
+
+        return true;
+    }
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
