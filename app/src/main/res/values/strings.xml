@@ -2,14 +2,19 @@
     <string name="app_name">Technician</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="feedback_message">Please give us your valueable feedback!</string>
+    <string name="title_activity_main">Technician</string>
     <string name="nav_heading">Technician</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="select_service">Select Service</string>
+    <string name="select_city">Select City</string>
+    <string name="complain_text">Please submit your complain</string>
 
     <!--FRAGMENT NAMES-->
     <string name="complain">Complain</string>
@@ -21,6 +26,7 @@
 
     <!--Place holders-->
     <string name="phone_place_holder">Enter your phone number</string>
+    <string name="email_place_holder">Enter your email</string>
     <string name="message_place_holder">Message</string>
     <string name="address_place_holder">Enter your address</string>
     <string name="name_place_holder">Enter your name

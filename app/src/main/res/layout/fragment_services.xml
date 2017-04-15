@@ -54,13 +54,28 @@
             android:background="@drawable/et_search"
             />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_service"
+            style="@style/et_style"
+            />
         <Spinner
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:id="@+id/sp_services"
+            android:layout_centerVertical="true"
+            android:overlapAnchor="true"
+            android:dropDownVerticalOffset="10dp"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown"
             />
-
+        </LinearLayout>
         <android.inputmethodservice.ExtractEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

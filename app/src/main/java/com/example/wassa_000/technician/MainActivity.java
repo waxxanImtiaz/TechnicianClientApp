@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
+        //DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+       // ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+         //       this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+       // drawer.setDrawerListener(toggle);
+       // toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+      //  NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+      //  navigationView.setNavigationItemSelectedListener(this);
 
         viewPager = (CustomViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.sign_in) {
             return true;
         }
 
