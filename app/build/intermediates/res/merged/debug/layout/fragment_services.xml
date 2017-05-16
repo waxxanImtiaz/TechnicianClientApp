@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wassa_000.technician.ServiceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:gravity="center"
+                    android:text="@string/quote" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:hint="@string/name_place_holder" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:hint="@string/address_place_holder" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:hint="@string/phone_place_holder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/et_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_service"
+                        android:textColor="#000" />
+
+                    <Spinner
+                        android:id="@+id/sp_services"
+                        style="@style/sp_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/remarks"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/table"
+                    android:background="@drawable/et_search"
+                    android:gravity="top"
+                    android:hint="@string/type_message"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:padding="5dp"
+                    android:scrollbars="vertical" />
+
+                <Button
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/btn_submit"
+                    android:textColor="@color/windowBackground" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

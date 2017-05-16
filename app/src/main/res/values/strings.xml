@@ -2,7 +2,7 @@
     <string name="app_name">Technician</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="feedback_message">Please give us your valueable feedback!</string>
+    <string name="feedback_message">Please give us your value able feedback!</string>
     <string name="title_activity_main">Technician</string>
     <string name="nav_heading">Technician</string>
 
@@ -14,7 +14,9 @@
     <string name="sign_in">Sign In</string>
     <string name="select_service">Select Service</string>
     <string name="select_city">Select City</string>
-    <string name="complain_text">Please submit your complain</string>
+    <string name="complain_text">Please type your complain</string>
+    <string name="type_message">Enter your message</string>
+    <string name="type_feed_back">Enter your feedback</string>
 
     <!--FRAGMENT NAMES-->
     <string name="complain">Complain</string>
