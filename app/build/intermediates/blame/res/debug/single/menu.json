@@ -1,7 +1,15 @@
 [
     {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\logged_in_menu.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\menu\\logged_in_menu.xml"
+    },
+    {
         "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },
     {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
@@ -18,6 +26,10 @@
     {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\menu\\logged_in_menu.xml",
         "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\menu\\logged_in_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",

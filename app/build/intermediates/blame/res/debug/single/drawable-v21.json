@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+    },
+    {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
         "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
@@ -8,20 +16,20 @@
         "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
     },
     {
-        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
     },
     {
-        "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
-        "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
         "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
     },
     {
-        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
-        "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
@@ -32,12 +40,16 @@
         "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
     },
     {
-        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
-        "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     },
     {
-        "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
@@ -48,6 +60,38 @@
         "source": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
+        "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
+        "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
         "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
         "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     },
@@ -56,19 +100,11 @@
         "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
     },
     {
-        "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
-        "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
-    },
-    {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
         "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
     },
     {
         "merged": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
         "source": "E:\\androidprojects\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
     }
 ]

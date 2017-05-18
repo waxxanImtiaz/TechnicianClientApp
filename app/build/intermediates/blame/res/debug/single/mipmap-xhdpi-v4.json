@@ -4,6 +4,10 @@
         "source": "E:\\androidprojects\\Technician\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\office\\Imtiaz\\Technician\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
         "source": "E:\\office\\Imtiaz\\Technician\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     }
