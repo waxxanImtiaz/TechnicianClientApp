@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Technician</string>
+    <string name="app_name">Serve Easy</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="feedback_message">Please give us your value able feedback!</string>
-    <string name="title_activity_main">Technician</string>
+    <string name="title_activity_main">Serve Easy</string>
     <string name="nav_heading">Technician</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

@@ -52,7 +52,7 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Admin\Desktop\Techn
 	android:allowBackup
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:11:9-35
 	android:icon
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:12:9-39
 	android:theme
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:15:9-40
 activity#com.example.wassa_000.technician.MainActivity

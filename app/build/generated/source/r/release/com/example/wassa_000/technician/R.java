@@ -3012,7 +3012,7 @@ containing a value of this type.
            <tr><td><code>{@link #ActionBar_icon com.example.wassa_000.technician:icon}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.wassa_000.technician:indeterminateProgressStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_itemPadding com.example.wassa_000.technician:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.example.wassa_000.technician:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.example.wassa_000.technician:logopk}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_navigationMode com.example.wassa_000.technician:navigationMode}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_popupTheme com.example.wassa_000.technician:popupTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_progressBarPadding com.example.wassa_000.technician:progressBarPadding}</code></td><td></td></tr>
@@ -3308,7 +3308,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.wassa_000.technician:logo
+          @attr name com.example.wassa_000.technician:logopk
         */
         public static final int ActionBar_logo = 8;
         /**
@@ -8272,7 +8272,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.wassa_000.technician:contentInsetLeft}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_contentInsetRight com.example.wassa_000.technician:contentInsetRight}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_contentInsetStart com.example.wassa_000.technician:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.example.wassa_000.technician:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.example.wassa_000.technician:logopk}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_logoDescription com.example.wassa_000.technician:logoDescription}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.wassa_000.technician:maxButtonHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.wassa_000.technician:navigationContentDescription}</code></td><td></td></tr>
@@ -8432,7 +8432,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.wassa_000.technician:logo
+          @attr name com.example.wassa_000.technician:logopk
         */
         public static final int Toolbar_logo = 4;
         /**
