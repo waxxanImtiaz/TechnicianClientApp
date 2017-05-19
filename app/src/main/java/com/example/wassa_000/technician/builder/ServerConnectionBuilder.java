@@ -20,6 +20,7 @@ public abstract class ServerConnectionBuilder {
     protected String link;
     protected HttpURLConnection http;
 
+    //call third
     public void connect(){
         try {
             URL url = new URL(link);
