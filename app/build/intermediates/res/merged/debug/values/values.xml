@@ -312,7 +312,7 @@
     <string name="address">Address:</string>
     <string name="address_hint">Address</string>
     <string name="address_place_holder">Enter your address</string>
-    <string name="app_name">Technician</string>
+    <string name="app_name">Serve Easy</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btn_submit">Submit</string>
@@ -367,7 +367,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_login">Sign in</string>
-    <string name="title_activity_main">Technician</string>
+    <string name="title_activity_main">Serve Easy</string>
     <string name="type_feed_back">Enter your feedback</string>
     <string name="type_message">Enter your message</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
@@ -1806,6 +1806,7 @@
     <style name="et_sign_up" parent="sign_up_common">
         <item name="android:textColor">#000</item>
         <item name="android:textSize">15dp</item>
+        <item name="android:background">@drawable/et_search</item>
         <item name="android:textColorHint">@color/btn_atc_lime</item>
         <item name="android:padding">10dp</item>
     </style>
