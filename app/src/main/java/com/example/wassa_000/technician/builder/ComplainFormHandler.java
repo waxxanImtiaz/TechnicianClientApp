@@ -1,7 +1,12 @@
 package com.example.wassa_000.technician.builder;
 
+import com.example.wassa_000.technician.contentprovider.SharedFields;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +26,7 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
         this.reqMethod = requestMethod;
     }
 
-    public void  setFormParameters(String userId,String complain){
+    public void  setFormParametersAndConnect(String userId,String complain){
         try {
             Map<String,String> arguments = new HashMap<>();
             arguments.put("userid", userId);
@@ -38,8 +43,28 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
             http.connect();
             try
             {
-                OutputStream os = urlConnection.getOutputStream();
-                os.write(out);
+//                OutputStream os = http.getOutputStream();
+//                os.write(out);
+                InputStreamReader in = null;
+                StringBuffer sb = new StringBuffer();
+                if (http != null)
+                    http.setReadTimeout(60 * 1000);
+                if (http != null && http.getInputStream() != null) {
+                    in = new InputStreamReader(http.getInputStream(),
+                            Charset.defaultCharset());
+                    BufferedReader bufferedReader = new BufferedReader(in);
+                    if (bufferedReader != null) {
+                        int cp;
+                        while ((cp = bufferedReader.read()) != -1) {
+                            sb.append((char) cp);
+                        }
+                        bufferedReader.close();
+                    }
+                }
+                System.out.println(SharedFields.DEBUG_MESSAGE+":complain="+sb.toString());
+                in.close();
+
+
             }
             catch (Exception e)
             {
