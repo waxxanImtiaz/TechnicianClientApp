@@ -13,6 +13,7 @@ import android.widget.MultiAutoCompleteTextView;
 import android.widget.Spinner;
 
 import com.example.wassa_000.technician.controller.UiController;
+import com.example.wassa_000.technician.serverconnetors.FeedBackService;
 
 
 public class FeedBackFragment extends Fragment {
@@ -57,7 +58,7 @@ public class FeedBackFragment extends Fragment {
         spinnerCities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                city = cities[i];
+                city = String.valueOf(i);
             }
 
             @Override
@@ -107,6 +108,9 @@ public class FeedBackFragment extends Fragment {
             UiController.showDialog("Please connect to network",getActivity());
             return;
         }
+
+        FeedBackService service = new FeedBackService(getContext());
+        service.execute(name,phone,city,remarks,email);
     }
     @Override
     public void onActivityCreated(Bundle b){

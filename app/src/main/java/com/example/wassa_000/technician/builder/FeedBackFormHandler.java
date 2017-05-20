@@ -14,11 +14,11 @@ import java.util.Map;
 /**
  * Created by Ghulam Ali on 5/20/2017.
  */
-public class ServiceFormHandler  extends ServerConnectionBuilder {
+public class FeedBackFormHandler  extends ServerConnectionBuilder{
 
     private Context c;
 
-    public ServiceFormHandler(Context c) {
+    public FeedBackFormHandler(Context c) {
         this.c = c;
     }
 
@@ -32,17 +32,17 @@ public class ServiceFormHandler  extends ServerConnectionBuilder {
         this.reqMethod = requestMethod;
     }
 
-    public String setFormParametersAndConnect( String name,String phone,String address,String service
-    ,String message) {
+    public String setFormParametersAndConnect( String name,String phone,String city
+            ,String message,String email) {
         try {
             Map<String, String> arguments = new HashMap<>();
             arguments.put("userid", SharedFields.userId);
             arguments.put("name", name);
             arguments.put("phone", phone);
-            arguments.put("service", service);
-            arguments.put("message", message);
-            arguments.put("address", address);
-            arguments.put("req_service", "true");
+            arguments.put("city_id", city);
+            arguments.put("email", email);
+            arguments.put("feedback", message);
+            arguments.put("feedback1", "true");
             StringBuilder sj = new StringBuilder();
 
             System.out.println("prameters:parameters are set");
@@ -90,3 +90,4 @@ public class ServiceFormHandler  extends ServerConnectionBuilder {
         }
     }
 }
+

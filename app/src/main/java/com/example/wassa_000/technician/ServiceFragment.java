@@ -106,7 +106,7 @@ public class ServiceFragment extends Fragment {
         }
         ServiceDataSender sender = new ServiceDataSender(getContext());
 
-        sender.execute(name,phone,item,remarks);
+        sender.execute(name,phone,address,item,remarks);
 
     }
 }
