@@ -20,10 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d463364-bff6-4b45-bf01-ade5dfb9bfbc" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/restart-changes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/reload-dex/debug/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/reload-dex/debug/classes.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/ServiceFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/ServiceFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/contentprovider/SharedFields.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/contentprovider/SharedFields.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/wassa_000/technician/ServiceFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/wassa_000/technician/ServiceFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/wassa_000/technician/contentprovider/SharedFields.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/wassa_000/technician/contentprovider/SharedFields.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/main_ef726b7973e3c6b8d6deeeb4313cbbe40e7b8ab3.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/main_ef726b7973e3c6b8d6deeeb4313cbbe40e7b8ab3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/wassa_000/technician/ServiceFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/wassa_000/technician/ServiceFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/wassa_000/technician/contentprovider/SharedFields.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/wassa_000/technician/contentprovider/SharedFields.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/wassa_000/technician/ServiceFragment$override.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/wassa_000/technician/ServiceFragment$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/wassa_000/technician/contentprovider/SharedFields$override.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/wassa_000/technician/contentprovider/SharedFields$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/coldswap.marker" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/coldswap.marker" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_services.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_services.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ServiceFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ServiceFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServiceFormHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServiceFormHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServiceDataSender.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServiceDataSender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_services.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_services.xml" />
     </list>
     <ignored path="TechnicianClientApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,14 +88,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComplainService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ComplainService.java">
+      <file leaf-file-name="ComplainFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ComplainFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="60" column="17" selection-start-line="56" selection-start-column="16" selection-end-line="60" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,8 +101,8 @@
       <file leaf-file-name="ServiceFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ServiceFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6071428">
-              <caret line="104" column="48" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.5032467">
+              <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
               <folding>
                 <element signature="e#2465#2608#0" expanded="true" />
                 <element signature="e#2607#2608#0" expanded="true" />
@@ -1684,12 +1704,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/controller/UiController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ComplainFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ComplainService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/contentprovider/SharedFields.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_services.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServiceFormHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServiceDataSender.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ComplainFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ServiceFragment.java" />
       </list>
     </option>
@@ -2344,14 +2364,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ComplainFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9935065">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2359,24 +2371,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ComplainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ComplainFormHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2402,10 +2396,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ComplainService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.27597404">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ComplainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="17" selection-start-line="56" selection-start-column="16" selection-end-line="60" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ComplainFormHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/ServiceFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6071428">
-          <caret line="104" column="48" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.5032467">
+          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
           <folding>
             <element signature="e#2465#2608#0" expanded="true" />
             <element signature="e#2607#2608#0" expanded="true" />

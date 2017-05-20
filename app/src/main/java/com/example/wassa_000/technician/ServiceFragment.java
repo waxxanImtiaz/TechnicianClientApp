@@ -81,7 +81,6 @@ public class ServiceFragment extends Fragment {
         String address = this.address.getText().toString();
         String phone = this.phone.getText().toString();
         String remarks = this.remarks.getText().toString();
-        String service = this.item;
 
         if (name.isEmpty()) {
             this.name.setError("Please enter name");
@@ -100,6 +99,11 @@ public class ServiceFragment extends Fragment {
             return;
         }
 
+        if (!UiController.isNetworkAvailable(getContext()))
+        {
+            UiController.showDialog("Please connect to network",getActivity());
+            return;
+        }
         ServiceDataSender sender = new ServiceDataSender(getContext());
 
         sender.execute(name,phone,item,remarks);
