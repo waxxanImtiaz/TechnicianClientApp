@@ -38,6 +38,11 @@ public class FeedBackFragment extends Fragment {
 
 
 
+    @Override
+    public void onActivityCreated(Bundle b){
+        super.onActivityCreated(b);
 
+
+    }
 
 }

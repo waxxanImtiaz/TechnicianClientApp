@@ -12,6 +12,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.MultiAutoCompleteTextView;
 
+import com.example.wassa_000.technician.builder.ComplainFormHandler;
+import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.controller.UiController;
+import com.example.wassa_000.technician.serverconnetors.ComplainService;
+
 
 public class ComplainFragment extends Fragment{
 
@@ -32,17 +37,33 @@ public class ComplainFragment extends Fragment{
         View v = inflater.inflate(R.layout.fragment_complain, container, false);
 
         tvComplain = (MultiAutoCompleteTextView)v.findViewById(R.id.complain);
-        btnSubmit = (Button)v.findViewById(R.id.btn_submit);
+        btnSubmit = (Button)v.findViewById(R.id.btnSubmit);
+
         // Inflate the layout for this fragment
 
-//        btnSubmit.setOnClickListener(new ButtonOnClickListener());
         return v;
     }
 
     private class ButtonOnClickListener implements View.OnClickListener{
         @Override
         public void onClick(View v){
+            String complain = tvComplain.getText().toString();
 
+            if (complain.isEmpty()){
+                UiController.showDialog("Please enter complain",getActivity());
+            }
+            else{
+                ComplainService service = new ComplainService(getContext());
+                service.execute(complain);
+            }
         }
     }
+    @Override
+    public void onActivityCreated(Bundle b){
+        super.onActivityCreated(b);
+
+        btnSubmit.setOnClickListener(new ButtonOnClickListener());
+
+    }
+
 }
