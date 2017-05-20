@@ -2,6 +2,8 @@ package com.example.wassa_000.technician.builder;
 
 import android.content.Context;
 
+import com.example.wassa_000.technician.contentprovider.SharedFields;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
@@ -30,11 +32,11 @@ public class ServiceFormHandler  extends ServerConnectionBuilder {
         this.reqMethod = requestMethod;
     }
 
-    public String setFormParametersAndConnect(String userId, String name,String phone,String service
+    public String setFormParametersAndConnect( String name,String phone,String service
     ,String message) {
         try {
             Map<String, String> arguments = new HashMap<>();
-            arguments.put("userid", userId);
+            arguments.put("userid", SharedFields.userId);
             arguments.put("name", name);
             arguments.put("phone", phone);
             arguments.put("service", service);

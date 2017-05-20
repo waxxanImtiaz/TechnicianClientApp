@@ -24,7 +24,7 @@ public class ServiceDataSender extends AsyncTask<String, Void, String> {
         handler.setUrl(SharedFields.userLink);
         handler.setRequestMethod("POST");
 
-        return handler.setFormParametersAndConnect(SharedFields.userId,params[0]
+        return handler.setFormParametersAndConnect(params[0]
         ,params[1],params[2],params[3]);
     }
 

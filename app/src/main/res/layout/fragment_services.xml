@@ -50,6 +50,7 @@
                 <EditText
                     android:id="@+id/et_address"
                     style="@style/et_style"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/et_search"
@@ -106,6 +107,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimary"
                     android:text="@string/btn_submit"
+                    android:id="@+id/btnSubmit"
                     android:textColor="@color/windowBackground" />
             </LinearLayout>
         </RelativeLayout>
