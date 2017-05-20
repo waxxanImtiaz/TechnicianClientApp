@@ -7,6 +7,7 @@ import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.serverconnetors.ComplainService;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.URLEncoder;
@@ -61,29 +62,28 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
 //                OutputStream os = http.getOutputStream();
 //                os.write(out);
               // int reqCode = http.getResponseCode();
+                DataOutputStream wr = new DataOutputStream(http.getOutputStream());
+                wr.writeBytes(sj.toString());
+                wr.flush();
+                wr.close();
 
+                int responseCode = http.getResponseCode();
 
-                InputStreamReader in = null;
-                StringBuffer sb = new StringBuffer();
-                if (http != null)
-                    http.setReadTimeout(60 * 1000);
-                if (http != null && http.getInputStream() != null) {
-                    in = new InputStreamReader(http.getInputStream(),
-                            Charset.defaultCharset());
-                    BufferedReader bufferedReader = new BufferedReader(in);
-                    if (bufferedReader != null) {
-                        int cp;
-                        while ((cp = bufferedReader.read()) != -1) {
-                            sb.append((char) cp);
-                        }
-                        bufferedReader.close();
-                    }
+                BufferedReader in = new BufferedReader(
+                        new InputStreamReader(http.getInputStream()));
+                String inputLine;
+                StringBuffer response = new StringBuffer();
+
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
                 }
-                System.out.println(SharedFields.DEBUG_MESSAGE + ":complain=" + sb.toString());
+                in.close();
+
+                System.out.println(SharedFields.DEBUG_MESSAGE + ":complain=" + response.toString());
                 in.close();
 
 
-                return "true";
+                return response.toString();
             } catch (Exception e) {
                 e.printStackTrace();
                 return "error=" + e.getMessage();
