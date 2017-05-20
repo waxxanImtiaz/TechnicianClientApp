@@ -21,15 +21,16 @@ public class ComplainService extends AsyncTask<String, Void, String>  {
     @Override
     protected String doInBackground(String... params) {
 
-        ComplainFormHandler handler = new ComplainFormHandler();
+        ComplainFormHandler handler = new ComplainFormHandler(mContext);
         handler.setUrl(SharedFields.userLink);
         handler.setRequestMethod("POST");
-        handler.setFormParametersAndConnect("1",params[0]);
-        return "Executed";
+
+        return handler.setFormParametersAndConnect("1",params[0]);
     }
 
     @Override
     protected void onPostExecute(String result) {
+
          if (result.equalsIgnoreCase("true")){
              Toast.makeText(mContext, "Complain submitted succesffully", Toast.LENGTH_SHORT).show();
          }else

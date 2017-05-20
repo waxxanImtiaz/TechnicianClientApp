@@ -4,37 +4,21 @@
     api-level="16"
     density="tvdpi"
     format="7"
-    timestamp="60869678964187"
-    verifier="COMPATIBLE" >
+    timestamp="64684826928684" >
 
     <task
         name="javac"
-        duration="1377" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="1069" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="145" />
+        duration="0" />
     <task
         name="verifier"
-        duration="7" />
+        duration="0" />
 
-    <artifact
-        location="E:\androidprojects\TechnicianClientApp\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
-
-    <build timestamp="60807231140906" >
-        <artifact
-            location="E:\androidprojects\TechnicianClientApp\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
-    </build>
-    <build
-        timestamp="60869678964187"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="E:\androidprojects\TechnicianClientApp\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
+    <build timestamp="64684826928684" />
 
 </instant-run>

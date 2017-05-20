@@ -1,6 +1,10 @@
 package com.example.wassa_000.technician.builder;
 
+import android.content.Context;
+import android.widget.Toast;
+
 import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.serverconnetors.ComplainService;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -16,6 +20,12 @@ import java.util.Map;
  */
 
 public class ComplainFormHandler extends ServerConnectionBuilder {
+
+    private Context c;
+
+    public ComplainFormHandler(Context c) {
+        this.c = c;
+    }
 
     //call first
     public void setUrl(String link) {
@@ -35,17 +45,24 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
             arguments.put("complain", "true");
             StringBuilder sj = new StringBuilder();
 
+            System.out.println("prameters:parameters are set");
             for (Map.Entry<String, String> entry : arguments.entrySet()) {
                 sj.append(URLEncoder.encode(entry.getKey(), "UTF-8") + "=" + URLEncoder.encode(entry.getValue(), "UTF-8") + "&");
             }
+            sj.deleteCharAt(sj.length()-1);
             byte[] out = sj.toString().getBytes();
 
+            this.connect();
             http.setFixedLengthStreamingMode(out.length);
             http.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+
             http.connect();
             try {
 //                OutputStream os = http.getOutputStream();
 //                os.write(out);
+              // int reqCode = http.getResponseCode();
+
+
                 InputStreamReader in = null;
                 StringBuffer sb = new StringBuffer();
                 if (http != null)
@@ -68,11 +85,13 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
 
                 return "true";
             } catch (Exception e) {
-
+                e.printStackTrace();
+                return "error=" + e.getMessage();
             }
 
         } catch (Exception e) {
+            e.printStackTrace();
+            return "Error:" + e.getMessage();
         }
-        return "false";
     }
 }
