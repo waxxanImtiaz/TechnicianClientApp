@@ -50,7 +50,7 @@ public class ServiceFragment extends Fragment {
 
         spinnerServices = (Spinner)view.findViewById(R.id.sp_services);
         services = new String[] {"Mobile Repairig","Plumber","Texi"};
-
+        item = services[0];
         final ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, services);
         spinnerServices.setAdapter(servicesArrayAdapter);
 

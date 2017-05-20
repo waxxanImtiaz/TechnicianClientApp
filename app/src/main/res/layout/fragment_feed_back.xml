@@ -107,6 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_submit"
+                android:id="@+id/btnSubmit"
                 style="@style/et_style"
                 android:textColor="@color/windowBackground"
                 android:background="@color/colorPrimary"/>
