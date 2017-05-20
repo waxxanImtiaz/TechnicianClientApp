@@ -1,6 +1,0 @@
-CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\controller\UiController$override.class
-CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\ComplainFragment$ButtonOnClickListener$override.class
-CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\serverconnetors\ComplainService$override.class
-CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\ComplainFragment$override.class
-CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\controller\UiController$1$override.class

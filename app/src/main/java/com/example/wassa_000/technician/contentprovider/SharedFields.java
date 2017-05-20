@@ -17,4 +17,5 @@ public class SharedFields {
     //PERMISSION CODES
 
     public static final int INTERNET_PERMISSION = 10;
+    public static final int NETWORK_STATE = 120;
 }

@@ -31,7 +31,7 @@ public class ComplainService extends AsyncTask<String, Void, String>  {
     @Override
     protected void onPostExecute(String result) {
 
-         if (result.equalsIgnoreCase("true")){
+         if (result.equalsIgnoreCase("success")){
              Toast.makeText(mContext, "Complain submitted succesffully", Toast.LENGTH_SHORT).show();
          }else
              Toast.makeText(mContext, "Complain not submitted", Toast.LENGTH_SHORT).show();
