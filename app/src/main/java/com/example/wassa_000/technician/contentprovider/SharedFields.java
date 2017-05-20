@@ -13,4 +13,8 @@ public class SharedFields {
 
 
     public static final String DEBUG_MESSAGE = "server_error";
+
+    //PERMISSION CODES
+
+    public static final int INTERNET_PERMISSION = 10;
 }
