@@ -47,6 +47,11 @@ public class ComplainFragment extends Fragment{
     private class ButtonOnClickListener implements View.OnClickListener{
         @Override
         public void onClick(View v){
+            if (!UiController.isNetworkAvailable(getContext()))
+            {
+                UiController.showDialog("Please connect to wifi",getActivity());
+                return;
+            }
             String complain = tvComplain.getText().toString();
 
             if (complain.isEmpty()){

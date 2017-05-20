@@ -59,9 +59,6 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
 
             http.connect();
             try {
-//                OutputStream os = http.getOutputStream();
-//                os.write(out);
-              // int reqCode = http.getResponseCode();
                 DataOutputStream wr = new DataOutputStream(http.getOutputStream());
                 wr.writeBytes(sj.toString());
                 wr.flush();
@@ -79,7 +76,6 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
                 }
                 in.close();
 
-                System.out.println(SharedFields.DEBUG_MESSAGE + ":complain=" + response.toString());
                 in.close();
 
 

@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity
                 // No explanation needed, we can request the permission.
 
                 ActivityCompat.requestPermissions(MainActivity.this,
-                        new String[]{Manifest.permission.READ_CONTACTS},
+                        new String[]{Manifest.permission.INTERNET},
                         SharedFields.INTERNET_PERMISSION);
 
                 // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
