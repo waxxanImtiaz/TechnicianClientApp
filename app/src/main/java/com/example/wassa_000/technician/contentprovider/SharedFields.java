@@ -10,7 +10,7 @@ public class SharedFields {
     public static final String serverLink = "http://serveasy.pk/andriod_services/";
     public static final String userLink = serverLink.concat("users.php");
 
-
+    public static final String userId = "1";
 
     public static final String DEBUG_MESSAGE = "server_error";
 
@@ -18,4 +18,6 @@ public class SharedFields {
 
     public static final int INTERNET_PERMISSION = 10;
     public static final int NETWORK_STATE = 120;
+
+
 }
