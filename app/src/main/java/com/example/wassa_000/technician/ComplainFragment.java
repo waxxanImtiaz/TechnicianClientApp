@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
 
 import com.example.wassa_000.technician.builder.ComplainFormHandler;
@@ -22,6 +23,8 @@ public class ComplainFragment extends Fragment{
 
     private MultiAutoCompleteTextView tvComplain;
     private Button btnSubmit;
+
+    private EditText phone;
     public ComplainFragment() {
         // Required empty public constructor
     }
@@ -36,6 +39,8 @@ public class ComplainFragment extends Fragment{
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_complain, container, false);
 
+        phone = (EditText)v.findViewById(R.id.et_phone);
+
         tvComplain = (MultiAutoCompleteTextView)v.findViewById(R.id.complain);
         btnSubmit = (Button)v.findViewById(R.id.btnSubmit);
 
@@ -49,6 +54,13 @@ public class ComplainFragment extends Fragment{
         public void onClick(View v){
 
             String complain = tvComplain.getText().toString();
+
+            String p = phone.getText().toString();
+
+            if (p.isEmpty()) {
+                phone.setError("Please enter phone number");
+                return;
+            }
 
             if (complain.isEmpty()){
                 UiController.showDialog("Please enter complain",getActivity());

@@ -311,8 +311,8 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="address">Address:</string>
     <string name="address_hint">Address</string>
-    <string name="address_place_holder">Enter your address</string>
-    <string name="app_name">Serve Easy</string>
+    <string name="address_place_holder">Enter your address*</string>
+    <string name="app_name">serveasy</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btn_submit">Submit</string>
@@ -342,7 +342,7 @@
     <string name="message_place_holder">Message</string>
     <string name="my_account">My Account</string>
     <string name="name">Name:</string>
-    <string name="name_place_holder">Enter your name
+    <string name="name_place_holder">Enter your name*
     </string>
     <string name="nav_heading">Technician</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -352,7 +352,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="phone_place_holder">Enter your phone number</string>
+    <string name="phone_place_holder">Enter your phone number*</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="quote">Please fill following fields</string>
@@ -369,7 +369,7 @@
     <string name="title_activity_login">Sign in</string>
     <string name="title_activity_main">Serve Easy</string>
     <string name="type_feed_back">Enter your feedback</string>
-    <string name="type_message">Enter your message</string>
+    <string name="type_message">Enter your message(Optional)</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

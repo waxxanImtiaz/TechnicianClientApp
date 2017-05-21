@@ -31,13 +31,13 @@
                     android:layout_gravity="center"
                     android:src="@drawable/logo2" />
 
-                <TextView
-                    style="@style/et_style"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10sp"
-                    android:gravity="center"
-                    android:text="@string/quote" />
+                <!--<TextView-->
+                    <!--style="@style/et_style"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="10sp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/quote" />-->
 
                 <EditText
                     android:id="@+id/et_name"
@@ -63,6 +63,30 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/et_search"
                     android:hint="@string/phone_place_holder" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_city"
+                        style="@style/et_style"
+                        android:textColor="#000"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_cities"
+                        style="@style/sp_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"
+
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

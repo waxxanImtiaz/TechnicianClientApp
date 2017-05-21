@@ -1,3 +1,5 @@
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\ServiceFragment$2$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\ServiceFragment$1$override.class
 CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\contentprovider\SharedFields$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\serverconnetors\ServiceDataSender$override.class
 CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\ServiceFragment$override.class

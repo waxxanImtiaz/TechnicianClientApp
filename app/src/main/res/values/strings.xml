@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Serve Easy</string>
+    <string name="app_name">serveasy</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="feedback_message">Please give us your value able feedback!</string>
@@ -16,7 +16,7 @@
     >
     <string name="select_city">Select City</string>
     <string name="complain_text">Please type your complain</string>
-    <string name="type_message">Enter your message</string>
+    <string name="type_message">Enter your message(Optional)</string>
     <string name="type_feed_back">Enter your feedback</string>
 
     <!--FRAGMENT NAMES-->
@@ -28,11 +28,11 @@
 
 
     <!--Place holders-->
-    <string name="phone_place_holder">Enter your phone number</string>
+    <string name="phone_place_holder">Enter your phone number*</string>
     <string name="email_place_holder">Enter your email</string>
     <string name="message_place_holder">Message</string>
-    <string name="address_place_holder">Enter your address</string>
-    <string name="name_place_holder">Enter your name
+    <string name="address_place_holder">Enter your address*</string>
+    <string name="name_place_holder">Enter your name*
     </string>
     <string name="title_activity_login">Sign in</string>
 

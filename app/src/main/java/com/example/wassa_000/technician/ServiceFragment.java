@@ -20,6 +20,10 @@ public class ServiceFragment extends Fragment {
 
     private Spinner spinnerServices;
     private String[] services;
+    private String[] cities;
+    private Spinner spinnerCities;
+
+    private String city;
     private String item;
     private EditText name;
     private EditText phone;
@@ -40,6 +44,14 @@ public class ServiceFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_services, container, false);
+        spinnerCities = (Spinner)view.findViewById(R.id.sp_cities);
+        cities = new String[] {"Karachi","Hyderabad","Sukkur"};
+
+
+        ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, cities);
+        spinnerCities.setAdapter(servicesArrayAdapter);
+
+        city = cities[0];
 
         //initialize fields
         name = (EditText) view.findViewById(R.id.et_name);
@@ -51,8 +63,8 @@ public class ServiceFragment extends Fragment {
         spinnerServices = (Spinner)view.findViewById(R.id.sp_services);
         services = new String[] {"Mobile Repairig","Plumber","Texi"};
         item = services[0];
-        final ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, services);
-        spinnerServices.setAdapter(servicesArrayAdapter);
+        final ArrayAdapter<String> servicesAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, services);
+        spinnerServices.setAdapter(servicesAdapter);
 
 
         spinnerServices.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -94,17 +106,17 @@ public class ServiceFragment extends Fragment {
             this.address.setError("Please enter address");
             return;
         }
-        if (remarks.isEmpty()) {
-            UiController.showDialog("Please enter your message",getActivity());
-            return;
-        }
+//        if (remarks.isEmpty()) {
+//            UiController.showDialog("Please enter your message",getActivity());
+//            return;
+//        }
 
         if (!UiController.isNetworkAvailable(getContext()))
         {
             UiController.showDialog("Please connect to network",getActivity());
             return;
         }
-        ServiceDataSender sender = new ServiceDataSender(getContext());
+        ServiceDataSender sender = new ServiceDataSender(getActivity());
 
         sender.execute(name,phone,address,item,remarks);
 

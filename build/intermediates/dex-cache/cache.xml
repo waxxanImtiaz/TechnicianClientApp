@@ -1,3 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_6a69b7d94cbf307d5c63a7243ffd4f72e4d2e801.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_9efe35d4c4dd60c7d3d809ba8db355645a120c04.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\com.android.support-design-23.4.0_6a69b7d94cbf307d5c63a7243ffd4f72e4d2e801.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="69d553cdcb3fa4a2165fcf36e65e101cb68e1b67">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2b00f474cf7f125d217d9f275bd1a79d7949693c.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.4.0_9efe35d4c4dd60c7d3d809ba8db355645a120c04.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_001ea12a746c339b1b27deeea0db565065b2854c.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_8f4020516bade64f41b321f69ca2404496ebe0b6.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-23.4.0_8f4020516bade64f41b321f69ca2404496ebe0b6.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\internal_impl-23.4.0_001ea12a746c339b1b27deeea0db565065b2854c.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_cb15bcb078a89b52f46303b72dd19427459bdedc.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.4.0_fd950e9f945105d5de299a9ac57cc25f8ccca3aa.jar" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\support-annotations-23.4.0_fc18a0fdc80391aaf9a93e629f1a6f03cf6a9cf4.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="72c1d83122a35575454d48b3b55d6fd22756d05f">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\instant-run_b2b8d006434323f5e9a5e03076a15960be361e51.jar" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_fc18a0fdc80391aaf9a93e629f1a6f03cf6a9cf4.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_fd950e9f945105d5de299a9ac57cc25f8ccca3aa.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-23.4.0_cb15bcb078a89b52f46303b72dd19427459bdedc.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_0197ac9d9cc92c97d17ccb4c7bbc1b043bf92adb.jar" />
+    </item>
+    <item
+        jar="E:\androidprojects\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\androidprojects\TechnicianClientApp\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.4.0_0197ac9d9cc92c97d17ccb4c7bbc1b043bf92adb.jar" />
+    </item>
+
+</items>

@@ -32,6 +32,15 @@
         <!--android:gravity="center"-->
         <!--style="@style/et_style"-->
         <!--/>-->
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/et_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_search"
+        android:hint="@string/phone_place_holder" />
+
+
     <MultiAutoCompleteTextView
         android:layout_width="match_parent"
         android:layout_height="170dp"
@@ -39,7 +48,7 @@
         android:gravity="top"
         android:layout_below="@+id/table"
         android:inputType="textMultiLine"
-        android:padding="5dp"
+        android:padding="10dp"
         android:scrollbars="vertical"
         android:id="@+id/complain"
         android:hint="@string/complain_text"
