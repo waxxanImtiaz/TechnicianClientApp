@@ -5,32 +5,33 @@
     tools:context="com.example.wassa_000.technician.FeedBackFragment">
 
 
-    <ScrollView  android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorAccent">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_centerInParent="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:src="@drawable/logo2"
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo2"
 
-                />
-            <!-- TODO: Update blank fragment layout -->
-            <!--<TextView-->
+                    />
+                <!-- TODO: Update blank fragment layout -->
+                <!--<TextView-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="wrap_content"-->
                 <!--android:layout_centerInParent="true"-->
@@ -39,24 +40,24 @@
                 <!--android:textSize="17sp"-->
                 <!--/>-->
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_name"
-                android:background="@drawable/et_search"
-                style="@style/et_style"
-                android:hint="@string/name_place_holder"
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_phone"
-                android:background="@drawable/et_search"
-                style="@style/et_style"
-                android:hint="@string/phone_place_holder"
-                />
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:hint="@string/name_place_holder" />
 
-            <!--<EditText-->
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/et_style"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search"
+                    android:hint="@string/phone_place_holder" />
+
+                <!--<EditText-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="wrap_content"-->
                 <!--android:id="@+id/et_email"-->
@@ -66,62 +67,81 @@
                 <!--/>-->
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/select_city"
-                    style="@style/et_style"
-                    android:textColor="#000"
-                    />
-                <Spinner
-                    android:id="@+id/sp_cities"
-                    style="@style/sp_style"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="10sp"
+                    android:orientation="horizontal">
 
-                    android:spinnerMode="dropdown" />
+                    <TextView
+                        style="@style/et_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_city"
+                        android:textColor="#000" />
+
+                    <Spinner
+                        android:id="@+id/sp_cities"
+                        style="@style/sp_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"
+
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/et_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate_us"
+                        android:textColor="#000" />
+
+                    <RatingBar
+                        android:id="@+id/myRatingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:numStars="6"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" />
+                </LinearLayout>
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/remarks"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/table"
+                    android:background="@drawable/et_search"
+                    android:gravity="top"
+                    android:hint="@string/type_feed_back"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:padding="5dp"
+                    android:scrollbars="vertical" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/btn_submit"
+                    android:textColor="@color/windowBackground" />
             </LinearLayout>
-            <RatingBar
-                android:id="@+id/myRatingBar"
-                style="?android:attr/ratingBarStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_margin="10dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:layout_height="wrap_content"
-                android:numStars="5" />
-
-            <MultiAutoCompleteTextView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                style="@style/et_style"
-                android:gravity="top"
-                android:layout_below="@+id/table"
-                android:inputType="textMultiLine"
-                android:padding="5dp"
-                android:scrollbars="vertical"
-                android:id="@+id/remarks"
-                android:hint="@string/type_feed_back"
-                android:background="@drawable/et_search"
-                android:minLines="5"
-                />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_submit"
-                android:id="@+id/btnSubmit"
-                style="@style/et_style"
-                android:textColor="@color/windowBackground"
-                android:background="@color/colorPrimary"/>
-        </LinearLayout>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

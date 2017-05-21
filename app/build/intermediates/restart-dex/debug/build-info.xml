@@ -4,29 +4,43 @@
     api-level="16"
     density="tvdpi"
     format="7"
-    timestamp="68980214162938" >
+    timestamp="73659395184393"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="18677" />
+        duration="5574" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="4417" />
     <task
         name="instant-run-transform"
-        duration="8201" />
+        duration="2164" />
     <task
         name="verifier"
-        duration="962" />
+        duration="182" />
 
     <artifact
-        location="E:\androidprojects\TechnicianClientApp\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="E:\androidprojects\TechnicianClientApp\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="E:\androidprojects\TechnicianClientApp\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="68980214162938" >
+    <build timestamp="73167040271734" >
         <artifact
             location="E:\androidprojects\TechnicianClientApp\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="73659395184393"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="E:\androidprojects\TechnicianClientApp\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="E:\androidprojects\TechnicianClientApp\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

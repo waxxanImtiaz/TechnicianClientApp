@@ -2619,20 +2619,21 @@ containing a value of this type.
         public static final int prompt_email=0x7f060040;
         public static final int prompt_password=0x7f060041;
         public static final int quote=0x7f060042;
-        public static final int select_city=0x7f060043;
-        public static final int select_service=0x7f060044;
-        public static final int selected_area=0x7f060045;
-        public static final int service=0x7f060046;
-        public static final int shipping_address=0x7f060047;
-        public static final int shipping_address_hint=0x7f060048;
-        public static final int sign_in=0x7f060049;
-        public static final int sign_out=0x7f06004a;
-        public static final int sign_up=0x7f06004b;
+        public static final int rate_us=0x7f060043;
+        public static final int select_city=0x7f060044;
+        public static final int select_service=0x7f060045;
+        public static final int selected_area=0x7f060046;
+        public static final int service=0x7f060047;
+        public static final int shipping_address=0x7f060048;
+        public static final int shipping_address_hint=0x7f060049;
+        public static final int sign_in=0x7f06004a;
+        public static final int sign_out=0x7f06004b;
+        public static final int sign_up=0x7f06004c;
         public static final int status_bar_notification_info_overflow=0x7f060013;
-        public static final int title_activity_login=0x7f06004c;
-        public static final int title_activity_main=0x7f06004d;
-        public static final int type_feed_back=0x7f06004e;
-        public static final int type_message=0x7f06004f;
+        public static final int title_activity_login=0x7f06004d;
+        public static final int title_activity_main=0x7f06004e;
+        public static final int type_feed_back=0x7f06004f;
+        public static final int type_message=0x7f060050;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090088;

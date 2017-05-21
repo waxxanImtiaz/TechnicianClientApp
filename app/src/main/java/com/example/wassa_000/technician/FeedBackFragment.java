@@ -3,6 +3,7 @@ package com.example.wassa_000.technician;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -10,7 +11,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
+import android.widget.RatingBar;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.serverconnetors.FeedBackService;
@@ -26,6 +29,7 @@ public class FeedBackFragment extends Fragment {
     private EditText phone;
     private MultiAutoCompleteTextView remarks;
     private Button submit;
+
     public FeedBackFragment() {
         // Required empty public constructor
     }
@@ -36,17 +40,36 @@ public class FeedBackFragment extends Fragment {
 
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_feed_back, container, false);
-        spinnerCities = (Spinner)view.findViewById(R.id.sp_cities);
-        cities = new String[] {"Karachi","Hyderabad","Sukkur"};
+        spinnerCities = (Spinner) view.findViewById(R.id.sp_cities);
+        cities = new String[]{"Karachi", "Hyderabad", "Sukkur"};
 
 
+        final RatingBar minimumRating = (RatingBar) view.findViewById(R.id.myRatingBar);
+        minimumRating.setOnTouchListener(new View.OnTouchListener() {
+            public boolean onTouch(View view, MotionEvent event) {
+                float touchPositionX = event.getX();
+                float width = minimumRating.getWidth();
+                float starsf = (touchPositionX / width) * 5.0f;
+                int stars = (int) starsf + 1;
+
+                if (stars == 1 || stars == 2)
+                    Toast.makeText(getContext(), "Poor", Toast.LENGTH_SHORT).show();
+                else if (stars == 3 || stars == 4)
+                    Toast.makeText(getContext(), "Average", Toast.LENGTH_SHORT).show();
+                else if (stars == 5)
+                    Toast.makeText(getContext(), "Excellent", Toast.LENGTH_SHORT).show();
+                minimumRating.setRating(stars);
+                return true;
+            }
+        });
         //initialize fields
         name = (EditText) view.findViewById(R.id.et_name);
-        phone = (EditText)view.findViewById(R.id.et_phone);
+        phone = (EditText) view.findViewById(R.id.et_phone);
 //        email = (EditText)view.findViewById(R.id.et_email);
         submit = (Button) view.findViewById(R.id.btnSubmit);
         remarks = (MultiAutoCompleteTextView) view.findViewById(R.id.remarks);
@@ -78,8 +101,7 @@ public class FeedBackFragment extends Fragment {
     }
 
 
-
-    public void work(){
+    public void work() {
 
         String name = this.name.getText().toString();
 //        String email = this.email.getText().toString();
@@ -99,22 +121,22 @@ public class FeedBackFragment extends Fragment {
 //            return;
 //        }
         if (remarks.isEmpty()) {
-            UiController.showDialog("Please enter your message",getActivity());
+            UiController.showDialog("Please enter feedback", getActivity());
             return;
         }
 
-        if (!UiController.isNetworkAvailable(getContext()))
-        {
-            UiController.showDialog("Please connect to network",getActivity());
+        if (!UiController.isNetworkAvailable(getContext())) {
+            UiController.showDialog("Please connect to network", getActivity());
             return;
         }
 
         FeedBackService service = new FeedBackService(getActivity());
-        service.execute(name,phone,city,remarks,"email");
+        service.execute(name, phone, city, remarks, "email");
 //        service.execute(name,phone,city,remarks,email);
     }
+
     @Override
-    public void onActivityCreated(Bundle b){
+    public void onActivityCreated(Bundle b) {
         super.onActivityCreated(b);
 
 
