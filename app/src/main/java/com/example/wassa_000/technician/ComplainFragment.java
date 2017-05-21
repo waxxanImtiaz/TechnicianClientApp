@@ -49,6 +49,20 @@ public class ComplainFragment extends Fragment{
         return v;
     }
 
+    /*final RatingBar minimumRating = (RatingBar)findViewById(R.id.myRatingBar);
+    minimumRating.setOnTouchListener(new OnTouchListener()
+    {
+        public boolean onTouch(View view, MotionEvent event)
+        {
+            float touchPositionX = event.getX();
+            float width = minimumRating.getWidth();
+            float starsf = (touchPositionX / width) * 5.0f;
+            int stars = (int)starsf + 1;
+            minimumRating.setRating(stars);
+            return true;
+        }
+    });*/
+
     private class ButtonOnClickListener implements View.OnClickListener{
         @Override
         public void onClick(View v){
@@ -71,7 +85,7 @@ public class ComplainFragment extends Fragment{
                     UiController.showDialog("Please connect to network",getActivity());
                     return;
                 }
-                ComplainService service = new ComplainService(getContext());
+                ComplainService service = new ComplainService(getActivity());
                 service.execute(complain);
             }
         }

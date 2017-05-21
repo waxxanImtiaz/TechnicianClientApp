@@ -110,7 +110,8 @@ public class FeedBackFragment extends Fragment {
         }
 
         FeedBackService service = new FeedBackService(getActivity());
-        service.execute(name,phone,city,remarks,email);
+        service.execute(name,phone,city,remarks,"email");
+//        service.execute(name,phone,city,remarks,email);
     }
     @Override
     public void onActivityCreated(Bundle b){

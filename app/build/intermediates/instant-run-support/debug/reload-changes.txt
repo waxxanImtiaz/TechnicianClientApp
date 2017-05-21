@@ -1,0 +1,16 @@
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\serverconnetors\ComplainService$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$style$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\design\R$id$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$styleable$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$mipmap$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$layout$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\ServiceFragment$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$menu$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$integer$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\MainActivity$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\FeedBackFragment$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\ComplainFragment$ButtonOnClickListener$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$id$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\wassa_000\technician\R$string$override.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,E:\androidprojects\TechnicianClientApp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$id$override.class

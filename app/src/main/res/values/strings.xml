@@ -21,7 +21,7 @@
 
     <!--FRAGMENT NAMES-->
     <string name="complain">T&amp;C</string>
-    <string name="feedback">Feed back</string>
+    <string name="feedback">Feedback</string>
     <string name="service">Services</string>
     <string name="quote">Please fill following fields</string>
     <string name="btn_submit">Submit</string>

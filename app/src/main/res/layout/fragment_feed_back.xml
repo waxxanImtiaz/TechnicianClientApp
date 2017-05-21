@@ -65,6 +65,7 @@
                 <!--android:hint="@string/email_place_holder"-->
                 <!--/>-->
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,6 +88,15 @@
 
                     android:spinnerMode="dropdown" />
             </LinearLayout>
+            <RatingBar
+                android:id="@+id/myRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content"
+                android:numStars="5" />
 
             <MultiAutoCompleteTextView
                 android:layout_width="match_parent"

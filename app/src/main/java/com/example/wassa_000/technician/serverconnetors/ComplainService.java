@@ -1,11 +1,13 @@
 package com.example.wassa_000.technician.serverconnetors;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
 import com.example.wassa_000.technician.builder.ComplainFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.controller.UiController;
 
 /**
  * Created by Admin on 5/19/2017.
@@ -13,8 +15,8 @@ import com.example.wassa_000.technician.contentprovider.SharedFields;
 
 public class ComplainService extends AsyncTask<String, Void, String>  {
 
-    private Context mContext;
-    public ComplainService(Context mContext){
+    private Activity mContext;
+    public ComplainService(Activity mContext){
         this.mContext = mContext;
     }
 
@@ -32,9 +34,10 @@ public class ComplainService extends AsyncTask<String, Void, String>  {
     protected void onPostExecute(String result) {
 
          if (result.equalsIgnoreCase("success")){
-             Toast.makeText(mContext, "Complain submitted succesffully", Toast.LENGTH_SHORT).show();
+             UiController.showDialog("Complain submitted succesffully",mContext);
          }else
-             Toast.makeText(mContext, "Complain not submitted", Toast.LENGTH_SHORT).show();
+
+             UiController.showDialog( "Complain not submitted",mContext);
         }
 
     @Override
