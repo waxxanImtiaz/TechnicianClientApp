@@ -47,7 +47,7 @@ public class FeedBackFragment extends Fragment {
         //initialize fields
         name = (EditText) view.findViewById(R.id.et_name);
         phone = (EditText)view.findViewById(R.id.et_phone);
-        email = (EditText)view.findViewById(R.id.et_email);
+//        email = (EditText)view.findViewById(R.id.et_email);
         submit = (Button) view.findViewById(R.id.btnSubmit);
         remarks = (MultiAutoCompleteTextView) view.findViewById(R.id.remarks);
 
@@ -82,7 +82,7 @@ public class FeedBackFragment extends Fragment {
     public void work(){
 
         String name = this.name.getText().toString();
-        String email = this.email.getText().toString();
+//        String email = this.email.getText().toString();
         String phone = this.phone.getText().toString();
         String remarks = this.remarks.getText().toString();
 
@@ -94,10 +94,10 @@ public class FeedBackFragment extends Fragment {
             this.phone.setError("Please enter phone number");
             return;
         }
-        if (email.isEmpty()) {
-            this.email.setError("Please enter email address");
-            return;
-        }
+//        if (email.isEmpty()) {
+//            this.email.setError("Please enter email address");
+//            return;
+//        }
         if (remarks.isEmpty()) {
             UiController.showDialog("Please enter your message",getActivity());
             return;

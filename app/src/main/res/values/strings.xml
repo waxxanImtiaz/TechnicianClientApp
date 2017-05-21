@@ -20,7 +20,7 @@
     <string name="type_feed_back">Enter your feedback</string>
 
     <!--FRAGMENT NAMES-->
-    <string name="complain">Complain</string>
+    <string name="complain">T&amp;C</string>
     <string name="feedback">Feed back</string>
     <string name="service">Services</string>
     <string name="quote">Please fill following fields</string>
