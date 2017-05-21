@@ -24,12 +24,12 @@
         "source": "E:\\androidprojects\\TechnicianClientApp\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "E:\\androidprojects\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "E:\\androidprojects\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
         "merged": "E:\\androidprojects\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "E:\\androidprojects\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\androidprojects\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "E:\\androidprojects\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_layout_tab_text.xml"
     },
     {
         "merged": "E:\\androidprojects\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",

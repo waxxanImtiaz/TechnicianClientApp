@@ -2328,7 +2328,7 @@ containing a value of this type.
         public static final int always=0x7f0c0033;
         public static final int beginning=0x7f0c0031;
         public static final int bottom=0x7f0c001d;
-        public static final int btnSubmit=0x7f0c0089;
+        public static final int btnSubmit=0x7f0c008a;
         public static final int btn_submit=0x7f0c007a;
         public static final int buttonPanel=0x7f0c0044;
         public static final int cancel_action=0x7f0c0093;
@@ -2340,7 +2340,7 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f0c002c;
         public static final int clip_vertical=0x7f0c002d;
         public static final int collapseActionView=0x7f0c0034;
-        public static final int complain=0x7f0c0088;
+        public static final int complain=0x7f0c0089;
         public static final int contentPanel=0x7f0c004a;
         public static final int custom=0x7f0c0050;
         public static final int customPanel=0x7f0c004f;
@@ -2365,10 +2365,10 @@ containing a value of this type.
         public static final int et_confirm_password=0x7f0c0075;
         public static final int et_contact_number=0x7f0c0077;
         public static final int et_email=0x7f0c0076;
-        public static final int et_name=0x7f0c008a;
+        public static final int et_name=0x7f0c008b;
         public static final int et_name_sign_up=0x7f0c0073;
         public static final int et_password=0x7f0c0074;
-        public static final int et_phone=0x7f0c008b;
+        public static final int et_phone=0x7f0c0087;
         public static final int exitUntilCollapsed=0x7f0c0017;
         public static final int expand_activities_button=0x7f0c003e;
         public static final int expanded_menu=0x7f0c0051;
@@ -2452,7 +2452,7 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0c0094;
         public static final int submit_area=0x7f0c0065;
         public static final int tabMode=0x7f0c000d;
-        public static final int table=0x7f0c0087;
+        public static final int table=0x7f0c0088;
         public static final int tabs=0x7f0c007c;
         public static final int text=0x7f0c009c;
         public static final int text2=0x7f0c009a;

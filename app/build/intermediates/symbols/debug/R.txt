@@ -629,7 +629,7 @@ int id alertTitle 0x7f0c0049
 int id always 0x7f0c0033
 int id beginning 0x7f0c0031
 int id bottom 0x7f0c001d
-int id btnSubmit 0x7f0c0089
+int id btnSubmit 0x7f0c008a
 int id btn_submit 0x7f0c007a
 int id buttonPanel 0x7f0c0044
 int id cancel_action 0x7f0c0093
@@ -641,7 +641,7 @@ int id chronometer 0x7f0c0099
 int id clip_horizontal 0x7f0c002c
 int id clip_vertical 0x7f0c002d
 int id collapseActionView 0x7f0c0034
-int id complain 0x7f0c0088
+int id complain 0x7f0c0089
 int id contentPanel 0x7f0c004a
 int id custom 0x7f0c0050
 int id customPanel 0x7f0c004f
@@ -666,10 +666,10 @@ int id et_address 0x7f0c0079
 int id et_confirm_password 0x7f0c0075
 int id et_contact_number 0x7f0c0077
 int id et_email 0x7f0c0076
-int id et_name 0x7f0c008a
+int id et_name 0x7f0c008b
 int id et_name_sign_up 0x7f0c0073
 int id et_password 0x7f0c0074
-int id et_phone 0x7f0c008b
+int id et_phone 0x7f0c0087
 int id exitUntilCollapsed 0x7f0c0017
 int id expand_activities_button 0x7f0c003e
 int id expanded_menu 0x7f0c0051
@@ -753,7 +753,7 @@ int id start 0x7f0c0025
 int id status_bar_latest_event_content 0x7f0c0094
 int id submit_area 0x7f0c0065
 int id tabMode 0x7f0c000d
-int id table 0x7f0c0087
+int id table 0x7f0c0088
 int id tabs 0x7f0c007c
 int id text 0x7f0c009c
 int id text2 0x7f0c009a

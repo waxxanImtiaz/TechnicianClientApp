@@ -56,14 +56,14 @@
                 android:hint="@string/phone_place_holder"
                 />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_email"
-                android:background="@drawable/et_search"
-                style="@style/et_style"
-                android:hint="@string/email_place_holder"
-                />
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/et_email"-->
+                <!--android:background="@drawable/et_search"-->
+                <!--style="@style/et_style"-->
+                <!--android:hint="@string/email_place_holder"-->
+                <!--/>-->
 
             <LinearLayout
                 android:layout_width="match_parent"

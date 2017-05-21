@@ -109,7 +109,7 @@ public class FeedBackFragment extends Fragment {
             return;
         }
 
-        FeedBackService service = new FeedBackService(getContext());
+        FeedBackService service = new FeedBackService(getActivity());
         service.execute(name,phone,city,remarks,email);
     }
     @Override
