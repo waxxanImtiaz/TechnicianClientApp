@@ -90,6 +90,7 @@
         <AutoCompleteTextView
             android:id="@+id/et_email"
             style="@style/et_sign_up"
+            android:inputType="textWebEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email_hint" />

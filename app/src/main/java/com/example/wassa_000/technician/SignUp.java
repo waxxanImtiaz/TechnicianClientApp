@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.example.wassa_000.technician.beans.Customer;
+import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
 import com.example.wassa_000.technician.factory.BeanFactory;
 
@@ -104,6 +106,15 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
         if (TextUtils.isEmpty(etMobile.getText().toString())) {
             etMobile.setError("Enter Mobile number");
+            return;
+        }
+
+        if (!SharedMethods.isValidEmailAddress(etEmail.getText().toString())) {
+            etEmail.setError("Invalid email address");
+            return;
+        }
+        if (!SharedMethods.validatePhoneNumber(etMobile.getText().toString())){
+            etMobile.setError("Invalid phone number");
             return;
         }
 

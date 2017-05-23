@@ -30,7 +30,7 @@
 
 
     <!--Place holders-->
-    <string name="phone_place_holder">Enter your phone number*</string>
+    <string name="phone_place_holder">Phone no (03*********)</string>
     <string name="email_place_holder">Enter your email</string>
     <string name="message_place_holder">Message</string>
     <string name="address_place_holder">Enter your address</string>
@@ -58,7 +58,7 @@
     <string name="enter_addresss">Enter Your Address</string>
     <string name="password_hint">Password</string>
     <string name="confirm_password_hint">Confirm Password</string>
-    <string name="contact_number_hint">Contact number</string>
+    <string name="contact_number_hint">Phone no (03*********)</string>
     <string name="gender_hint">Gender</string>
     <string name="customer_area_hint">Customer Area</string>
     <string name="address_hint">Address</string>
