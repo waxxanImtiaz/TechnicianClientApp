@@ -66,6 +66,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     private String birthday;
     private TextView tvLoginStatus;
     private Profile profile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +77,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         spGender = (Spinner) findViewById(R.id.sp_gender);
         spinnerCities = (Spinner) findViewById(R.id.sp_cities);
         cities = new String[]{"Karachi", "Hyderabad", "Sukkur"};
-        callbackManager = CallbackManager.Factory.create();
+
 
         ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, cities);
         spinnerCities.setAdapter(servicesArrayAdapter);
@@ -107,7 +108,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     }
 
 
-    public void intiRequest(){
+    public void intiRequest() {
         request = GraphRequest.newMeRequest(
                 accessToken,
                 new GraphRequest.GraphJSONObjectCallback() {
@@ -117,8 +118,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                             GraphResponse response) {
                         try {
                             name = object.getString("name");
-                            Log.i("firstName:","name:"+name);
-                        }catch (Exception e){}
+                            Log.i("firstName:", "name:" + name);
+                        } catch (Exception e) {
+                        }
 
                     }
                 });
@@ -128,6 +130,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         request.setParameters(parameters);
         request.executeAsync();
     }
+
     public void initFields() {
         etConformPassword = (EditText) findViewById(R.id.et_confirm_password);
         etEmail = (EditText) findViewById(R.id.et_email);
@@ -140,9 +143,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
         loginButton.setReadPermissions("email");
+        callbackManager = CallbackManager.Factory.create();
         accessToken = AccessToken.getCurrentAccessToken();
         //intiRequest();
-        loginButton.setReadPermissions(Arrays.asList( "email"));
+        //loginButton.setReadPermissions(Arrays.asList( "email"));
 
 
         // Callback registration
@@ -150,10 +154,22 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onSuccess(LoginResult loginResult) {
 
-                Log.i("login","Login success");
+                Log.d("login", "Login success");
+
                 id = loginResult.getAccessToken().getUserId();
+
+                Thread t = new Thread() {
+
+                    public void run() {
+
+
+                        Toast.makeText(SignUp.this, "Logged in", Toast.LENGTH_SHORT).show();
+                    }
+                };
+                runOnUiThread(t);
+                tvLoginStatus.setText("Login Success " + id);
                 intiRequest();
-                tvLoginStatus.setText("Login Success "+id);
+//                LoginManager.getInstance().logOut();
             }
 
             @Override
@@ -173,7 +189,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     }
 
 
-
     @Override
     protected void onActivityResult(int requestCode, int responseCode,
                                     Intent data) {
@@ -181,10 +196,12 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         //intiRequest();
         //Toast.makeText(this, "You are logged in", Toast.LENGTH_SHORT).show();
     }
-    private void startMainActivity(){
-        Intent i = new Intent(SignUp.this,MainActivity.class);
+
+    private void startMainActivity() {
+        Intent i = new Intent(SignUp.this, MainActivity.class);
         startActivity(i);
     }
+
     @Override
     public void onClick(View view) {
 
@@ -216,7 +233,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
             etEmail.setError("Invalid email address");
             return;
         }
-        if (!SharedMethods.validatePhoneNumber(etMobile.getText().toString())){
+        if (!SharedMethods.validatePhoneNumber(etMobile.getText().toString())) {
             etMobile.setError("Invalid phone number");
             return;
         }
@@ -233,7 +250,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-    public void setDataAfterLogin(){
+    public void setDataAfterLogin() {
 
     }
 }
