@@ -43,6 +43,7 @@
             </activity>
         <activity android:name=".SignUp"
             android:label="@string/sign_up"
+            android:noHistory="true"
             android:icon="@drawable/logo2"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
             <meta-data

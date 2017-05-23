@@ -19,5 +19,11 @@ public class SharedFields {
     public static final int INTERNET_PERMISSION = 10;
     public static final int NETWORK_STATE = 120;
 
+    //Facebook login fields
+
+    public static final int REQUEST_CODE_FB = 12;
+    public static final int RESULT_CODE_FB = 26;
+
+
 
 }
