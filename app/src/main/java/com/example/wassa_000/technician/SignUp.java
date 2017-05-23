@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,14 +27,23 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
     private EditText etPassword;
     private Button btnSubmit;
     private EditText etConformPassword;
+    private String[] cities;
+    private Spinner spinnerCities;
 
+    private String city;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
         spGender = (Spinner) findViewById(R.id.sp_gender);
+        spinnerCities = (Spinner)findViewById(R.id.sp_cities);
+        cities = new String[] {"Karachi","Hyderabad","Sukkur"};
 
+        ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, cities);
+        spinnerCities.setAdapter(servicesArrayAdapter);
+
+        city = cities[0];
         // Gender Drop down elements
         List<String> gender = new ArrayList<>();
         gender.add("Male");
@@ -43,6 +53,17 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         ArrayAdapter<String> genderAdapter  = new ArrayAdapter<String>(this,R.layout.spinner_item,gender);
         spGender.setAdapter(genderAdapter);
 
+        spinnerCities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                city = cities[i];
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
         initFields();
 
     }

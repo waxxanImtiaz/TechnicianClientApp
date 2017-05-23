@@ -19,7 +19,7 @@
     <string name="rate_us">Rate Us:</string>
     <string name="complain_text">Please type your complain</string>
     <string name="type_message">Enter your message(Optional)</string>
-    <string name="type_feed_back">Enter your feedback</string>
+    <string name="type_feed_back">Enter your feedback(Optional)</string>
 
     <!--FRAGMENT NAMES-->
     <string name="complain">T&amp;C</string>
@@ -33,7 +33,7 @@
     <string name="phone_place_holder">Enter your phone number*</string>
     <string name="email_place_holder">Enter your email</string>
     <string name="message_place_holder">Message</string>
-    <string name="address_place_holder">Enter your address*</string>
+    <string name="address_place_holder">Enter your address</string>
     <string name="name_place_holder">Enter your name*
     </string>
     <string name="title_activity_login">Sign in</string>

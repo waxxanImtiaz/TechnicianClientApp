@@ -8,10 +8,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent"
         android:layout_centerVertical="true"
-        android:background="@color/colorAccent">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -74,7 +74,8 @@
 
                     <TextView
                         style="@style/et_style"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
                         android:layout_height="wrap_content"
                         android:text="@string/select_city"
                         android:textColor="#000" />
@@ -82,11 +83,11 @@
                     <Spinner
                         android:id="@+id/sp_cities"
                         style="@style/sp_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_margin="10sp"
-
+                        android:layout_weight="0.6"
                         android:spinnerMode="dropdown" />
                 </LinearLayout>
 
@@ -99,24 +100,21 @@
 
                     <TextView
                         style="@style/et_style"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="@string/rate_us"
+                        android:layout_weight="0.4"
                         android:textColor="#000" />
 
-                    <RatingBar
-                        android:id="@+id/myRatingBar"
-                        style="?android:attr/ratingBarStyleSmall"
-                        android:layout_width="wrap_content"
+                    <Spinner
+                        android:id="@+id/sp_rating"
+                        style="@style/sp_style"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="10dp"
-                        android:padding="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:numStars="6"
-                        android:paddingBottom="5dp"
-                        android:paddingTop="5dp" />
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10sp"
+                        android:layout_weight="0.6"
+                        android:spinnerMode="dropdown" />
                 </LinearLayout>
 
                 <MultiAutoCompleteTextView

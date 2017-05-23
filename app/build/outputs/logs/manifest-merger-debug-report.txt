@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:11:5-33:19
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:11:5-41:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -66,7 +66,7 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Admin\Desktop\Techn
 activity#com.example.wassa_000.technician.MainActivity
 ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:17:9-27:20
 	android:label
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:19:13-56
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:19:13-45
 	android:windowSoftInputMode
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:21:13-67
 	android:theme
@@ -84,17 +84,23 @@ ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:25:27-74
 activity#com.example.wassa_000.technician.LoginActivity
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:28:9-30:60
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:28:9-34:24
 	android:label
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:30:13-57
 	android:name
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:29:13-42
-activity#com.example.wassa_000.technician.SignUp
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:31:9-32:85
-	android:windowSoftInputMode
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:32:13-73
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:31:13-33:49
+	android:value
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:33:17-46
 	android:name
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:31:19-41
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:32:17-63
+activity#com.example.wassa_000.technician.SignUp
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:35:9-40:20
+	android:windowSoftInputMode
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:36:13-73
+	android:name
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:35:19-41
 uses-sdk
 INJECTED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78

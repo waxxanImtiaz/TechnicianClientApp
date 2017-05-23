@@ -33,7 +33,7 @@ public class FeedBackFormHandler  extends ServerConnectionBuilder{
     }
 
     public String setFormParametersAndConnect( String name,String phone,String city
-            ,String message,String email) {
+            ,String message,String email,String rate) {
         try {
             Map<String, String> arguments = new HashMap<>();
             arguments.put("userid", SharedFields.userId);
@@ -42,6 +42,7 @@ public class FeedBackFormHandler  extends ServerConnectionBuilder{
             arguments.put("city_id", city);
             arguments.put("email", email);
             arguments.put("feedback", message);
+            arguments.put("rate", rate);
             arguments.put("feedback1", "true");
             StringBuilder sj = new StringBuilder();
 

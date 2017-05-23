@@ -94,7 +94,7 @@ public class ComplainFragment extends Fragment{
     public void onActivityCreated(Bundle b){
         super.onActivityCreated(b);
 
-        btnSubmit.setOnClickListener(new ButtonOnClickListener());
+//        btnSubmit.setOnClickListener(new ButtonOnClickListener());
 
     }
 

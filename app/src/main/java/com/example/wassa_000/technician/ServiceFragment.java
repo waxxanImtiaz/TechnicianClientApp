@@ -99,10 +99,10 @@ public class ServiceFragment extends Fragment {
             return;
         }
 
-        if (address.isEmpty()) {
-            this.address.setError("Please enter address");
-            return;
-        }
+//        if (address.isEmpty()) {
+//            this.address.setError("Please enter address");
+//            return;
+//        }
         if (phone.isEmpty()) {
             this.phone.setError("Please enter phone number");
             return;

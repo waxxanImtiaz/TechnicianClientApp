@@ -21,7 +21,9 @@ import com.example.wassa_000.technician.serverconnetors.FeedBackService;
 
 public class FeedBackFragment extends Fragment {
     private Spinner spinnerCities;
+    private Spinner spRating;
     private String[] cities;
+    private String[] rates;
 
     private String city;
     private EditText name;
@@ -29,7 +31,7 @@ public class FeedBackFragment extends Fragment {
     private EditText phone;
     private MultiAutoCompleteTextView remarks;
     private Button submit;
-
+    private String rateText;
     public FeedBackFragment() {
         // Required empty public constructor
     }
@@ -46,27 +48,12 @@ public class FeedBackFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_feed_back, container, false);
         spinnerCities = (Spinner) view.findViewById(R.id.sp_cities);
+        spRating = (Spinner) view.findViewById(R.id.sp_rating);
         cities = new String[]{"Karachi", "Hyderabad", "Sukkur"};
+        rates = new String[]{"Bad", "Average", "Excellent"};
 
-
-        final RatingBar minimumRating = (RatingBar) view.findViewById(R.id.myRatingBar);
-        minimumRating.setOnTouchListener(new View.OnTouchListener() {
-            public boolean onTouch(View view, MotionEvent event) {
-                float touchPositionX = event.getX();
-                float width = minimumRating.getWidth();
-                float starsf = (touchPositionX / width) * 5.0f;
-                int stars = (int) starsf + 1;
-
-                if (stars == 1 || stars == 2)
-                    Toast.makeText(getContext(), "Poor", Toast.LENGTH_SHORT).show();
-                else if (stars == 3 || stars == 4)
-                    Toast.makeText(getContext(), "Average", Toast.LENGTH_SHORT).show();
-                else if (stars == 5)
-                    Toast.makeText(getContext(), "Excellent", Toast.LENGTH_SHORT).show();
-                minimumRating.setRating(stars);
-                return true;
-            }
-        });
+        ArrayAdapter<String> ratesAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, rates);
+        spRating.setAdapter(ratesAdapter);
         //initialize fields
         name = (EditText) view.findViewById(R.id.et_name);
         phone = (EditText) view.findViewById(R.id.et_phone);
@@ -78,10 +65,22 @@ public class FeedBackFragment extends Fragment {
         spinnerCities.setAdapter(servicesArrayAdapter);
 
         city = cities[0];
+        rateText = rates[0];
         spinnerCities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 city = String.valueOf(i);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+        spRating.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                rateText = String.valueOf(i);
             }
 
             @Override
@@ -120,10 +119,10 @@ public class FeedBackFragment extends Fragment {
 //            this.email.setError("Please enter email address");
 //            return;
 //        }
-        if (remarks.isEmpty()) {
-            UiController.showDialog("Please enter feedback", getActivity());
-            return;
-        }
+//        if (remarks.isEmpty()) {
+//            UiController.showDialog("Please enter feedback", getActivity());
+//            return;
+//        }
 
         if (!UiController.isNetworkAvailable(getContext())) {
             UiController.showDialog("Please connect to network", getActivity());
@@ -131,7 +130,7 @@ public class FeedBackFragment extends Fragment {
         }
 
         FeedBackService service = new FeedBackService(getActivity());
-        service.execute(name, phone, city, remarks, "email");
+        service.execute(name, phone, city, remarks, "email",rateText);
 //        service.execute(name,phone,city,remarks,email);
     }
 
