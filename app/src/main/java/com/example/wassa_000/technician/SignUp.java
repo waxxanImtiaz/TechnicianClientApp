@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,7 +19,7 @@ import com.example.wassa_000.technician.factory.BeanFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SignUp extends AppCompatActivity implements View.OnClickListener{
+public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     private Spinner spGender;
     private EditText etName;
@@ -31,14 +32,15 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
     private Spinner spinnerCities;
 
     private String city;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
         spGender = (Spinner) findViewById(R.id.sp_gender);
-        spinnerCities = (Spinner)findViewById(R.id.sp_cities);
-        cities = new String[] {"Karachi","Hyderabad","Sukkur"};
+        spinnerCities = (Spinner) findViewById(R.id.sp_cities);
+        cities = new String[]{"Karachi", "Hyderabad", "Sukkur"};
 
         ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, cities);
         spinnerCities.setAdapter(servicesArrayAdapter);
@@ -50,7 +52,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         gender.add("Female");
 
 
-        ArrayAdapter<String> genderAdapter  = new ArrayAdapter<String>(this,R.layout.spinner_item,gender);
+        ArrayAdapter<String> genderAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, gender);
         spGender.setAdapter(genderAdapter);
 
         spinnerCities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -68,19 +70,42 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 
     }
 
-    public void initFields(){
-        etConformPassword = (EditText)findViewById(R.id.et_confirm_password);
-        etEmail = (EditText)findViewById(R.id.et_email);
-        etMobile = (EditText)findViewById(R.id.et_contact_number);
-        etName = (EditText)findViewById(R.id.et_name_sign_up);
-        etPassword = (EditText)findViewById(R.id.et_password);
-        btnSubmit = (Button)findViewById(R.id.btn_submit);
+    public void initFields() {
+        etConformPassword = (EditText) findViewById(R.id.et_confirm_password);
+        etEmail = (EditText) findViewById(R.id.et_email);
+        etMobile = (EditText) findViewById(R.id.et_contact_number);
+        etName = (EditText) findViewById(R.id.et_name_sign_up);
+        etPassword = (EditText) findViewById(R.id.et_password);
+        btnSubmit = (Button) findViewById(R.id.btn_submit);
         btnSubmit.setOnClickListener(this);
     }
+
     @Override
-    public void onClick(View view){
+    public void onClick(View view) {
 
         Customer c = BeanFactory.getCustomer();
+
+        if (TextUtils.isEmpty(etName.getText().toString())) {
+            etName.setError("Enter name");
+            return;
+        }
+        if (TextUtils.isEmpty(etPassword.getText().toString())) {
+            etPassword.setError("Enter password");
+            return;
+        }
+        if (TextUtils.isEmpty(etConformPassword.getText().toString())) {
+            etConformPassword.setError("Enter confirm password");
+            return;
+        }
+        if (TextUtils.isEmpty(etEmail.getText().toString())) {
+            etEmail.setError("Enter email");
+            return;
+        }
+
+        if (TextUtils.isEmpty(etMobile.getText().toString())) {
+            etMobile.setError("Enter Mobile number");
+            return;
+        }
 
         c.setName(etName.getText().toString());
         c.setMobile(etMobile.getText().toString());
@@ -89,10 +114,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         BeanFactory.setCustomer(c);
         SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(this);
 
-       // try{
+        // try{
         //    Thread.sleep(3000);
-            startActivity(new Intent(SignUp.this,MainActivity.class));
-            finish();
+        startActivity(new Intent(SignUp.this, MainActivity.class));
+        finish();
         //}catch (InterruptedException e){}
     }
 }

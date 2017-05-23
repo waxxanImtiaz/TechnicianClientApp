@@ -322,7 +322,7 @@
     <string name="confirm_password">Confirm Password:</string>
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="contact_number">Contact Number:</string>
-    <string name="contact_number_hint">Contact Number</string>
+    <string name="contact_number_hint">Contact number</string>
     <string name="customer_area">Customer Area:</string>
     <string name="customer_area_hint">Customer Area</string>
     <string name="dob">Birthday</string>
@@ -336,7 +336,7 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="feedback">Feedback</string>
     <string name="feedback_message">Please give us your value able feedback!</string>
-    <string name="full_name">Full Name</string>
+    <string name="full_name">Name</string>
     <string name="gender">Gender:</string>
     <string name="gender_hint">Gender</string>
     <string name="message_place_holder">Message</string>

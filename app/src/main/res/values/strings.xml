@@ -54,11 +54,11 @@
     </string>
 
     <!--sign up hints-->
-    <string name="full_name">Full Name</string>
+    <string name="full_name">Name</string>
     <string name="enter_addresss">Enter Your Address</string>
     <string name="password_hint">Password</string>
     <string name="confirm_password_hint">Confirm Password</string>
-    <string name="contact_number_hint">Contact Number</string>
+    <string name="contact_number_hint">Contact number</string>
     <string name="gender_hint">Gender</string>
     <string name="customer_area_hint">Customer Area</string>
     <string name="address_hint">Address</string>
