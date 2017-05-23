@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:1-65:12
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:11:5-63:19
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:11:5-64:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\AndroidManifest.xml:25:5-20
@@ -207,47 +207,49 @@ ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:27:27-74
 activity#com.example.wassa_000.technician.LoginActivity
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:30:9-43:24
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:30:9-44:24
 	android:label
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:32:13-57
+	android:windowSoftInputMode
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:33:13-60
 	android:name
 		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:31:13-42
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:33:13-36:19
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:34:13-37:19
 	android:value
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:35:17-46
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:36:17-46
 	android:name
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:34:17-63
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:35:17-63
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:37:13-42:29
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:38:13-43:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:38:13-65
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:39:13-65
 	android:name
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:38:21-62
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:39:21-62
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:39:13-72
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:40:13-72
 	android:name
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:39:23-69
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:40:23-69
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:40:13-74
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:41:13-74
 	android:name
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:40:23-71
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:41:23-71
 data
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:41:13-71
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:42:13-71
 	android:scheme
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:41:19-68
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:42:19-68
 activity#com.example.wassa_000.technician.SignUp
-ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:44:9-61:20
+ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:45:9-62:20
 	android:label
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:45:13-44
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:46:13-44
 	android:noHistory
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:47:13-37
 	android:windowSoftInputMode
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:48:13-73
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:49:13-73
 	android:icon
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:47:13-43
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:48:13-43
 	android:name
-		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:44:19-41
+		ADDED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml:45:19-41
 uses-sdk
 INJECTED from C:\Users\Admin\Desktop\TechnicianClientApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:21:5-23:78

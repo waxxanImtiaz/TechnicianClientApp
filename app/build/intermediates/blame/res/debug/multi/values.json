@@ -4163,7 +4163,14 @@
                     "endOffset": 50924
                 },
                 "from": {
-                    "file": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 45,
+                        "endOffset": 58
+                    }
                 }
             },
             {
@@ -4715,14 +4722,7 @@
                     "endOffset": 54571
                 },
                 "from": {
-                    "file": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 2553,
-                        "endColumn": 68,
-                        "endOffset": 2617
-                    }
+                    "file": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {

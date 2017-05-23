@@ -400,7 +400,7 @@
     <string name="address">Address:</string>
     <string name="address_hint">Address</string>
     <string name="address_place_holder">Enter your address</string>
-    <string name="app_name">Serveasy</string>
+    <string name="app_name">serveasy</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btn_submit">Submit</string>
