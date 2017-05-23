@@ -41,13 +41,13 @@
                 android:layout_gravity="center"
                 android:src="@drawable/logo2" />
 
-            <TextView
-                style="@style/et_style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp"
-                android:gravity="center"
-                android:text="@string/quote" />
+            <!--<TextView-->
+                <!--style="@style/et_style"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10sp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/quote" />-->
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
