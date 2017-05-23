@@ -17,6 +17,13 @@ import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
 import com.example.wassa_000.technician.factory.BeanFactory;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,16 +40,38 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     private String[] cities;
     private Spinner spinnerCities;
 
+    private LoginButton loginButton;
     private String city;
-
+    CallbackManager callbackManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_sign_up);
 
         spGender = (Spinner) findViewById(R.id.sp_gender);
         spinnerCities = (Spinner) findViewById(R.id.sp_cities);
         cities = new String[]{"Karachi", "Hyderabad", "Sukkur"};
+        callbackManager = CallbackManager.Factory.create();
+
+        //register callback manager
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+                        // App code
+                    }
+
+                    @Override
+                    public void onCancel() {
+                        // App code
+                    }
+
+                    @Override
+                    public void onError(FacebookException exception) {
+                        // App code
+                    }
+                });
 
         ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, cities);
         spinnerCities.setAdapter(servicesArrayAdapter);
@@ -80,6 +109,27 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         etPassword = (EditText) findViewById(R.id.et_password);
         btnSubmit = (Button) findViewById(R.id.btn_submit);
         btnSubmit.setOnClickListener(this);
+
+        loginButton = (LoginButton) findViewById(R.id.login_button);
+        loginButton.setReadPermissions("email");
+
+        // Callback registration
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                // App code
+            }
+
+            @Override
+            public void onCancel() {
+                // App code
+            }
+
+            @Override
+            public void onError(FacebookException exception) {
+                // App code
+            }
+        });
     }
 
     @Override
