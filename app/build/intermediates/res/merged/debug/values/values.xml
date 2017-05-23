@@ -312,7 +312,7 @@
     <string name="address">Address:</string>
     <string name="address_hint">Address</string>
     <string name="address_place_holder">Enter your address*</string>
-    <string name="app_name">serveasy</string>
+    <string name="app_name">Serveasy</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btn_submit">Submit</string>
@@ -358,6 +358,7 @@
     <string name="quote">Please fill following fields</string>
     <string name="rate_us">Rate Us:</string>
     <string name="select_city">Select City</string>
+    <string name="select_gender">Select Gender</string>
     <string name="select_service">Select Service</string>
     <string name="selected_area">Your Selected Area</string>
     <string name="service">Services</string>
@@ -368,7 +369,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_login">Sign in</string>
-    <string name="title_activity_main">Serve Easy</string>
+    <string name="title_activity_main">serveasy</string>
     <string name="type_feed_back">Enter your feedback</string>
     <string name="type_message">Enter your message(Optional)</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

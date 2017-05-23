@@ -8,7 +8,6 @@ public class Customer {
     private String email;
     private String password;
     private String gender;
-    private String address;
     private String mobile;
     private String city;
 
@@ -42,14 +41,6 @@ public class Customer {
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getMobile() {

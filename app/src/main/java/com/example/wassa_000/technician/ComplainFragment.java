@@ -39,12 +39,12 @@ public class ComplainFragment extends Fragment{
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_complain, container, false);
 
-        phone = (EditText)v.findViewById(R.id.et_phone);
-
-        tvComplain = (MultiAutoCompleteTextView)v.findViewById(R.id.complain);
-        btnSubmit = (Button)v.findViewById(R.id.btnSubmit);
-
-        // Inflate the layout for this fragment
+//        phone = (EditText)v.findViewById(R.id.et_phone);
+//
+//        tvComplain = (MultiAutoCompleteTextView)v.findViewById(R.id.complain);
+//        btnSubmit = (Button)v.findViewById(R.id.btnSubmit);
+//
+//        // Inflate the layout for this fragment
 
         return v;
     }

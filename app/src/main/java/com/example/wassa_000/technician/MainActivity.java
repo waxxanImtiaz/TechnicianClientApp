@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity
     private CustomViewPager viewPager;
     private TabLayout tabLayout;
     private File sharedPrefFile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,13 +46,13 @@ public class MainActivity extends AppCompatActivity
         checkPermission();
 
         //DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-       // ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-         //       this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-       // drawer.setDrawerListener(toggle);
-       // toggle.syncState();
+        // ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        //       this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        // drawer.setDrawerListener(toggle);
+        // toggle.syncState();
 
-      //  NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-      //  navigationView.setNavigationItemSelectedListener(this);
+        //  NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        //  navigationView.setNavigationItemSelectedListener(this);
 
         viewPager = (CustomViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -61,10 +62,7 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-
-
-    public void checkPermission(){
+    public void checkPermission() {
         // Here, thisActivity is the current activity
         if (ContextCompat.checkSelfPermission(MainActivity.this,
                 Manifest.permission.INTERNET)
@@ -76,24 +74,24 @@ public class MainActivity extends AppCompatActivity
 
             }
 
-                // Show an explanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
+            // Show an explanation to the user *asynchronously* -- don't block
+            // this thread waiting for the user's response! After the user
+            // sees the explanation, try again to request the permission.
 
-            } else {
+        } else {
 
-                // No explanation needed, we can request the permission.
+            // No explanation needed, we can request the permission.
 
-                ActivityCompat.requestPermissions(MainActivity.this,
-                        new String[]{Manifest.permission.INTERNET},
-                        SharedFields.INTERNET_PERMISSION);
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.INTERNET},
+                    SharedFields.INTERNET_PERMISSION);
 
-                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
-                // app-defined int constant. The callback method gets the
-                // result of the request.
-            }
-            //access network state
-            // Here, thisActivity is the current activity
+            // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+            // app-defined int constant. The callback method gets the
+            // result of the request.
+        }
+        //access network state
+        // Here, thisActivity is the current activity
         if (ContextCompat.checkSelfPermission(MainActivity.this,
                 Manifest.permission.ACCESS_NETWORK_STATE)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -121,6 +119,7 @@ public class MainActivity extends AppCompatActivity
 
         }
     }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -130,11 +129,12 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
+
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ServiceFragment(), getResources().getString(R.string.service));
-        adapter.addFragment(new ComplainFragment(),  getResources().getString(R.string.complain));
-        adapter.addFragment(new FeedBackFragment(),  getResources().getString(R.string.feedback));
+        adapter.addFragment(new ComplainFragment(), getResources().getString(R.string.complain));
+        adapter.addFragment(new FeedBackFragment(), getResources().getString(R.string.feedback));
         viewPager.setAdapter(adapter);
     }
 
@@ -166,6 +166,7 @@ public class MainActivity extends AppCompatActivity
             return mFragmentTitleList.get(position);
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -183,18 +184,17 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.sign_in) {
-            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
             return true;
-        }
-        else if (id == R.id.sign_up) {
-            startActivity(new Intent(MainActivity.this,SignUp.class));
+        } else if (id == R.id.sign_up) {
+            startActivity(new Intent(MainActivity.this, SignUp.class));
             return true;
-        }else if(id == R.id.sign_out){
+        } else if (id == R.id.sign_out) {
 
-            if(sharedPrefFile.exists())
+            if (sharedPrefFile.exists())
                 sharedPrefFile.delete();
 
-            Intent intent  = new Intent(this, LoginActivity.class);
+            Intent intent = new Intent(this, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
 
@@ -203,6 +203,7 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
 
@@ -212,15 +213,15 @@ public class MainActivity extends AppCompatActivity
 
         sharedPrefFile = PreferencesFactory.preferenceFileExist(this);
 
-        if (!sharedPrefFile.exists())
-        {
+        if (!sharedPrefFile.exists()) {
             SharedPreferencesDataLoader.getCustomer(this);
             myMenuInflater.inflate(R.menu.main, menu);
-        }else
+        } else
             myMenuInflater.inflate(R.menu.logged_in_menu, menu);
 
         return true;
     }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {

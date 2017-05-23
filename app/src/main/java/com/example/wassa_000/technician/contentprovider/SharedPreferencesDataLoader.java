@@ -22,7 +22,7 @@ public class SharedPreferencesDataLoader {
             customer.setName(prefs.getString("name",""));
             customer.setEmail(prefs.getString("username",""));
             customer.setPassword(prefs.getString("password",""));
-            customer.setAddress(prefs.getString("address",""));
+//            customer.setAddress(prefs.getString("address",""));
             customer.setGender(prefs.getString("gender",""));
             customer.setMobile(prefs.getString("mobile",""));
             return true;
@@ -40,7 +40,7 @@ public class SharedPreferencesDataLoader {
             SharedFields.editor.putString("password", customer.getPassword());
             SharedFields.editor.putString("name", customer.getName());
             SharedFields.editor.putString("mobile", customer.getMobile());
-            SharedFields.editor.putString("address", customer.getAddress());
+//            SharedFields.editor.putString("address", customer.getAddress());
             SharedFields.editor.putString("gender", customer.getGender());
             SharedFields.editor.commit();
         }catch (NullPointerException e){}
