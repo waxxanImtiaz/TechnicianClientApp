@@ -52,8 +52,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="fb_login_protocol_scheme">fb1269946606451235</string>
-    <string name="fb_id">imtiaz.wassan.7@facebook.com</string>
+    <string name="fb_login_protocol_scheme">782457638589342</string>
+    <string name="fb_id">782457638589342</string>
     <!--sign up hints-->
     <string name="full_name">Name</string>
     <string name="enter_addresss">Enter Your Address</string>

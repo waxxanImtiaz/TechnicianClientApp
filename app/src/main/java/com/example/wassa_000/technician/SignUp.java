@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.wassa_000.technician.beans.Customer;
@@ -63,6 +64,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     private String email;
     private String gender;
     private String birthday;
+    private TextView tvLoginStatus;
     private Profile profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +134,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         etMobile = (EditText) findViewById(R.id.et_contact_number);
         etName = (EditText) findViewById(R.id.et_name_sign_up);
         etPassword = (EditText) findViewById(R.id.et_password);
+        tvLoginStatus = (TextView) findViewById(R.id.tvLoginStatus);
         btnSubmit = (Button) findViewById(R.id.btn_submit);
         btnSubmit.setOnClickListener(this);
 
@@ -147,19 +150,23 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onSuccess(LoginResult loginResult) {
 
-
+                Log.i("login","Login success");
+                id = loginResult.getAccessToken().getUserId();
+                intiRequest();
+                tvLoginStatus.setText("Login Success "+id);
             }
 
             @Override
             public void onCancel() {
                 // App code
+                tvLoginStatus.setText("Login cancelled");
 
             }
 
             @Override
             public void onError(FacebookException exception) {
                 // App code
-                Log.i("fb_exception","excpetion:"+exception.getMessage());
+                tvLoginStatus.setText(exception.getMessage());
             }
         });
 
@@ -170,10 +177,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onActivityResult(int requestCode, int responseCode,
                                     Intent data) {
-        super.onActivityResult(requestCode, responseCode, data);
         callbackManager.onActivityResult(requestCode, responseCode, data);
-        intiRequest();
-        Toast.makeText(this, "You are logged in", Toast.LENGTH_SHORT).show();
+        //intiRequest();
+        //Toast.makeText(this, "You are logged in", Toast.LENGTH_SHORT).show();
     }
     private void startMainActivity(){
         Intent i = new Intent(SignUp.this,MainActivity.class);
