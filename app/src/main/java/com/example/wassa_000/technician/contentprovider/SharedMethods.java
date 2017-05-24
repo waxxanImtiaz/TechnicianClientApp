@@ -1,5 +1,10 @@
 package com.example.wassa_000.technician.contentprovider;
 
+import android.app.Activity;
+import android.content.Context;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+
 /**
  * Created by Admin on 5/23/2017.
  */
@@ -26,5 +31,13 @@ public class SharedMethods {
             return true;
         return false;
 
+    }
+    public static void hideKeyBoard(Activity c){
+        // Check if no view has focus:
+        View view = c.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager) c.getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 }

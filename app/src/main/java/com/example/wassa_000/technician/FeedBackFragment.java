@@ -15,6 +15,7 @@ import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.serverconnetors.FeedBackService;
 
@@ -128,6 +129,8 @@ public class FeedBackFragment extends Fragment {
             UiController.showDialog("Please connect to network", getActivity());
             return;
         }
+
+        SharedMethods.hideKeyBoard(getActivity());
 
         FeedBackService service = new FeedBackService(this);
         service.execute(name, phone, city, remarks, "not logged in",rateText);

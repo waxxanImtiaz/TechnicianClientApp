@@ -40,7 +40,10 @@ public class FeedBackService extends AsyncTask<String, Void, String> {
 
             UiController.showDialog("Feedback submitted succesffully", mContext.getActivity());
 
-            mContext.email.setText("");
+            //mContext.email.setText("");
+            mContext.name.setText("");
+            mContext.remarks.setText("");
+            mContext.phone.setText("");
 
         } else
             UiController.showDialog("Feedback not submitted", mContext.getActivity());
