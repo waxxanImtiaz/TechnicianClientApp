@@ -322,10 +322,11 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         BeanFactory.setCustomer(c);
         SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(this);
 
+        SharedMethods.hideKeyBoard(this);
+
         SignUpService service = new SignUpService(this);
         service.execute();
-
-
+        
     }
 
 }

@@ -1,6 +1,7 @@
 package com.example.wassa_000.technician.serverconnetors;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.text.TextUtils;
@@ -22,10 +23,11 @@ public class SignUpService extends AsyncTask<String, Void, String> {
 
 
     private Activity mContext;
-
+    private ProgressDialog progressDialog2;
     public SignUpService(Activity mContext) {
         this.mContext = mContext;
     }
+
 
     @Override
     protected String doInBackground(String... params) {
@@ -42,6 +44,7 @@ public class SignUpService extends AsyncTask<String, Void, String> {
         try {
             JSONObject object = new JSONObject(result);
 
+            progressDialog2.dismiss();
 
             if (result.equalsIgnoreCase("success")) {
                 UiController.showDialog("Signed Up successfully", mContext);
@@ -62,5 +65,6 @@ public class SignUpService extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPreExecute() {
+        progressDialog2 = ProgressDialog.show(mContext, "", "Loading");
     }
 }
