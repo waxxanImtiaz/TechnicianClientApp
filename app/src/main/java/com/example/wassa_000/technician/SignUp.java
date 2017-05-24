@@ -21,6 +21,7 @@ import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
 import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.factory.BeanFactory;
+import com.example.wassa_000.technician.serverconnetors.SignUpService;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
@@ -91,7 +92,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
 
 
-        city = cities[0];
+        city = String.valueOf(1);
         // Gender Drop down elements
         List<String> gender = new ArrayList<>();
         gender.add("Male");
@@ -104,7 +105,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         spinnerCities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                city = cities[i];
+                city = String.valueOf(i+1);
             }
 
             @Override
@@ -317,13 +318,15 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         c.setName(etName.getText().toString());
         c.setMobile(etMobile.getText().toString());
         c.setEmail(etEmail.getText().toString());
+        c.setCity(city);
         c.setPassword(etPassword.getText().toString());
         c.setMobile(etMobile.getText().toString());
         BeanFactory.setCustomer(c);
         SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(this);
 
-        startActivity(new Intent(SignUp.this, MainActivity.class));
-        finish();
+        SignUpService service = new SignUpService(this);
+        service.execute();
+
 
     }
 

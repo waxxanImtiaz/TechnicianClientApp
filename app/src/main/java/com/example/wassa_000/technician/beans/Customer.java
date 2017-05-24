@@ -11,6 +11,7 @@ public class Customer {
     private String mobile;
     private String city;
     private String fbId;
+
     public String getName() {
         return name;
     }
