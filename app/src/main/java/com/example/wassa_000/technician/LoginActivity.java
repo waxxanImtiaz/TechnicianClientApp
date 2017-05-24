@@ -3,6 +3,7 @@ package com.example.wassa_000.technician;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -20,6 +21,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,8 +31,18 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.Profile;
+import com.facebook.ProfileTracker;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,12 +72,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private UserLoginTask mAuthTask = null;
 
     private SharedPreferences sharedPreferences;
-
+    private AccessToken accessToken;
+    CallbackManager callbackManager;
     // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private TextView tvDetails;
+    private LoginButton loginButton;
+    private AccessTokenTracker accessTokenTracker;
+    private ProfileTracker profileTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +114,74 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         });
 
         mLoginFormView = findViewById(R.id.login_form);
+        tvDetails = (TextView) findViewById(R.id.tvDetails);
         mProgressView = findViewById(R.id.login_progress);
+
+        loginButton = (LoginButton) findViewById(R.id.login_button);
+        loginButton.setReadPermissions("email");
+        callbackManager = CallbackManager.Factory.create();
+        accessToken = AccessToken.getCurrentAccessToken();
+        accessTokenTracker = new AccessTokenTracker() {
+            @Override
+            protected void onCurrentAccessTokenChanged(AccessToken oldToken, AccessToken newToken) {
+                tvDetails.setText(String.valueOf("Welcome onCurrentAccessTokenChanged"));
+            }
+        };
+
+        profileTracker = new ProfileTracker() {
+            @Override
+            protected void onCurrentProfileChanged(Profile oldProfile, Profile newProfile) {
+                //nextActivity(newProfile);
+
+                if (oldProfile != null  )
+                    tvDetails.setText(String.valueOf("Welcome ," + oldProfile.getFirstName()));
+
+                if (newProfile != null  )
+                    tvDetails.setText(String.valueOf("Welcome ," + newProfile.getFirstName()));
+            }
+        };
+        accessTokenTracker.startTracking();
+        profileTracker.startTracking();
+        // Callback registration
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+
+                Log.d("login", "Login success");
+                final Profile profile = Profile.getCurrentProfile();
+                // id = loginResult.getAccessToken().getUserId();
+                tvDetails.setText(String.valueOf("Welcome ").concat(profile.getName()));
+//                Thread t = new Thread() {
+//
+//                    public void run() {
+//
+//
+//                        Toast.makeText(LoginActivity.this, "Logged in", Toast.LENGTH_SHORT).show();
+//                    }
+//                };
+//                runOnUiThread(t);
+                //   tvLoginStatus.setText("Login Success " + id);
+                // intiRequest();
+//                LoginManager.getInstance().logOut();
+            }
+
+            @Override
+            public void onCancel() {
+                // App code
+                //  tvLoginStatus.setText("Login cancelled");
+                tvDetails.setText(String.valueOf("Welcome onCancel"));
+            }
+
+            @Override
+            public void onError(FacebookException exception) {
+                tvDetails.setText(String.valueOf("Welcome onError:" + exception.toString()));
+
+                Log.d("hashkey", exception.toString());
+                // App code
+                // tvLoginStatus.setText(exception.getMessage());
+            }
+        });
+
     }
 
     private void populateAutoComplete() {
@@ -128,6 +212,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             requestPermissions(new String[]{READ_CONTACTS}, REQUEST_READ_CONTACTS);
         }
         return false;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int responseCode,
+                                    Intent data) {
+        //super.onActivityResult(requestCode, responseCode, data);
+        callbackManager.onActivityResult(requestCode, responseCode, data);
+        //intiRequest();
+        //Toast.makeText(this, "You are logged in", Toast.LENGTH_SHORT).show();
     }
 
     /**
