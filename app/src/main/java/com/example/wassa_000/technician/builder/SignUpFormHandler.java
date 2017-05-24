@@ -7,6 +7,8 @@ import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.factory.BeanFactory;
 
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
@@ -36,6 +38,7 @@ public class SignUpFormHandler extends ServerConnectionBuilder {
         this.reqMethod = requestMethod;
     }
 
+    private JSONObject obj;
     public String setFormParametersAndConnect( ) {
         try {
             Customer customer = BeanFactory.getCustomer();
@@ -86,9 +89,10 @@ public class SignUpFormHandler extends ServerConnectionBuilder {
 
                 in.close();
 
+                obj = new JSONObject(response.toString());
 
                 Log.v("signup",response.toString());
-                return response.toString();
+                return obj.toString();
             } catch (Exception e) {
                 e.printStackTrace();
                 return "error=" + e.getMessage();
