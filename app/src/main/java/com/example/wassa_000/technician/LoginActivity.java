@@ -151,18 +151,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 final Profile profile = Profile.getCurrentProfile();
                 // id = loginResult.getAccessToken().getUserId();
                 tvDetails.setText(String.valueOf("Welcome ").concat(profile.getName()));
-//                Thread t = new Thread() {
-//
-//                    public void run() {
-//
-//
-//                        Toast.makeText(LoginActivity.this, "Logged in", Toast.LENGTH_SHORT).show();
-//                    }
-//                };
-//                runOnUiThread(t);
-                //   tvLoginStatus.setText("Login Success " + id);
-                // intiRequest();
-//                LoginManager.getInstance().logOut();
             }
 
             @Override
@@ -178,7 +166,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
                 Log.d("hashkey", exception.toString());
                 // App code
-                // tvLoginStatus.setText(exception.getMessage());
             }
         });
 

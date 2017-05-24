@@ -25,8 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignLeft="@+id/login_progress"
+        android:layout_alignStart="@+id/login_progress">
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -35,9 +35,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-
+                style="@style/logoStyle"
                 android:layout_gravity="center"
                 android:src="@drawable/logo2" />
 

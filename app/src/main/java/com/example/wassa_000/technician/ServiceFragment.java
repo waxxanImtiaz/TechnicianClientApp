@@ -61,7 +61,8 @@ public class ServiceFragment extends Fragment {
         remarks = (MultiAutoCompleteTextView) view.findViewById(R.id.remarks);
 
         spinnerServices = (Spinner)view.findViewById(R.id.sp_services);
-        services = new String[] {"Mobile Repairig","Plumber","Texi"};
+        services = new String[] {"Refrigrator ","AC","Deep Freezer","Microvawe","TV","DVD","Camera","Mobile Phone","Washing Machine"
+        ,"Water Dispenser"};
         item = services[0];
         final ArrayAdapter<String> servicesAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, services);
         spinnerServices.setAdapter(servicesAdapter);

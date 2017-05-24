@@ -1279,7 +1279,7 @@ public final class R {
 		public static final int com_facebook_button_share = 0x7f080192;
 		public static final int com_facebook_loginview_default_style = 0x7f080193;
 		public static final int com_facebook_loginview_silver_style = 0x7f080194;
-		public static final int tooltip_bubble_text = 0x7f08019b;
+		public static final int tooltip_bubble_text = 0x7f08019c;
 	}
 	public static final class styleable {
 		public static final int[] ActionBar = { 0x7f010001, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01005d };

@@ -3649,11 +3649,12 @@ containing a value of this type.
         public static final int com_facebook_loginview_silver_style=0x7f080194;
         public static final int et_sign_up=0x7f080195;
         public static final int et_style=0x7f080196;
-        public static final int sign_up_common=0x7f080197;
-        public static final int sign_up_tv=0x7f080198;
-        public static final int sp_style=0x7f080199;
-        public static final int textViewStyle=0x7f08019a;
-        public static final int tooltip_bubble_text=0x7f08019b;
+        public static final int logoStyle=0x7f080197;
+        public static final int sign_up_common=0x7f080198;
+        public static final int sign_up_tv=0x7f080199;
+        public static final int sp_style=0x7f08019a;
+        public static final int textViewStyle=0x7f08019b;
+        public static final int tooltip_bubble_text=0x7f08019c;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

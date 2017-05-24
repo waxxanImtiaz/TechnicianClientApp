@@ -58,4 +58,9 @@
         <item name="android:dropDownVerticalOffset">20dp</item>
     </style>
 
+    <style name="logoStyle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+    </style>
+
 </resources>
