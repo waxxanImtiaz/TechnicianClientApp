@@ -41,6 +41,7 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.Profile;
 import com.facebook.ProfileTracker;
+import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
@@ -142,6 +143,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         };
         accessTokenTracker.startTracking();
         profileTracker.startTracking();
+        LoginManager.getInstance().logOut();
         // Callback registration
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -151,18 +153,20 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 final Profile profile = Profile.getCurrentProfile();
                 // id = loginResult.getAccessToken().getUserId();
                 tvDetails.setText(String.valueOf("Welcome ").concat(profile.getName()));
+
+                loginButton.setVisibility(View.GONE);
             }
 
             @Override
             public void onCancel() {
                 // App code
                 //  tvLoginStatus.setText("Login cancelled");
-                tvDetails.setText(String.valueOf("Welcome onCancel"));
+                tvDetails.setText(String.valueOf("Login cancelled"));
             }
 
             @Override
             public void onError(FacebookException exception) {
-                tvDetails.setText(String.valueOf("Welcome onError:" + exception.toString()));
+                tvDetails.setText(String.valueOf("Network Error"));
 
                 Log.d("hashkey", exception.toString());
                 // App code
