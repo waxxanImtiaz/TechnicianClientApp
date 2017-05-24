@@ -89,6 +89,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         ArrayAdapter<String> servicesArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, cities);
         spinnerCities.setAdapter(servicesArrayAdapter);
 
+
+
         city = cities[0];
         // Gender Drop down elements
         List<String> gender = new ArrayList<>();
@@ -115,32 +117,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     }
 
 
-    public void intiRequest() {
-        request = GraphRequest.newMeRequest(
-                accessToken,
-                new GraphRequest.GraphJSONObjectCallback() {
-                    @Override
-                    public void onCompleted(
-                            JSONObject object,
-                            GraphResponse response) {
-                        final JSONObject json = response.getJSONObject();
-                        try {
-                            //name = object.getString("name");
-                            // initProfile(json);
-                            //tvLoginStatus.setText("Object:"+json.getString("name")+",email="+json.getString("email"));
-                            Log.i("firstName:", "name:" + name);
-                        } catch (Exception e) {
-                        }
-
-                    }
-                });
-
-        Bundle parameters = new Bundle();
-        parameters.putString("fields", "id,name,installed,email,gender");
-        request.setParameters(parameters);
-        request.executeAsync();
-    }
-
     public void initFields() {
         etConformPassword = (EditText) findViewById(R.id.et_confirm_password);
         etEmail = (EditText) findViewById(R.id.et_email);
@@ -158,6 +134,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         //intiRequest();
         //loginButton.setReadPermissions(Arrays.asList( "email"));
 
+        LoginManager.getInstance().logOut();
         accessTokenTracker = new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(AccessToken oldToken, AccessToken newToken) {
@@ -328,7 +305,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
 
         if (!TextUtils.equals(etPassword.getText().toString(),etConformPassword.getText().toString())){
-            UiController.showDialog("Password doesn't match",SignUp.this);
+            //UiController.showDialog("Password doesn't match",SignUp.this);
+            etConformPassword.setError("Doesn't match with password");
             return;
         }
         if (customer == null || TextUtils.isEmpty(customer.getFbId())){
