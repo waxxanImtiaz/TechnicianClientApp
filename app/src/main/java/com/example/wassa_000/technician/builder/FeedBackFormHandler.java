@@ -1,8 +1,14 @@
 package com.example.wassa_000.technician.builder;
 
 import android.content.Context;
+import android.text.TextUtils;
+import android.util.Log;
 
+import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.factory.BeanFactory;
+
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -37,22 +43,36 @@ public class FeedBackFormHandler  extends ServerConnectionBuilder{
         try {
             Map<String, String> arguments = new HashMap<>();
             arguments.put("userid", SharedFields.userId);
-            arguments.put("name", name);
+            arguments.put("username", name);
             arguments.put("phone", phone);
             arguments.put("city_id", city);
             arguments.put("email", email);
+
+//            Customer c = BeanFactory.getCustomer();
+//            if (!TextUtils.isEmpty(c.getFbId())){
+//                arguments.put("user_fb_id", c.getFbId());
+//            }
+//            else arguments.put("user_fb_id", "11234353384921334791237");
+
+//            if (TextUtils.isEmpty(c.getPassword())){
+//                arguments.put("password", "not logged in");
+//            }else  arguments.put("password", c.getPassword());
+//            arguments.put("address", "address");
+            arguments.put("area_id", "1");
             arguments.put("feedback", message);
             arguments.put("rate", rate);
             arguments.put("feedback1", "true");
             StringBuilder sj = new StringBuilder();
-
+            Log.i("parameters",arguments.toString());
             System.out.println("prameters:parameters are set");
             for (Map.Entry<String, String> entry : arguments.entrySet()) {
                 sj.append(URLEncoder.encode(entry.getKey(), "UTF-8") + "=" + URLEncoder.encode(entry.getValue(), "UTF-8") + "&");
             }
+
+
             sj.deleteCharAt(sj.length()-1);
             byte[] out = sj.toString().getBytes();
-
+            Log.i("parameters",sj.toString());
             this.connect();
             http.setFixedLengthStreamingMode(out.length);
             http.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
@@ -78,8 +98,13 @@ public class FeedBackFormHandler  extends ServerConnectionBuilder{
 
                 in.close();
 
+                JSONObject obj = new JSONObject(response.toString());
 
-                return response.toString();
+                Log.v("response","response="+response);
+
+
+
+                return obj.getString("req_status");
             } catch (Exception e) {
                 e.printStackTrace();
                 return "error=" + e.getMessage();

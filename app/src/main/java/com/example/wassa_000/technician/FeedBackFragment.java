@@ -26,12 +26,12 @@ public class FeedBackFragment extends Fragment {
     private String[] rates;
 
     private String city;
-    private EditText name;
-    private EditText email;
-    private EditText phone;
-    private MultiAutoCompleteTextView remarks;
+    public EditText name;
+    public EditText email;
+    public EditText phone;
+    public MultiAutoCompleteTextView remarks;
     private Button submit;
-    private String rateText;
+    public String rateText;
     public FeedBackFragment() {
         // Required empty public constructor
     }
@@ -69,7 +69,7 @@ public class FeedBackFragment extends Fragment {
         spinnerCities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                city = String.valueOf(i);
+                city = String.valueOf((i+1));
             }
 
             @Override
@@ -129,8 +129,8 @@ public class FeedBackFragment extends Fragment {
             return;
         }
 
-        FeedBackService service = new FeedBackService(getActivity());
-        service.execute(name, phone, city, remarks, "email",rateText);
+        FeedBackService service = new FeedBackService(this);
+        service.execute(name, phone, city, remarks, "not logged in",rateText);
 //        service.execute(name,phone,city,remarks,email);
     }
 
