@@ -10,7 +10,7 @@ public class Customer {
     private String gender;
     private String mobile;
     private String city;
-
+    private String fbId;
     public String getName() {
         return name;
     }
@@ -57,5 +57,13 @@ public class Customer {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getFbId() {
+        return fbId;
+    }
+
+    public void setFbId(String fbId) {
+        this.fbId = fbId;
     }
 }

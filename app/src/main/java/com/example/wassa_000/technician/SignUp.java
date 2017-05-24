@@ -38,6 +38,7 @@ import com.facebook.login.widget.LoginButton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -229,9 +230,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                                     etEmail.setText(customer.getEmail());
 
 
-                                    // c.setCity(json.getString("hometown"));
-                                    //  c.setCity(object.getString("locale"));
                                     customer.setGender(object.getString("gender"));
+                                    customer.setFbId(object.getString("id"));
                                     if (customer.getGender().equalsIgnoreCase("male")) {
                                         spGender.setSelection(0);
                                         spGender.refreshDrawableState();
@@ -254,11 +254,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 parameters.putString("fields", "id,name,email,gender");
                 request.setParameters(parameters);
                 request.executeAsync();
-                //tvLoginStatus.s
-                // etText("Login Success " + id);
-                // intiRequest();
-                // intiRequest();
-//                LoginManager.getInstance().logOut();
+
             }
 
             @Override
@@ -329,6 +325,16 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
             etMobile.setError("Invalid phone number");
             return;
         }
+
+
+        if (!TextUtils.equals(etPassword.getText().toString(),etConformPassword.getText().toString())){
+            UiController.showDialog("Password doesn't match",SignUp.this);
+            return;
+        }
+        if (customer == null || TextUtils.isEmpty(customer.getFbId())){
+            c.setFbId("");
+        }
+        else c.setFbId(customer.getFbId());
 
         c.setName(etName.getText().toString());
         c.setMobile(etMobile.getText().toString());

@@ -40,6 +40,7 @@ public class SharedPreferencesDataLoader {
             SharedFields.editor.putString("password", customer.getPassword());
             SharedFields.editor.putString("name", customer.getName());
             SharedFields.editor.putString("mobile", customer.getMobile());
+            SharedFields.editor.putString("fbId", customer.getFbId());
 //            SharedFields.editor.putString("address", customer.getAddress());
             SharedFields.editor.putString("gender", customer.getGender());
             SharedFields.editor.commit();
