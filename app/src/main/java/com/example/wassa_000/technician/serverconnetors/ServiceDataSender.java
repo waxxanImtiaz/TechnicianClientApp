@@ -1,6 +1,7 @@
 package com.example.wassa_000.technician.serverconnetors;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
@@ -8,6 +9,8 @@ import android.widget.Toast;
 import com.example.wassa_000.technician.builder.ServiceFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.controller.UiController;
+
+import org.json.JSONObject;
 
 /**
  * Created by Ghulam Ali on 5/20/2017.
@@ -18,7 +21,7 @@ public class ServiceDataSender extends AsyncTask<String, Void, String> {
     public ServiceDataSender(Activity mContext){
         this.mContext = mContext;
     }
-
+    private ProgressDialog progressDialog2;
     @Override
     protected String doInBackground(String... params) {
 
@@ -32,13 +35,19 @@ public class ServiceDataSender extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String result) {
-
-        if (result.equalsIgnoreCase("success")){
-            UiController.showDialog("Service requested successfully",mContext);
-        }else
-            UiController.showDialog("Service request error",mContext);
+        progressDialog2.dismiss();
+        try {
+            JSONObject object = new JSONObject(result);
+            
+            if (object.getString("req_status").equalsIgnoreCase("success")) {
+                UiController.showDialog("Service requested successfully", mContext);
+            } else
+                UiController.showDialog("Service request error", mContext);
+        }catch (Exception e){}
     }
 
     @Override
-    protected void onPreExecute() {}
+    protected void onPreExecute() {
+        progressDialog2 = ProgressDialog.show(mContext, "", "Loading");
+    }
 }

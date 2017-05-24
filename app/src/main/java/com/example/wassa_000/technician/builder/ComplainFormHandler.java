@@ -6,6 +6,8 @@ import android.widget.Toast;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.serverconnetors.ComplainService;
 
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
@@ -78,8 +80,8 @@ public class ComplainFormHandler extends ServerConnectionBuilder {
 
                 in.close();
 
-
-                return response.toString();
+                JSONObject object = new JSONObject(response.toString());
+                return object.getString("req_status");
             } catch (Exception e) {
                 e.printStackTrace();
                 return "error=" + e.getMessage();

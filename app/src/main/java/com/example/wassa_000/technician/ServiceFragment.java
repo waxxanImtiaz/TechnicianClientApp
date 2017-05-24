@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.Spinner;
 
+import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.serverconnetors.ServiceDataSender;
 
@@ -63,7 +64,7 @@ public class ServiceFragment extends Fragment {
         spinnerServices = (Spinner)view.findViewById(R.id.sp_services);
         services = new String[] {"Refrigrator ","AC","Deep Freezer","Microvawe","TV","DVD","Camera","Mobile Phone","Washing Machine"
         ,"Water Dispenser"};
-        item = services[0];
+        item =String.valueOf(1);
         final ArrayAdapter<String> servicesAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, services);
         spinnerServices.setAdapter(servicesAdapter);
 
@@ -71,7 +72,7 @@ public class ServiceFragment extends Fragment {
         spinnerServices.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                item = services[i];
+                item = String.valueOf(i+1);
             }
 
             @Override
@@ -118,6 +119,7 @@ public class ServiceFragment extends Fragment {
             UiController.showDialog("Please connect to network",getActivity());
             return;
         }
+        SharedMethods.hideKeyBoard(getActivity());
         ServiceDataSender sender = new ServiceDataSender(getActivity());
 
         sender.execute(name,phone,address,item,remarks);

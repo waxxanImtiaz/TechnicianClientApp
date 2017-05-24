@@ -39,7 +39,7 @@ public class ServiceFormHandler  extends ServerConnectionBuilder {
             arguments.put("userid", SharedFields.userId);
             arguments.put("name", name);
             arguments.put("phone", phone);
-            arguments.put("service", service);
+            arguments.put("service_type", service);
             arguments.put("message", message);
             arguments.put("address", address);
             arguments.put("req_service", "true");

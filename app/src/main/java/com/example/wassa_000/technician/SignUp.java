@@ -326,7 +326,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
         SignUpService service = new SignUpService(this);
         service.execute();
-        
+
     }
 
 }

@@ -46,7 +46,7 @@ public class SignUpService extends AsyncTask<String, Void, String> {
 
             progressDialog2.dismiss();
 
-            if (result.equalsIgnoreCase("success")) {
+            if (object.getString("req_status").equalsIgnoreCase("success")) {
                 UiController.showDialog("Signed Up successfully", mContext);
                 mContext.startActivity(new Intent(mContext, MainActivity.class));
                 mContext.finish();
