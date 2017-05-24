@@ -2,6 +2,7 @@ package com.example.wassa_000.technician.builder;
 
 import android.content.Context;
 
+import com.example.wassa_000.technician.ServiceFragment;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 
 import java.io.BufferedReader;
@@ -16,9 +17,9 @@ import java.util.Map;
  */
 public class ServiceFormHandler  extends ServerConnectionBuilder {
 
-    private Context c;
+    private ServiceFragment c;
 
-    public ServiceFormHandler(Context c) {
+    public ServiceFormHandler(ServiceFragment c) {
         this.c = c;
     }
 

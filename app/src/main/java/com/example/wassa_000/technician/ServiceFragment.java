@@ -26,10 +26,10 @@ public class ServiceFragment extends Fragment {
 
     private String city;
     private String item;
-    private EditText name;
-    private EditText phone;
-    private EditText address;
-    private MultiAutoCompleteTextView remarks;
+    public EditText name;
+    public EditText phone;
+    public EditText address;
+    public MultiAutoCompleteTextView remarks;
     private Button submit;
 
     public ServiceFragment() {
@@ -120,7 +120,7 @@ public class ServiceFragment extends Fragment {
             return;
         }
         SharedMethods.hideKeyBoard(getActivity());
-        ServiceDataSender sender = new ServiceDataSender(getActivity());
+        ServiceDataSender sender = new ServiceDataSender(ServiceFragment.this);
 
         sender.execute(name,phone,address,item,remarks);
 

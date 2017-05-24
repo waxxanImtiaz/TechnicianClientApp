@@ -6,6 +6,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.example.wassa_000.technician.ServiceFragment;
 import com.example.wassa_000.technician.builder.ServiceFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.controller.UiController;
@@ -17,8 +18,8 @@ import org.json.JSONObject;
  */
 public class ServiceDataSender extends AsyncTask<String, Void, String> {
 
-    private Activity mContext;
-    public ServiceDataSender(Activity mContext){
+    private ServiceFragment mContext;
+    public ServiceDataSender(ServiceFragment mContext){
         this.mContext = mContext;
     }
     private ProgressDialog progressDialog2;
@@ -38,16 +39,20 @@ public class ServiceDataSender extends AsyncTask<String, Void, String> {
         progressDialog2.dismiss();
         try {
             JSONObject object = new JSONObject(result);
-            
+
             if (object.getString("req_status").equalsIgnoreCase("success")) {
-                UiController.showDialog("Service requested successfully", mContext);
+                UiController.showDialog("Service requested successfully", mContext.getActivity());
+
+                mContext.address.setText("");
+                mContext.remarks.setText("");
+                mContext.phone.setText("");
             } else
-                UiController.showDialog("Service request error", mContext);
+                UiController.showDialog("Service request error", mContext.getActivity());
         }catch (Exception e){}
     }
 
     @Override
     protected void onPreExecute() {
-        progressDialog2 = ProgressDialog.show(mContext, "", "Loading");
+        progressDialog2 = ProgressDialog.show(mContext.getContext(), "", "Loading");
     }
 }
