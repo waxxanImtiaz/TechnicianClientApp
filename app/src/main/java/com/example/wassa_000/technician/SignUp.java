@@ -218,8 +218,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                                         spGender.refreshDrawableState();}
 
 
-
-                                    etPassword.setError("Enter password");
                                     //c.setPassword("fb_user");
 
                                     loginButton.setVisibility(View.GONE);

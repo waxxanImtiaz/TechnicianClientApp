@@ -44,11 +44,13 @@ public class SignUpFormHandler extends ServerConnectionBuilder {
             arguments.put("name", customer.getName());
             arguments.put("phone", customer.getMobile());
             arguments.put("email", customer.getEmail());
+            arguments.put("address", "address");
             arguments.put("password", customer.getPassword());
             arguments.put("city_id", customer.getCity());
-            arguments.put("gender", customer.getGender());
+            arguments.put("area_id", "1");
+//            arguments.put("gender", customer.getGender());
             arguments.put("user_fb_id", customer.getFbId());
-            arguments.put("req_service", "true");
+            arguments.put("new_sign_up", "true");
             StringBuilder sj = new StringBuilder();
 
             System.out.println("prameters:parameters are set");
@@ -85,6 +87,7 @@ public class SignUpFormHandler extends ServerConnectionBuilder {
                 in.close();
 
 
+                Log.v("signup",response.toString());
                 return response.toString();
             } catch (Exception e) {
                 e.printStackTrace();
