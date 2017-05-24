@@ -19,8 +19,10 @@ import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
+import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.factory.BeanFactory;
 import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -29,6 +31,7 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.LoggingBehavior;
 import com.facebook.Profile;
+import com.facebook.ProfileTracker;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
@@ -66,6 +69,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     private String birthday;
     private TextView tvLoginStatus;
     private Profile profile;
+    private Customer customer;
+    private AccessTokenTracker accessTokenTracker;
+    private ProfileTracker profileTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,8 +122,11 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                     public void onCompleted(
                             JSONObject object,
                             GraphResponse response) {
+                        final JSONObject json = response.getJSONObject();
                         try {
-                            name = object.getString("name");
+                            //name = object.getString("name");
+                            // initProfile(json);
+                            //tvLoginStatus.setText("Object:"+json.getString("name")+",email="+json.getString("email"));
                             Log.i("firstName:", "name:" + name);
                         } catch (Exception e) {
                         }
@@ -126,7 +135,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 });
 
         Bundle parameters = new Bundle();
-        parameters.putString("fields", "id,name,installed,picture");
+        parameters.putString("fields", "id,name,installed,email,gender");
         request.setParameters(parameters);
         request.executeAsync();
     }
@@ -148,7 +157,36 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         //intiRequest();
         //loginButton.setReadPermissions(Arrays.asList( "email"));
 
+        accessTokenTracker = new AccessTokenTracker() {
+            @Override
+            protected void onCurrentAccessTokenChanged(AccessToken oldToken, AccessToken newToken) {
+                //tvLoginStatus.setText(String.valueOf("Welcome onCurrentAccessTokenChanged"));
+                //intiRequest();
+            }
+        };
 
+        profileTracker = new ProfileTracker() {
+            @Override
+            protected void onCurrentProfileChanged(Profile oldProfile, Profile newProfile) {
+                //nextActivity(newProfile);
+
+                if (oldProfile != null) {
+                    profile = oldProfile;
+                    //intiRequest();
+                    //tvLoginStatus.setText(String.valueOf("Welcome onCurrentProfileChanged," + oldProfile.getFirstName()));
+
+                }
+                if (newProfile != null) {
+                    profile = newProfile;
+                    //intiRequest();
+                    //tvLoginStatus.setText(String.valueOf("Welcome onCurrentProfileChanged," + newProfile.getFirstName()));
+
+                }
+
+            }
+        };
+        accessTokenTracker.startTracking();
+        profileTracker.startTracking();
         // Callback registration
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -166,9 +204,60 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                         Toast.makeText(SignUp.this, "Logged in", Toast.LENGTH_SHORT).show();
                     }
                 };
+
                 runOnUiThread(t);
-                tvLoginStatus.setText("Login Success " + id);
-                intiRequest();
+
+                // intiRequest();
+                GraphRequest request = GraphRequest.newMeRequest(
+                        loginResult.getAccessToken(),
+                        new GraphRequest.GraphJSONObjectCallback() {
+                            @Override
+                            public void onCompleted(JSONObject object, GraphResponse response) {
+                                Log.v("LoginActivity", response.toString());
+                                try {
+                                    //JSONObject hometown = object.getJSONObject("hometown");
+//                                    final String town = hometown.getString("name");
+
+                                    // Application code
+                                    //String birthday = object.getString("birthday"); // 01/31/1980 format
+                                    customer = new Customer();
+
+                                    customer.setName(object.getString("name"));
+                                    etName.setText(customer.getName());
+
+                                    customer.setEmail(object.getString("email"));
+                                    etEmail.setText(customer.getEmail());
+
+
+                                    // c.setCity(json.getString("hometown"));
+                                    //  c.setCity(object.getString("locale"));
+                                    customer.setGender(object.getString("gender"));
+                                    if (customer.getGender().equalsIgnoreCase("male")) {
+                                        spGender.setSelection(0);
+                                        spGender.refreshDrawableState();
+                                    }
+                                    else{ spGender.setSelection(1);
+                                        spGender.refreshDrawableState();}
+
+
+
+                                    etPassword.setError("Enter password");
+                                    //c.setPassword("fb_user");
+
+                                    loginButton.setVisibility(View.GONE);
+
+                                } catch (Exception e) {
+                                }
+                            }
+                        });
+                Bundle parameters = new Bundle();
+                parameters.putString("fields", "id,name,email,gender");
+                request.setParameters(parameters);
+                request.executeAsync();
+                //tvLoginStatus.s
+                // etText("Login Success " + id);
+                // intiRequest();
+                // intiRequest();
 //                LoginManager.getInstance().logOut();
             }
 
@@ -182,11 +271,14 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onError(FacebookException exception) {
                 // App code
-                tvLoginStatus.setText(exception.getMessage());
+                UiController.showDialog("Please check you internet connection", SignUp.this);
+                //tvLoginStatus.setText(exception.getMessage());
+                Log.v("FacebookException", exception.getMessage());
             }
         });
 
     }
+
 
 
     @Override
@@ -242,6 +334,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         c.setMobile(etMobile.getText().toString());
         c.setEmail(etEmail.getText().toString());
         c.setPassword(etPassword.getText().toString());
+        c.setMobile(etMobile.getText().toString());
         BeanFactory.setCustomer(c);
         SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(this);
 
@@ -250,7 +343,4 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-    public void setDataAfterLogin() {
-
-    }
 }
