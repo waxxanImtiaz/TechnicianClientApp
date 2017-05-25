@@ -91,11 +91,11 @@ public class LoginFormHandler extends ServerConnectionBuilder {
 
                 in.close();
 
-                obj = new JSONObject(response.toString());
+                //obj = new JSONObject(response.toString());
 
 
                 Log.v("logindata","data="+response.toString());
-                return obj.toString();
+                return response.toString();
             } catch (Exception e) {
                 e.printStackTrace();
                 return "error=" + e.getMessage();

@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -40,6 +41,7 @@ import com.example.wassa_000.technician.builder.SignUpFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.factory.BeanFactory;
+import com.example.wassa_000.technician.serverconnetors.UserLoginTask;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
@@ -106,8 +108,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
-        progressDialog2 = ProgressDialog.show(LoginActivity.this, "", "Loading");
-        progressDialog2.hide();
+
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -128,6 +129,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+        LoginManager.getInstance().logOut();
         mLoginFormView = findViewById(R.id.login_form);
         tvDetails = (TextView) findViewById(R.id.tvDetails);
         mProgressView = findViewById(R.id.login_progress);
@@ -166,7 +168,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         };
         accessTokenTracker.startTracking();
         profileTracker.startTracking();
-        LoginManager.getInstance().logOut();
+
         // Callback registration
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -227,8 +229,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         customer.setFbId(profile.getId());
 
         BeanFactory.setCustomer(customer);
-
-        mAuthTask = new UserLoginTask();
+        loginButton.setVisibility(View.INVISIBLE);
+        mAuthTask = new UserLoginTask(this);
         mAuthTask.execute((Void) null);
     }
 
@@ -358,28 +360,28 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
             int shortAnimTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
 
-//            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
-//            mLoginFormView.animate().setDuration(shortAnimTime).alpha(
-//                    show ? 0 : 1).setListener(new AnimatorListenerAdapter() {
-//                @Override
-//                public void onAnimationEnd(Animator animation) {
-//                    mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
-//                }
-//            });
+            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+            mLoginFormView.animate().setDuration(shortAnimTime).alpha(
+                    show ? 0 : 1).setListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+                }
+            });
 
-//            mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
-//            mProgressView.animate().setDuration(shortAnimTime).alpha(
-//                    show ? 1 : 0).setListener(new AnimatorListenerAdapter() {
-//                @Override
-//                public void onAnimationEnd(Animator animation) {
-//                    mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
-//                }
-//            });
+            mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+            mProgressView.animate().setDuration(shortAnimTime).alpha(
+                    show ? 1 : 0).setListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+                }
+            });
         } else {
             // The ViewPropertyAnimator APIs are not available, so simply show
             // and hide the relevant UI components.
-            // mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
-            //mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+            mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
         }
     }
 
@@ -441,74 +443,4 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * Represents an asynchronous login/registration task used to authenticate
      * the user.
      */
-    public class UserLoginTask extends AsyncTask<Void, Void, String> {
-
-
-        UserLoginTask() {
-
-        }
-
-
-        @Override
-        protected String doInBackground(Void... params) {
-            // TODO: attempt authentication against a network service.
-
-            try {
-
-                LoginFormHandler handler = new LoginFormHandler(LoginActivity.this);
-                handler.setUrl(SharedFields.userLink);
-                handler.setRequestMethod("POST");
-
-                return handler.setFormParametersAndConnect();
-            } catch (Exception e) {
-                return "";
-            }
-
-
-        }
-
-        @Override
-        protected void onPreExecute() {
-            runOnUiThread(new Thread() {
-                @Override
-                public void run() {
-                    progressDialog2.show();
-                    loginButton.setVisibility(View.GONE);
-                }
-            });
-
-        }
-
-        @Override
-        protected void onPostExecute(final String success) {
-            mAuthTask = null;
-            //showProgress(false);
-
-            progressDialog2.dismiss();
-            Log.v("login", " onPostExecute=" + success);
-
-            try {
-                JSONObject object = new JSONObject(success);
-
-                if (object.getString("id") != null && !object.getString("id").isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "You are logged in successfully", Toast.LENGTH_SHORT).show();
-                } else
-                    UiController.showDialog("Service request error", LoginActivity.this);
-            } catch (Exception e) {
-            }
-//            if (success) {
-//                finish();
-//            } else {
-//                mPasswordView.setError(getString(R.string.error_incorrect_password));
-//                mPasswordView.requestFocus();
-//            }
-        }
-
-        @Override
-        protected void onCancelled() {
-            mAuthTask = null;
-            //showProgress(false);
-        }
-    }
 }
-
