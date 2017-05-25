@@ -42,7 +42,7 @@ public class ServiceDataSender extends AsyncTask<String, Void, String> {
 
             if (object.getString("req_status").equalsIgnoreCase("success")) {
                 UiController.showDialog("Service requested successfully", mContext.getActivity());
-
+                mContext.name.setText("");
                 mContext.address.setText("");
                 mContext.remarks.setText("");
                 mContext.phone.setText("");

@@ -320,7 +320,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         c.setPassword(etPassword.getText().toString());
         c.setMobile(etMobile.getText().toString());
         BeanFactory.setCustomer(c);
-        SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(this);
+
 
         SharedMethods.hideKeyBoard(this);
 

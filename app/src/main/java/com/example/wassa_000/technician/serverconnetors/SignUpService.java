@@ -11,6 +11,7 @@ import com.example.wassa_000.technician.SignUp;
 import com.example.wassa_000.technician.builder.ServiceFormHandler;
 import com.example.wassa_000.technician.builder.SignUpFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
 import com.example.wassa_000.technician.controller.UiController;
 
 import org.json.JSONObject;
@@ -48,6 +49,7 @@ public class SignUpService extends AsyncTask<String, Void, String> {
 
             if (object.getString("req_status").equalsIgnoreCase("success")) {
                 UiController.showDialog("Signed Up successfully", mContext);
+                SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(mContext);
                 mContext.startActivity(new Intent(mContext, MainActivity.class));
                 mContext.finish();
             } else {
