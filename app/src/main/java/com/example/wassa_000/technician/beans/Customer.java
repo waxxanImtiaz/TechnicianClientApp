@@ -11,7 +11,7 @@ public class Customer {
     private String mobile;
     private String city;
     private String fbId;
-
+    private String id;
     public String getName() {
         return name;
     }
@@ -66,5 +66,13 @@ public class Customer {
 
     public void setFbId(String fbId) {
         this.fbId = fbId;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

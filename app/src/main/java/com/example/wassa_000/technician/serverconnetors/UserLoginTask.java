@@ -10,9 +10,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.wassa_000.technician.LoginActivity;
+import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.builder.LoginFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.controller.UiController;
+import com.example.wassa_000.technician.factory.BeanFactory;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -60,6 +62,7 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
 
     }
 
+    private boolean isMessageAppeard = false;
     @Override
     protected void onPostExecute(final String success) {
 
@@ -68,6 +71,7 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
 
         try {
             JSONArray array = new JSONArray(success);
+
             for(int n = 0; n < array.length(); n++)
             {
                 JSONObject object = array.getJSONObject(n);
@@ -89,11 +93,18 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
     }
     public void showMessage(JSONObject object)throws JSONException{
 
-        if (object.getString("id") != null && !object.getString("id").isEmpty()) {
-            Toast.makeText(mContext, "You are logged in successfully", Toast.LENGTH_SHORT).show();
+        if (!isMessageAppeard) {
+            isMessageAppeard = true;
+            if (object.getString("id") != null && !object.getString("id").isEmpty()) {
+                Toast.makeText(mContext, "You are logged in successfully", Toast.LENGTH_SHORT).show();
+                Customer c = BeanFactory.getCustomer();
+                c.setId(object.getString("id"));
+                BeanFactory.setCustomer(c);
 
-        } else
-            UiController.showDialog("Info:"+object.toString(), mContext);
+
+            } else
+                UiController.showDialog("Info:" + object.toString(), mContext);
+        }
     }
 
 }
