@@ -65,10 +65,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     CallbackManager callbackManager;
     private GraphRequest request;
     private String id;
-    private String name;
-    private String email;
-    private String gender;
-    private String birthday;
     private TextView tvLoginStatus;
     private Profile profile;
     private Customer customer;

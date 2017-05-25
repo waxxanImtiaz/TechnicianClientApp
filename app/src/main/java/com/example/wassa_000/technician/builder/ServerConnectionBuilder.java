@@ -19,6 +19,7 @@ public abstract class ServerConnectionBuilder {
     protected String reqMethod;
     protected String link;
     protected HttpURLConnection http;
+    protected final int CONNECTION_TIME_OUT = 20000;
 
     //call third
     public void connect(){

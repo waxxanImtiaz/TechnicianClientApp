@@ -3,6 +3,7 @@ package com.example.wassa_000.technician;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -33,17 +34,27 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.wassa_000.technician.beans.Customer;
+import com.example.wassa_000.technician.builder.LoginFormHandler;
+import com.example.wassa_000.technician.builder.SignUpFormHandler;
+import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.controller.UiController;
+import com.example.wassa_000.technician.factory.BeanFactory;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
 import com.facebook.Profile;
 import com.facebook.ProfileTracker;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -84,6 +95,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private LoginButton loginButton;
     private AccessTokenTracker accessTokenTracker;
     private ProfileTracker profileTracker;
+    private Profile profile;
+    private ProgressDialog progressDialog2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +106,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
-
+        progressDialog2 = ProgressDialog.show(LoginActivity.this, "", "Loading");
+        progressDialog2.hide();
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -125,7 +139,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         accessTokenTracker = new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(AccessToken oldToken, AccessToken newToken) {
-                tvDetails.setText(String.valueOf("Welcome onCurrentAccessTokenChanged"));
+                //tvDetails.setText(String.valueOf("Welcome onCurrentAccessTokenChanged"));
             }
         };
 
@@ -134,11 +148,20 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             protected void onCurrentProfileChanged(Profile oldProfile, Profile newProfile) {
                 //nextActivity(newProfile);
 
-                if (oldProfile != null  )
-                    tvDetails.setText(String.valueOf("Welcome ," + oldProfile.getFirstName()));
+                if (oldProfile != null) {
+                    profile = oldProfile;
 
-                if (newProfile != null  )
-                    tvDetails.setText(String.valueOf("Welcome ," + newProfile.getFirstName()));
+                    //tvDetails.setText(String.valueOf("Welcome ," + oldProfile.getFirstName()));
+
+                }
+                if (newProfile != null) {
+                    profile = newProfile;
+
+                    //tvDetails.setText(String.valueOf("Welcome ," + newProfile.getFirstName()));
+                }
+
+                if (profile != null)
+                    initProfile();
             }
         };
         accessTokenTracker.startTracking();
@@ -151,10 +174,31 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
                 Log.d("login", "Login success");
                 final Profile profile = Profile.getCurrentProfile();
-                // id = loginResult.getAccessToken().getUserId();
-                tvDetails.setText(String.valueOf("Welcome ").concat(profile.getName()));
 
-                loginButton.setVisibility(View.GONE);
+                // intiRequest();
+                GraphRequest request = GraphRequest.newMeRequest(
+                        loginResult.getAccessToken(),
+                        new GraphRequest.GraphJSONObjectCallback() {
+                            @Override
+                            public void onCompleted(JSONObject object, GraphResponse response) {
+                                try {
+
+                                    initProfile();
+
+
+                                } catch (Exception e) {
+                                }
+                            }
+                        });
+                Bundle parameters = new Bundle();
+                parameters.putString("fields", "id,name,email");
+                request.setParameters(parameters);
+                request.executeAsync();
+
+                // id = loginResult.getAccessToken().getUserId();
+                //tvDetails.setText(String.valueOf("Welcome ").concat(profile.getName()));
+
+                //loginButton.setVisibility(View.GONE);
             }
 
             @Override
@@ -173,6 +217,19 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+    }
+
+    public void initProfile() {
+        Customer customer = new Customer();
+
+        //customer.setEmail(object.getString("email"));
+
+        customer.setFbId(profile.getId());
+
+        BeanFactory.setCustomer(customer);
+
+        mAuthTask = new UserLoginTask();
+        mAuthTask.execute((Void) null);
     }
 
     private void populateAutoComplete() {
@@ -274,9 +331,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         } else {
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
-            showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
-            mAuthTask.execute((Void) null);
+            //showProgress(true);
+
+            initProfile();
         }
     }
 
@@ -301,28 +358,28 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
             int shortAnimTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
 
-            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
-            mLoginFormView.animate().setDuration(shortAnimTime).alpha(
-                    show ? 0 : 1).setListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
-                }
-            });
+//            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+//            mLoginFormView.animate().setDuration(shortAnimTime).alpha(
+//                    show ? 0 : 1).setListener(new AnimatorListenerAdapter() {
+//                @Override
+//                public void onAnimationEnd(Animator animation) {
+//                    mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+//                }
+//            });
 
-            mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
-            mProgressView.animate().setDuration(shortAnimTime).alpha(
-                    show ? 1 : 0).setListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
-                }
-            });
+//            mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+//            mProgressView.animate().setDuration(shortAnimTime).alpha(
+//                    show ? 1 : 0).setListener(new AnimatorListenerAdapter() {
+//                @Override
+//                public void onAnimationEnd(Animator animation) {
+//                    mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+//                }
+//            });
         } else {
             // The ViewPropertyAnimator APIs are not available, so simply show
             // and hide the relevant UI components.
-            mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
-            mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+            // mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
+            //mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
         }
     }
 
@@ -384,56 +441,73 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * Represents an asynchronous login/registration task used to authenticate
      * the user.
      */
-    public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
+    public class UserLoginTask extends AsyncTask<Void, Void, String> {
 
-        private final String mEmail;
-        private final String mPassword;
 
-        UserLoginTask(String email, String password) {
-            mEmail = email;
-            mPassword = password;
+        UserLoginTask() {
+
         }
 
+
         @Override
-        protected Boolean doInBackground(Void... params) {
+        protected String doInBackground(Void... params) {
             // TODO: attempt authentication against a network service.
 
             try {
-                // Simulate network access.
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                return false;
+
+                LoginFormHandler handler = new LoginFormHandler(LoginActivity.this);
+                handler.setUrl(SharedFields.userLink);
+                handler.setRequestMethod("POST");
+
+                return handler.setFormParametersAndConnect();
+            } catch (Exception e) {
+                return "";
             }
 
-            for (String credential : DUMMY_CREDENTIALS) {
-                String[] pieces = credential.split(":");
-                if (pieces[0].equals(mEmail)) {
-                    // Account exists, return true if the password matches.
-                    return pieces[1].equals(mPassword);
-                }
-            }
 
-            // TODO: register the new account here.
-            return true;
         }
 
         @Override
-        protected void onPostExecute(final Boolean success) {
-            mAuthTask = null;
-            showProgress(false);
+        protected void onPreExecute() {
+            runOnUiThread(new Thread() {
+                @Override
+                public void run() {
+                    progressDialog2.show();
+                    loginButton.setVisibility(View.GONE);
+                }
+            });
 
-            if (success) {
-                finish();
-            } else {
-                mPasswordView.setError(getString(R.string.error_incorrect_password));
-                mPasswordView.requestFocus();
+        }
+
+        @Override
+        protected void onPostExecute(final String success) {
+            mAuthTask = null;
+            //showProgress(false);
+
+            progressDialog2.dismiss();
+            Log.v("login", " onPostExecute=" + success);
+
+            try {
+                JSONObject object = new JSONObject(success);
+
+                if (object.getString("id") != null && !object.getString("id").isEmpty()) {
+                    Toast.makeText(LoginActivity.this, "You are logged in successfully", Toast.LENGTH_SHORT).show();
+                } else
+                    UiController.showDialog("Service request error", LoginActivity.this);
+            } catch (Exception e) {
             }
+//            if (success) {
+//                finish();
+//            } else {
+//                mPasswordView.setError(getString(R.string.error_incorrect_password));
+//                mPasswordView.requestFocus();
+//            }
         }
 
         @Override
         protected void onCancelled() {
             mAuthTask = null;
-            showProgress(false);
+            //showProgress(false);
         }
     }
 }
