@@ -88,6 +88,10 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
         } catch (JSONException e) {
             Log.v("jsonException", "msg:" + e.toString());
             try {
+                if (success.equalsIgnoreCase("null")){
+                    UiController.showDialog("Invalid  username or  password",mContext);
+                    return;
+                }
                 Log.v("msg",  e.toString());
                 showMessage(new JSONObject(success));
             }catch (JSONException ex){
