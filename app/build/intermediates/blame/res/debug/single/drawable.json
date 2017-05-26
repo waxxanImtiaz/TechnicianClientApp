@@ -1,246 +1,258 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_vector_test.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_button_send_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_favicon_blue.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_favicon_blue.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_header_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_submit.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\btn_submit.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\messenger_button_blue_bg_round.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\messenger_button_blue_bg_selector.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logopk.png",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\logopk.png"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_button_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\messenger_button_blue_bg_round.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_bg.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_logo.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_button_login_logo.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_button_like_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_button_login_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logopk.png",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\logopk.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_send_button_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_send_button_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_submit.xml",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\btn_submit.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_button_login_silver_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_button_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\et_search.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\et_search.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_fab_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_icon_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_favicon_blue.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_favicon_blue.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_auth_dialog_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_header_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\messenger_button_white_bg_round.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\messenger_button_white_bg_selector.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\et_search.xml",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\et_search.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_icon.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_button_icon.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\messenger_button_blue_bg_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_bg_low.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_auth_dialog_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_button_login_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_cancel_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_logo.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_button_login_logo.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_cancel_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_send_button_icon.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_send_button_icon.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\c522075190fc279aeb138aff85ab7801a188f07d\\output\\res\\drawable\\com_facebook_button_send_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.22.1\\res\\drawable\\com_facebook_button_login_silver_background.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo2.png",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\logo2.png"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo2.png",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\drawable\\logo2.png"
+    },
+    {
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\\output\\res\\drawable\\abc_btn_check_material.xml"
     }
 ]

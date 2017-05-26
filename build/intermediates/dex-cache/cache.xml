@@ -3,111 +3,66 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_8a3b02830423a660ebe72aefd38d9302dc01b310.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_9569fafede6d424877b3c0f7f79c1f7eadcf9832.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_770e901bfab6ba49a89c8b537b3c4bc59fd2f94d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\customtabs\25.0.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\24776038e9af93e362c30a72c6442381be4a7da6\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-customtabs-25.0.0_f37435a30099cd95bd8038bcf51366f992e6c5dd.jar" />
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_af5ee03f5f6c3048de72348962724a197458430b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\835e18ac00fc3823102509488592fb7949611dbd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_2a92459221cdb76c26b73769d99e32151e54df7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_42835a9238a22798450315ddcfa7042fe39d8af8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_bd14c22f13273ba5130668ed01d676d6b403500f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\0e639fc7952dfc82fd34008cb14762d3fdb72f37\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_3f16a594001596b9426620bf40710f9d2790fd22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\17c28b102f4745b92424cb68af34c8f082fcb341\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="8a372c4191f80489770a231f7be4820b204b886a">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.0_3f036f9cb65f69d724eaaf04ab7a7b499e415e9e.jar" />
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_775bf301153598611b706f05ad488e18772a2717.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\b58c5de7ddf58a94927566505e9fbedc35680e14\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_7509d2eceaa669b423d31350cef5075ff088b275.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_5e0b759ce1281be137734252c2594b17b550082c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_a39b190db42db46ca21836a0234b55a666cbc97b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_4281505a84d14b3b32f827aa7cb77dae09a5e0c2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_733c55861bbee3c95818fc8cf355997c8c1398b1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.22.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d5cbc9214ee567ea6ef56fb2707d48e58d240fc2">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.22.1_076b4c6d822e00fc85794ca7bfb0ab1a445be3f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_daab486e239ad46899e88c7a89d2d33e7503c6f9.jar" />
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_fafa0a0c68dd1fc855f956ca29267e39cbafc502.jar" />
     </item>
     <item
         is-multidex="false"
@@ -116,25 +71,25 @@
         optimize="true"
         revision="25.0.2"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_a729045a5e53740a2e648c205a9a256c35191b03.jar" />
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_a729045a5e53740a2e648c205a9a256c35191b03.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jar="C:\Users\Admin\.android\build-cache\f2afbafec5b083cce1e84f09b0817ddaf2f5d55c\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_d604501fe5bb029edf9cecb7a30619dd0d4f0f65.jar" />
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_fc4f8287d8aff7186e90a68f94eedd96fc5481c0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\e9f3bb725b7dc1ab5b24f4a578ff44818744122c\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_3d8aa45a707365f895eaba18dcc49a14c532cabe.jar" />
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_d0ce42590adc0d25e5eb723a514f988120088ab6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -143,61 +98,70 @@
         optimize="true"
         revision="25.0.2"
         sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_bcd2ca7e22861a0f04826903b645ccd4a7d80cde.jar" />
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_bcd2ca7e22861a0f04826903b645ccd4a7d80cde.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jar="C:\Users\Admin\.android\build-cache\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_5734af3d5e7d1347917f1c14cc2d95e0c6cf0fc7.jar" />
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_0640e618a9f3c5616ccceef0d7b43c9173c4bfca.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\6d47fb1ee0c71c8da9b2c305412209a99c54c299\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_2517f6893993b9108b224c928530bb67a57093eb.jar" />
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_7183c9969891f4cb5455a4a3bdf3dc03751da1ec.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\40d5ef24b3a330efd45ebbc94de7017b283a7a58\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_cf140db8c4bac079eddd8854fe68b4367e37ac70.jar" />
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_c8c6c505f5743882dd9d8224e3a2e4f00fe43188.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\0c612ecb169f8e975a6e17b6595e6cb518e2a482\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_0012519004ea20e6af086468f7feacaee215e144.jar" />
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_2a8cea854445abc752767eb7a4b9ea999947b0e1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jar="C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_c130d6d21f7526d92c0397b7f56a8dd4282b4f68.jar" />
+        sha1="d5cbc9214ee567ea6ef56fb2707d48e58d240fc2">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_eff16590aa59f3a622c7901722fbe45d2ac2e642.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jar="C:\Users\Admin\.android\build-cache\be78de15172a5386d2f1c6ac6dcba9d3b6a3b682\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="C:\Users\Admin\Desktop\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_76e318c2d7de2c5ab161463dbe50e95544dfa3dd.jar" />
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_745c533b65971a4913fc11aad454359a8e6eab5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\40b112ca678bea0fff079a806599eb995e7617a8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_37e05a972cab505a134b9d9b9962e6f2013f9c4d.jar" />
     </item>
 
 </items>

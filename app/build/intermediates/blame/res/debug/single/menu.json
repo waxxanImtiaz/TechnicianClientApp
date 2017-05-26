@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\logged_in_menu.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\menu\\logged_in_menu.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\logged_in_menu.xml",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\menu\\logged_in_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\Users\\Admin\\Desktop\\TechnicianClientApp\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]
