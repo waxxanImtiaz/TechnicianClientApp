@@ -12,6 +12,9 @@ public class Customer {
     private String city;
     private String fbId;
     private String id;
+    private String address;
+    private String area;
+
     public String getName() {
         return name;
     }
@@ -74,5 +77,21 @@ public class Customer {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

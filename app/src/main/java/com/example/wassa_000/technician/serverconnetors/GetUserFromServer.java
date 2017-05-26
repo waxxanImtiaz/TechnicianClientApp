@@ -1,11 +1,21 @@
-package com.example.wassa_000.technician.builder;
+package com.example.wassa_000.technician.serverconnetors;
 
+import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.example.wassa_000.technician.MainActivity;
+import com.example.wassa_000.technician.ServiceFragment;
 import com.example.wassa_000.technician.beans.Customer;
+import com.example.wassa_000.technician.builder.ServerConnectionBuilder;
+import com.example.wassa_000.technician.builder.SignUpFormHandler;
+import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
+import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.factory.BeanFactory;
 
 import org.json.JSONObject;
@@ -21,12 +31,11 @@ import java.util.Map;
  * Created by Admin on 5/25/2017.
  */
 
-
-public class LoginFormHandler extends ServerConnectionBuilder {
+public class GetUserFromServer  extends ServerConnectionBuilder {
 
     private Context c;
 
-    public LoginFormHandler(Context c) {
+    public GetUserFromServer(Context c) {
         this.c = c;
     }
 
@@ -40,40 +49,30 @@ public class LoginFormHandler extends ServerConnectionBuilder {
         this.reqMethod = requestMethod;
     }
 
-//    private JSONObject obj;
-    public String setFormParametersAndConnect( ) {
+    public String setFormParametersAndConnect( String userId) {
         try {
-            Customer customer = BeanFactory.getCustomer();
             Map<String, String> arguments = new HashMap<>();
             //arguments.put("userid", SharedFields.userId);
-            if (customer.getFbId() != null && !TextUtils.isEmpty(customer.getFbId())) {
-                arguments.put("user_fb_id", customer.getFbId());
-            }
-            else {
-                arguments.put("email", customer.getEmail());
-                arguments.put("password", customer.getPassword());
-            }
-
-            arguments.put("new_sign_in", "true");
+            arguments.put("userid", userId);
+            arguments.put("app_start", "true");
 
             StringBuilder sj = new StringBuilder();
 
-
-            Log.v("signin",arguments.toString());
+            Log.v("getuser",arguments.toString());
             for (Map.Entry<String, String> entry : arguments.entrySet()) {
                 sj.append(URLEncoder.encode(entry.getKey(), "UTF-8") + "=" + URLEncoder.encode(entry.getValue(), "UTF-8") + "&");
             }
-
             sj.deleteCharAt(sj.length()-1);
             byte[] out = sj.toString().getBytes();
-            Log.v("logindata","data="+sj.toString());
+            Log.v("getuser",sj.toString());
             this.connect();
             http.setFixedLengthStreamingMode(out.length);
             http.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 
-            http.setConnectTimeout(CONNECTION_TIME_OUT);
-            http.connect();
+
             try {
+
+                http.connect();
                 DataOutputStream wr = new DataOutputStream(http.getOutputStream());
                 wr.writeBytes(sj.toString());
                 wr.flush();
@@ -93,25 +92,18 @@ public class LoginFormHandler extends ServerConnectionBuilder {
 
                 in.close();
 
-                //obj = new JSONObject(response.toString());
 
-                try {
-
-                    Log.v("logindata", "data=" + response.toString());
-                    return response.toString();
-                }catch (NullPointerException e)
-                {
-                    return "";
-                }
+                Log.v("getuser",response.toString());
+                return response.toString();
             } catch (Exception e) {
                 e.printStackTrace();
-                return "error=" + e.getMessage();
+                return "error=" + e.toString();
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-            return "Error:" + e.getMessage();
+            Log.v("error:","network:"+e.getMessage());
+            return "Error:" + e.toString();
         }
     }
 }
-

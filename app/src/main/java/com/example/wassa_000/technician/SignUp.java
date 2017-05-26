@@ -205,7 +205,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
 
                                     customer.setGender(object.getString("gender"));
-                                    customer.setFbId(object.getString("id"));
+                                    customer.setFbId(object.getString(SharedFields.fbId));
                                     if (customer.getGender().equalsIgnoreCase("male")) {
                                         spGender.setSelection(0);
                                         spGender.refreshDrawableState();

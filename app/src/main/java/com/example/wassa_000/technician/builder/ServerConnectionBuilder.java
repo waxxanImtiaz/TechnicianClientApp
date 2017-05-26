@@ -21,6 +21,10 @@ public abstract class ServerConnectionBuilder {
     protected HttpURLConnection http;
     protected final int CONNECTION_TIME_OUT = 20000;
 
+
+//    Map<String, String> arguments = new HashMap<>();
+//    arguments.put("userid", userId);
+//    arguments.put("app_start", "true");
     //call third
     public void connect(){
         try {

@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -13,6 +14,7 @@ import com.example.wassa_000.technician.LoginActivity;
 import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.builder.LoginFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.factory.BeanFactory;
 
@@ -69,6 +71,10 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
         if (progressDialog2 != null)
             progressDialog2.dismiss();
 
+        if (success == null) {
+            Toast.makeText(mContext, "Server error", Toast.LENGTH_SHORT).show();
+            return;
+        }
         try {
             JSONArray array = new JSONArray(success);
 
@@ -76,8 +82,8 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
             {
                 JSONObject object = array.getJSONObject(n);
                 showMessage(object);
-                // do some stuff....
             }
+
 
         } catch (JSONException e) {
             Log.v("jsonException", "msg:" + e.toString());
@@ -85,7 +91,6 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
                 Log.v("msg",  e.toString());
                 showMessage(new JSONObject(success));
             }catch (JSONException ex){
-                //Toast.makeText(mContext, String.valueOf(success), Toast.LENGTH_SHORT).show();
             }
         } catch (Exception e) {
             Log.v("exception", "msg:" + e.toString());
@@ -96,13 +101,18 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
         if (!isMessageAppeard) {
             isMessageAppeard = true;
             if (object.getString("id") != null && !object.getString("id").isEmpty()) {
-                Toast.makeText(mContext, "You are logged in successfully", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(mContext, "You are logged in successfully", Toast.LENGTH_SHORT).show();
                 Customer c = BeanFactory.getCustomer();
                 c.setId(object.getString("id"));
                 BeanFactory.setCustomer(c);
 
+                ServerConnection service = new ServerConnection(mContext);
+                SharedFields.userId = object.getString("id");
 
-            } else
+                service.execute(SharedFields.userId);
+
+
+            }else
                 UiController.showDialog("Info:" + object.toString(), mContext);
         }
     }

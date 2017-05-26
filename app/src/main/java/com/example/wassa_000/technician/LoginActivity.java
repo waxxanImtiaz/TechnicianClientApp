@@ -222,11 +222,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
     public void initProfile() {
-        Customer customer = new Customer();
+        Customer customer =BeanFactory.getCustomer();
 
         //customer.setEmail(object.getString("email"));
-
-        customer.setFbId(profile.getId());
+        if (profile != null)
+            customer.setFbId(profile.getId());
 
         BeanFactory.setCustomer(customer);
         loginButton.setVisibility(View.INVISIBLE);
@@ -293,13 +293,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
-        if (mAuthTask != null) {
-            return;
-        }
-
-        // Reset errors.
-        mEmailView.setError(null);
-        mPasswordView.setError(null);
+//        if (mAuthTask != null) {
+//            return;
+//        }
+//
+//        // Reset errors.
+//        mEmailView.setError(null);
+//        mPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
@@ -309,10 +309,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
-            mPasswordView.setError(getString(R.string.error_invalid_password));
+        if (TextUtils.isEmpty(password) ) {
+            mPasswordView.setError(getString(R.string.error_field_required));
             focusView = mPasswordView;
             cancel = true;
+            return;
+        }else
+        {
+
         }
 
         // Check for a valid email address.
@@ -320,23 +324,31 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
+            return;
         } else if (!isEmailValid(email)) {
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
+
         }
 
-        if (cancel) {
-            // There was an error; don't attempt login and focus the first
-            // form field with an error.
-            focusView.requestFocus();
-        } else {
-            // Show a progress spinner, and kick off a background task to
-            // perform the user login attempt.
-            //showProgress(true);
+        Customer c = BeanFactory.getCustomer();
 
-            initProfile();
-        }
+        c.setEmail(mEmailView.getText().toString());
+        c.setPassword(mPasswordView.getText().toString());
+        BeanFactory.setCustomer(c);
+        initProfile();
+//        if (cancel) {
+//            // There was an error; don't attempt login and focus the first
+//            // form field with an error.
+//            focusView.requestFocus();
+//        } else {
+//            // Show a progress spinner, and kick off a background task to
+//            // perform the user login attempt.
+//            //showProgress(true);
+//
+//
+//        }
     }
 
     private boolean isEmailValid(String email) {
