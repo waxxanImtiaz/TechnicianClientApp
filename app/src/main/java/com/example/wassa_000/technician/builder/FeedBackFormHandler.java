@@ -62,6 +62,7 @@ public class FeedBackFormHandler  extends ServerConnectionBuilder{
             arguments.put("feedback", message);
             arguments.put("rate", rate);
             arguments.put("feedback1", "true");
+            arguments.put("recommend", "7");
             StringBuilder sj = new StringBuilder();
             Log.i("parameters",arguments.toString());
             System.out.println("prameters:parameters are set");

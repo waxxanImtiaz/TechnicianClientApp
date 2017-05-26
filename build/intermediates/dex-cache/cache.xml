@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\New folder\TechnicianClientApp\app\libs\android-activation-1.5.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="34c941857c08ff1d6af9a43a8806342883b2a8e1">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\android-activation-1.5.6_efcb190a28c9f5f3ae0235fbc8eaefdbad514ca3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\New folder\TechnicianClientApp\app\libs\android-mail-1.5.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="939e074a4f4ce8365acc9a6c2d9c6004ce4029a5">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\android-mail-1.5.6_8df37a07b3788ceb572089125fb0a1c1721d3341.jar" />
+    </item>
+
+</items>

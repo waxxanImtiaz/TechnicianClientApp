@@ -5,14 +5,17 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.text.TextUtils;
+import android.widget.Toast;
 
 import com.example.wassa_000.technician.MainActivity;
 import com.example.wassa_000.technician.SignUp;
 import com.example.wassa_000.technician.builder.ServiceFormHandler;
 import com.example.wassa_000.technician.builder.SignUpFormHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
+import com.example.wassa_000.technician.contentprovider.SharedMethods;
 import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
 import com.example.wassa_000.technician.controller.UiController;
+import com.example.wassa_000.technician.factory.BeanFactory;
 
 import org.json.JSONObject;
 
@@ -48,10 +51,11 @@ public class SignUpService extends AsyncTask<String, Void, String> {
             progressDialog2.dismiss();
 
             if (object.getString("req_status").equalsIgnoreCase("success")) {
-                UiController.showDialog("Signed Up successfully", mContext);
+                Toast.makeText(mContext, "Signed Up successfully", Toast.LENGTH_SHORT).show();
                 SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(mContext);
                 mContext.startActivity(new Intent(mContext, MainActivity.class));
                 mContext.finish();
+                SharedMethods.sendEmail(BeanFactory.getCustomer().getEmail());
             } else {
                 String req = object.getString("already_registered");
 
@@ -59,7 +63,7 @@ public class SignUpService extends AsyncTask<String, Void, String> {
                     UiController.showDialog("You are already registered", mContext);
                     return;
                 }
-                UiController.showDialog("Sign up error", mContext);
+                Toast.makeText(mContext, "Sign up error", Toast.LENGTH_SHORT).show();
             }
         } catch (Exception e) {
         }
