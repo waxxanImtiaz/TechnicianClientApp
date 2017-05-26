@@ -105,7 +105,6 @@ public class UserLoginTask extends AsyncTask<Void, Void, String> {
         if (!isMessageAppeard) {
             isMessageAppeard = true;
             if (object.getString("id") != null && !object.getString("id").isEmpty()) {
-              //  Toast.makeText(mContext, "You are logged in successfully", Toast.LENGTH_SHORT).show();
                 Customer c = BeanFactory.getCustomer();
                 c.setId(object.getString("id"));
                 BeanFactory.setCustomer(c);

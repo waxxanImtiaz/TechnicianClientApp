@@ -71,7 +71,8 @@ public class ServerConnection extends AsyncTask<String, Void, String> {
                 cus.setPassword(object.getString("password"));
 
                 BeanFactory.setCustomer(cus);
-            }
+                SharedPreferencesDataLoader.storeCustomerDataToSharedPreferences(mContext);
+        }
             /*====================SET CITIES===================*/
 
             for (int i = 0; i < cities.length(); i++) {
@@ -90,6 +91,8 @@ public class ServerConnection extends AsyncTask<String, Void, String> {
                 SharedFields.services.put(i, serviceType.getString(String.valueOf(i + 1)));
             }
             Toast.makeText(mContext, "You are logged in succesfully", Toast.LENGTH_SHORT).show();
+            mContext.startActivity(new Intent(mContext,MainActivity.class));
+            mContext.finish();
         } catch (Exception e) {
             Log.v("exception", "excp:" + e.getMessage());
         }
