@@ -1,6 +1,7 @@
 package com.example.wassa_000.technician.serverconnetors;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
@@ -17,7 +18,7 @@ import com.example.wassa_000.technician.controller.UiController;
 public class FeedBackService extends AsyncTask<String, Void, String> {
 
     private FeedBackFragment mContext;
-
+    private ProgressDialog progressDialog2;
     public FeedBackService(FeedBackFragment mContext) {
         this.mContext = mContext;
     }
@@ -35,7 +36,7 @@ public class FeedBackService extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String result) {
-
+        progressDialog2.dismiss();
         if (result.equalsIgnoreCase("success")) {
 
             UiController.showDialog("Feedback submitted succesffully", mContext.getActivity());
@@ -52,5 +53,6 @@ public class FeedBackService extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPreExecute() {
+        progressDialog2 = ProgressDialog.show(mContext.getContext()," ", "Loading");
     }
 }

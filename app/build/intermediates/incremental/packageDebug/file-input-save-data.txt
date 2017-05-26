@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri May 26 17:16:45 PKT 2017
+#Fri May 26 17:32:24 PKT 2017
 210.set=ANDROID_RESOURCE
 282.file=E\:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\messenger_button_send_blue_small.xml
 14.set=ANDROID_RESOURCE
