@@ -33,4 +33,9 @@ public class SharedFields {
     public static Map<Integer,String> cities = new HashMap<>();
     public static Map<Integer,String> services = new HashMap<>();
 
+    public static final String EMAIL_APP = "serveasy.pk@gmail.com";
+    public static final String EMAIL_PASS = "providinghomeservice";
+    public static final String EMAIL_SUBJECT = "Serveasy Application";
+    public static final String EMAIL_BODY = "This is test email.";
+
 }

@@ -2,8 +2,11 @@ package com.example.wassa_000.technician.contentprovider;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+
+import com.example.wassa_000.technician.mail.GMailSender;
 
 /**
  * Created by Admin on 5/23/2017.
@@ -16,6 +19,7 @@ public class SharedMethods {
         java.util.regex.Matcher m = p.matcher(email);
         return m.matches();
     }
+
     public static boolean validatePhoneNumber(String phoneNo) {
 //        //validate phone numbers of format "1234567890"
 //        if (phoneNo.matches("\\d{10}")) return true;
@@ -32,7 +36,8 @@ public class SharedMethods {
         return false;
 
     }
-    public static void hideKeyBoard(Activity c){
+
+    public static void hideKeyBoard(Activity c) {
         // Check if no view has focus:
         View view = c.getCurrentFocus();
         if (view != null) {
@@ -40,4 +45,28 @@ public class SharedMethods {
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
+
+    public static void sendEmail(final String recipent) {
+        new Thread() {
+            public void run() {
+
+                try {
+                    GMailSender sender = new GMailSender(SharedFields.EMAIL_APP, SharedFields.EMAIL_PASS);
+                    if (sender.sendMail(SharedFields.EMAIL_SUBJECT,
+                            SharedFields.EMAIL_BODY,
+                           recipent,
+                            recipent)) {
+                       Log.d("Email","Email sent successfully to "+recipent);
+                    } else {
+                        Log.d("email did not sent to", "reciepent:"+recipent);
+                    }
+
+
+                } catch (Exception e) {
+                    Log.e("SendMail except:", e.getMessage(), e);
+                }
+            }
+        }.start();
+    }
+
 }
