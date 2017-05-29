@@ -768,7 +768,6 @@
     <string name="address_place_holder">Enter your address</string>
     <string name="app_name">serveasy</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="bind_email">Bind Email</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="btn_submit">Submit</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
@@ -802,6 +801,7 @@
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="contact_number">Contact Number:</string>
     <string name="contact_number_hint">Phone no (03*********)</string>
+    <string name="contact_us">Contact Us</string>
     <string name="customer_area">Customer Area:</string>
     <string name="customer_area_hint">Customer Area</string>
     <string name="dob">Birthday</string>
@@ -845,12 +845,15 @@
     <string name="prompt_password">Password</string>
     <string name="quote">Please fill following fields</string>
     <string name="rate_us">Rate Us:</string>
+    <string name="repair_history">Repair History</string>
+    <string name="reward_points">Reward Points</string>
     <string name="search_menu_title">Search</string>
     <string name="select_city">Select City</string>
     <string name="select_gender">Select Gender</string>
     <string name="select_service">Select Service</string>
     <string name="selected_area">Your Selected Area</string>
     <string name="service">Services</string>
+    <string name="settings">Settings</string>
     <string name="shipping_address">Shipping Address:</string>
     <string name="shipping_address_hint">Shipping Address</string>
     <string name="sign_in">Sign In</string>
