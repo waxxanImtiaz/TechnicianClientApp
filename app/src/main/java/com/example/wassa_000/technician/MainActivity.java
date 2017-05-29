@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
     private TabLayout tabLayout;
     private File sharedPrefFile;
     private String m_Text;
-    private View emailView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,9 +63,6 @@ public class MainActivity extends AppCompatActivity
 
         viewPager = (CustomViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
-
-        emailView =  LayoutInflater.from(this).inflate(
-                R.layout.email_dialog_item, null);
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
@@ -257,14 +254,14 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void showInputDialog(){
+    public void showInputDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Enter email");
 
 // Set up the input
         final EditText input = new EditText(this);
 // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
-        input.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS );
+        input.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
         builder.setView(input);
 
 // Set up the buttons
