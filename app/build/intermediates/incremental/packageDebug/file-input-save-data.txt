@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon May 29 15:55:23 PKT 2017
+#Mon May 29 16:37:42 PKT 2017
 210.set=ANDROID_RESOURCE
 282.file=E\:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\com_facebook_button_text_color.xml
 14.set=ANDROID_RESOURCE

@@ -15,14 +15,13 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="signin" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="userinfo" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaabc6e6-74cc-42b2-b171-f0db32914684" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/UserInfoHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/beans/Feedback.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
@@ -30,31 +29,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/MyAccount.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/MyAccount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/ComplainFormHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/ComplainFormHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/FeedBackFormHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/FeedBackFormHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/LoginFormHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/LoginFormHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/ServerConnectionBuilder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/ServerConnectionBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/ServiceFormHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/ServiceFormHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/SignUpFormHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/builder/SignUpFormHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/contentprovider/SharedFields.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/contentprovider/SharedFields.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/serverconnetors/GetUserFromServer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/serverconnetors/GetUserFromServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/serverconnetors/ServerConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/serverconnetors/ServerConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/factory/BeanFactory.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/factory/BeanFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/serverconnetors/UserInfoService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/wassa_000/technician/serverconnetors/UserInfoService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_e08e79f33eb54e52b4f37600de5107a2e7d2c780.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_e08e79f33eb54e52b4f37600de5107a2e7d2c780.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MyAccount.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MyAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ComplainFormHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ComplainFormHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/FeedBackFormHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/FeedBackFormHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServerConnectionBuilder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServerConnectionBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServiceFormHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServiceFormHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/SignUpFormHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/SignUpFormHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/contentprovider/SharedFields.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/contentprovider/SharedFields.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/GetUserFromServer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/GetUserFromServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServerConnection.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServerConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/factory/BeanFactory.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/factory/BeanFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java" />
     </list>
     <ignored path="TechnicianClientApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,18 +73,40 @@
       <file leaf-file-name="UserLoginTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserLoginTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="103">
               <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfoService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServerConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServerConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="78" column="38" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfoService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="263">
+              <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeanFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/factory/BeanFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,31 +117,11 @@
       <file leaf-file-name="UserInfoHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/UserInfoHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+            <state relative-caret-position="498">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpFormHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/SignUpFormHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="69" column="56" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerConnectionBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServerConnectionBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -145,6 +131,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="823">
               <caret line="99" column="36" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAccount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MyAccount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -160,40 +156,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComplainFormHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComplainFormHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ComplainFormHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logged_in_menu.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/logged_in_menu.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="35" />
-              <folding>
-                <element signature="e#272#292#0" expanded="true" />
-                <element signature="e#439#462#0" expanded="true" />
-                <element signature="e#607#631#0" expanded="true" />
-                <element signature="e#742#762#0" expanded="true" />
-                <element signature="e#904#922#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceFormHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServiceFormHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
+            <state relative-caret-position="198">
+              <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -2030,7 +1997,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/logged_in_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MyAccount.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServerConnection.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/contentprovider/SharedFields.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/UserInfoHandler.java" />
@@ -2040,6 +2006,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/SignUpFormHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/FeedBackFormHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ComplainFormHandler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/beans/Feedback.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/factory/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java" />
       </list>
     </option>
   </component>
@@ -2146,29 +2115,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="serverconnetors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TechnicianClientApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="technician" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="builder" />
+              <option name="myItemId" value="factory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2183,7 +2130,7 @@
     <property name="last_opened_file_path" value="E:/office/BRD" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="device.picker.selection" value="192.168.129.101:5555" />
+    <property name="device.picker.selection" value="192.168.129.103:5555" />
     <property name="ExportApk.ApkPath" value="E:\New folder\TechnicianClientApp\app" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
@@ -2577,21 +2524,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2896,14 +2828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MyAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/contentprovider/SharedFields.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -2920,36 +2844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserLoginTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/GetUserFromServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="70" column="56" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServerConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -2969,24 +2867,6 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/UserInfoHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/SignUpFormHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="69" column="56" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="56" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ServiceFormHandler.java">
@@ -3023,9 +2903,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/ComplainFormHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+        <state relative-caret-position="198">
+          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/SignUpFormHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="69" column="56" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/MyAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/builder/UserInfoHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserLoginTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/ServerConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="78" column="38" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/factory/BeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/beans/Feedback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/wassa_000/technician/serverconnetors/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

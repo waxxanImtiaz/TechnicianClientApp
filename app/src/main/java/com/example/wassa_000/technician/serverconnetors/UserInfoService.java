@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.example.wassa_000.technician.LoginActivity;
 import com.example.wassa_000.technician.MyAccount;
 import com.example.wassa_000.technician.beans.Customer;
+import com.example.wassa_000.technician.beans.Feedback;
 import com.example.wassa_000.technician.builder.LoginFormHandler;
 import com.example.wassa_000.technician.builder.UserInfoHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
@@ -18,6 +19,9 @@ import com.example.wassa_000.technician.factory.BeanFactory;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Admin on 5/29/2017.
@@ -74,8 +78,29 @@ public class UserInfoService extends AsyncTask<Void, Void, String> {
             return;
         }
 
-        Log.v("data",success+",,");
-        Toast.makeText(mContext, "Data fetched succesfully,"+success, Toast.LENGTH_SHORT).show();
+        try {
+            if (success != null && !success.isEmpty()) {
+                JSONObject object = new JSONObject(success);
+                JSONArray array = object.getJSONArray("all_feedback");
+                List<Feedback> fb = new ArrayList<>();
+                for (int i = 0; i < array.length(); i++) {
+                    Feedback f = new Feedback();
+
+                    JSONObject ob = array.getJSONObject(i);
+                    f.setDate(ob.getString("submitted_at"));
+                    f.setFeedback(ob.getString("feedback"));
+                    f.setRecomended(ob.getString("recommend"));
+                    fb.add(f);
+                }
+                BeanFactory.setFeedbacks(fb);
+                Log.v("data", success + ",,");
+                Toast.makeText(mContext, "Data fetched succesfully,size="+fb.size(), Toast.LENGTH_SHORT).show();
+
+            }
+        } catch (Exception e) {
+        }
+
+
     }
 
 
