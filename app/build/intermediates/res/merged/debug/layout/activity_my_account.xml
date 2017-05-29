@@ -32,6 +32,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
+                    android:id="@+id/tvName"
                     android:text="iadfadsf" />
             </LinearLayout>
 
@@ -53,28 +54,30 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
+                    android:id="@+id/tvEmail"
                     android:text="iadfadsf" />
             </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal">-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <!--<TextView-->
+            <!--style="@style/tvMyAccount"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.4"-->
+            <!--android:text="@string/gender" />-->
 
-                <TextView
-                    style="@style/tvMyAccount"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.4"
-                    android:text="@string/gender" />
+            <!--<TextView-->
+            <!--style="@style/tvMyAccount"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.6"-->
+            <!--android:id="@+id/tvGender"-->
+            <!--android:text="iadfadsf" />-->
+            <!--</LinearLayout>-->
 
-                <TextView
-                    style="@style/tvMyAccount"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:text="iadfadsf" />
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -94,29 +97,32 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
+                    android:id="@+id/tvCity"
                     android:text="iadfadsf" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal">-->
 
-                <TextView
+                <!--<TextView-->
 
-                    style="@style/tvMyAccount"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.4"
-                    android:text="@string/address" />
+                    <!--style="@style/tvMyAccount"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.4"-->
 
-                <TextView
-                    style="@style/tvMyAccount"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:text="iadfadsf" />
-            </LinearLayout>
+                    <!--android:text="@string/address" />-->
+
+                <!--<TextView-->
+                    <!--style="@style/tvMyAccount"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.6"-->
+                    <!--android:id="@+id/tvAddress"-->
+                    <!--android:text="iadfadsf" />-->
+            <!--</LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,6 +140,7 @@
                 <TextView
                     style="@style/tvMyAccount"
                     android:layout_width="0dp"
+                    android:id="@+id/tvMobileNumber"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
                     android:text="iadfadsf" />
