@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:1-69:12
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:1-70:12
 	package
 		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:10
 	android:name
 		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:12:5-67:19
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:12:5-68:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:28:5-48:19
 MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\Admin\.android\build-cache\17c28b102f4745b92424cb68af34c8f082fcb341\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:customtabs:25.0.0] C:\Users\Admin\.android\build-cache\24776038e9af93e362c30a72c6442381be4a7da6\output\AndroidManifest.xml:22:5-20
@@ -134,6 +134,10 @@ activity#com.example.wassa_000.technician.SplashScreen
 ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:60:9-66:20
 	android:name
 		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:60:19-47
+activity#com.example.wassa_000.technician.MyAccount
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:67:9-56
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:67:19-44
 uses-sdk
 INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:24:5-26:41

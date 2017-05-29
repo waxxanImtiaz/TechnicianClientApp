@@ -28,6 +28,8 @@
     <string name="quote">Please fill following fields</string>
     <string name="btn_submit">Submit</string>
 
+    <string name="userName">Username:</string>
+
 
     <!--Place holders-->
     <string name="phone_place_holder">Phone no (03*********)</string>

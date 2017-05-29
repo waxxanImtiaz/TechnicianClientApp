@@ -191,6 +191,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.sign_up) {
             startActivity(new Intent(MainActivity.this, SignUp.class));
             return true;
+        } else if (id == R.id.my_account) {
+            startActivity(new Intent(MainActivity.this, MyAccount.class));
+            return true;
         } else if (id == R.id.sign_out) {
 
             if (sharedPrefFile.exists())
