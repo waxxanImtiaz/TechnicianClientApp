@@ -63,6 +63,7 @@ public class ServerConnection extends AsyncTask<String, Void, String> {
 
                 Customer cus = new Customer();
                 cus.setCity(object.getString("city_name"));
+                cus.setId(object.getString("userid"));
                 cus.setArea(object.getString("area_name"));
                 cus.setName(object.getString("name"));
                 cus.setEmail(object.getString("email"));

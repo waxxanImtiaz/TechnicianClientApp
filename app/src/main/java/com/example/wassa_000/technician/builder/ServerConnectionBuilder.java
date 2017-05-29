@@ -19,7 +19,7 @@ public abstract class ServerConnectionBuilder {
     protected String reqMethod;
     protected String link;
     protected HttpURLConnection http;
-    protected final int CONNECTION_TIME_OUT = 20000;
+    protected final int CONNECTION_TIME_OUT = 10000;
 
 
 //    Map<String, String> arguments = new HashMap<>();

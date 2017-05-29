@@ -13,6 +13,7 @@ public class SharedFields {
     public static final String serverLink = "http://serveasy.pk/andriod_services/";
     public static final String userLink = serverLink.concat("users.php");
 
+    public static  final int CONNECTION_TIME =  10000;
     public static String userId = "2";
 
     public static final String DEBUG_MESSAGE = "server_error";

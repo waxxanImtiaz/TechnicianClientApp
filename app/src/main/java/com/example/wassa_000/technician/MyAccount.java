@@ -7,6 +7,7 @@ import android.widget.TextView;
 import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.factory.BeanFactory;
+import com.example.wassa_000.technician.serverconnetors.UserInfoService;
 
 import java.util.Map;
 
@@ -41,5 +42,8 @@ public class MyAccount extends AppCompatActivity {
 //        }
         tvMobileNumber.setText(customer.getMobile());
 //        tvGender.setText(customer.getGender());
+
+        UserInfoService service  = new UserInfoService(this);
+        service.execute();
     }
 }
