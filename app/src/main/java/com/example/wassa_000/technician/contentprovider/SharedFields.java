@@ -38,4 +38,5 @@ public class SharedFields {
     public static final String EMAIL_SUBJECT = "Serveasy Application";
     public static final String EMAIL_BODY = "This is test email.";
 
+    public static final int SPLASH_SCREEN_TIMER = 100;
 }

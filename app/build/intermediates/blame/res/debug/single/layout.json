@@ -72,6 +72,10 @@
         "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
+        "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash_screen.xml",
+        "source": "E:\\New folder\\TechnicianClientApp\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
         "merged": "E:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\\output\\res\\layout\\design_layout_tab_text.xml"
     },

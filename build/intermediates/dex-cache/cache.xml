@@ -3,12 +3,30 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\c871102527ccff49c5fca9861319cd166a89e1cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d20672631818754557255886d3feb43e7fe75a66">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\classes_bdeb8329c8dc9b6739d31d004435bdee7b640340.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\New folder\TechnicianClientApp\app\libs\android-activation-1.5.6.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="34c941857c08ff1d6af9a43a8806342883b2a8e1">
         <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\android-activation-1.5.6_efcb190a28c9f5f3ae0235fbc8eaefdbad514ca3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0\constraint-layout-solver-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="90493f2ea15ff3f57416368123e5d4d180e0c6fd">
+        <dex dex="E:\New folder\TechnicianClientApp\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0_81cc0757e55d7c572cd8169afbac17ee6c3cc3e9.jar" />
     </item>
     <item
         is-multidex="false"
