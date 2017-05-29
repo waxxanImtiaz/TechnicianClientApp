@@ -53,6 +53,6 @@ public class FeedBackService extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPreExecute() {
-        progressDialog2 = ProgressDialog.show(mContext.getContext()," ", "Loading");
+        progressDialog2 = ProgressDialog.show(mContext.getContext(),"", "Loading");
     }
 }

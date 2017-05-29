@@ -135,7 +135,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         accessTokenTracker = new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(AccessToken oldToken, AccessToken newToken) {
-                //tvLoginStatus.setText(String.valueOf("Welcome onCurrentAccessTokenChanged"));
+                tvLoginStatus.setText(String.valueOf("Welcome onCurrentAccessTokenChanged"));
                 //intiRequest();
             }
         };
@@ -148,13 +148,13 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 if (oldProfile != null) {
                     profile = oldProfile;
                     //intiRequest();
-                    //tvLoginStatus.setText(String.valueOf("Welcome onCurrentProfileChanged," + oldProfile.getFirstName()));
+                    tvLoginStatus.setText(String.valueOf("Welcome onCurrentProfileChanged," + oldProfile.getFirstName()));
 
                 }
                 if (newProfile != null) {
                     profile = newProfile;
                     //intiRequest();
-                    //tvLoginStatus.setText(String.valueOf("Welcome onCurrentProfileChanged," + newProfile.getFirstName()));
+                    tvLoginStatus.setText(String.valueOf("Welcome onCurrentProfileChanged," + newProfile.getFirstName()));
 
                 }
 
@@ -171,16 +171,16 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
                 id = loginResult.getAccessToken().getUserId();
 
-                Thread t = new Thread() {
-
-                    public void run() {
-
-
-                        Toast.makeText(SignUp.this, "Logged in", Toast.LENGTH_SHORT).show();
-                    }
-                };
-
-                runOnUiThread(t);
+//                Thread t = new Thread() {
+//
+//                    public void run() {
+//
+//
+//                        Toast.makeText(SignUp.this, "Logged in", Toast.LENGTH_SHORT).show();
+//                    }
+//                };
+//
+//                runOnUiThread(t);
 
                 // intiRequest();
                 GraphRequest request = GraphRequest.newMeRequest(

@@ -1,0 +1,176 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:1-62:12
+	package
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:3:5-47
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:8:22-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:10:22-76
+application
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:12:5-60:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:28:5-48:19
+MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\Admin\.android\build-cache\17c28b102f4745b92424cb68af34c8f082fcb341\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:25.0.0] C:\Users\Admin\.android\build-cache\24776038e9af93e362c30a72c6442381be4a7da6\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:25.2.0] C:\Users\Admin\.android\build-cache\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Admin\.android\build-cache\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Admin\.android\build-cache\f2afbafec5b083cce1e84f09b0817ddaf2f5d55c\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Admin\.android\build-cache\be78de15172a5386d2f1c6ac6dcba9d3b6a3b682\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\Admin\.android\build-cache\40d5ef24b3a330efd45ebbc94de7017b283a7a58\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Admin\.android\build-cache\e9f3bb725b7dc1ab5b24f4a578ff44818744122c\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Admin\.android\build-cache\0c612ecb169f8e975a6e17b6595e6cb518e2a482\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Admin\.android\build-cache\b58c5de7ddf58a94927566505e9fbedc35680e14\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Admin\.android\build-cache\835e18ac00fc3823102509488592fb7949611dbd\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Admin\.android\build-cache\0e639fc7952dfc82fd34008cb14762d3fdb72f37\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Admin\.android\build-cache\6d47fb1ee0c71c8da9b2c305412209a99c54c299\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:15:9-41
+	android:supportsRtl
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:16:9-35
+	android:allowBackup
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:13:9-35
+	android:icon
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:14:9-39
+	android:theme
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:17:9-40
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:18:9-20:45
+	android:value
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:20:13-42
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:19:13-58
+activity#com.example.wassa_000.technician.MainActivity
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:22:9-32:20
+	android:label
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:24:13-45
+	android:windowSoftInputMode
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:26:13-67
+	android:theme
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:23:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:30:27-74
+activity#com.example.wassa_000.technician.LoginActivity
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:33:9-48:20
+	android:label
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:35:13-57
+	android:windowSoftInputMode
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:36:13-60
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:34:13-42
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:37:13-39:49
+	android:value
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:39:17-46
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:38:17-63
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:40:13-47:29
+action#android.intent.action.VIEW
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:41:25-66
+category#android.intent.category.DEFAULT
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:43:17-76
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:43:27-73
+category#android.intent.category.BROWSABLE
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:44:17-78
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:44:27-75
+data
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:46:17-75
+	android:scheme
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:46:23-72
+activity#com.example.wassa_000.technician.SignUp
+ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:49:9-58:20
+	android:label
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:52:13-44
+	android:noHistory
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:53:13-37
+	android:windowSoftInputMode
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:54:13-73
+	android:icon
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:51:13-43
+	android:name
+		ADDED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml:50:13-35
+uses-sdk
+INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\Admin\.android\build-cache\17c28b102f4745b92424cb68af34c8f082fcb341\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.0.0] C:\Users\Admin\.android\build-cache\24776038e9af93e362c30a72c6442381be4a7da6\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:25.2.0] C:\Users\Admin\.android\build-cache\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Admin\.android\build-cache\ff2e832c1ea70d0ef77962ef300d1eddb2b90242\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Admin\.android\build-cache\f2afbafec5b083cce1e84f09b0817ddaf2f5d55c\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Admin\.android\build-cache\be78de15172a5386d2f1c6ac6dcba9d3b6a3b682\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\Admin\.android\build-cache\40b112ca678bea0fff079a806599eb995e7617a8\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.2.0] C:\Users\Admin\.android\build-cache\40d5ef24b3a330efd45ebbc94de7017b283a7a58\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Admin\.android\build-cache\e9f3bb725b7dc1ab5b24f4a578ff44818744122c\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Admin\.android\build-cache\0c612ecb169f8e975a6e17b6595e6cb518e2a482\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Admin\.android\build-cache\b58c5de7ddf58a94927566505e9fbedc35680e14\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Admin\.android\build-cache\835e18ac00fc3823102509488592fb7949611dbd\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Admin\.android\build-cache\0e639fc7952dfc82fd34008cb14762d3fdb72f37\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Admin\.android\build-cache\6d47fb1ee0c71c8da9b2c305412209a99c54c299\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.2.0] C:\Users\Admin\.android\build-cache\494ac9b2779fa05d1a41ef0b7b6b921dc3f828e6\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+		INJECTED from E:\New folder\TechnicianClientApp\app\src\main\AndroidManifest.xml
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:44:9-47:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:46:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.1] C:\Users\Admin\.android\build-cache\c522075190fc279aeb138aff85ab7801a188f07d\output\AndroidManifest.xml:45:13-70
