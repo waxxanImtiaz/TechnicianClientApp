@@ -46,7 +46,7 @@
     <string name="action_sign_in">Sign in</string>
     <string name="my_account">My Account</string>
     <string name="sign_out">Sign out</string>
-    <string name="bind_email">Bind Email</string>
+    <string name="bind_email">Check Email</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>

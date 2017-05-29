@@ -10,13 +10,15 @@
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/sign_out"
-        android:orderInCategory="100"
-        android:title="@string/sign_out"
-        app:showAsAction="never" />
-    <item
         android:id="@+id/bind_email"
         android:orderInCategory="100"
         android:title="@string/bind_email"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sign_out"
+        android:orderInCategory="100"
+        android:title="@string/sign_out"
+        app:showAsAction="never" />
+
 </menu>

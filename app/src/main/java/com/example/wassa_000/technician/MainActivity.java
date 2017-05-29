@@ -20,9 +20,11 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 
 import com.example.wassa_000.technician.contentprovider.PreferencesFactory;
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity
     private TabLayout tabLayout;
     private File sharedPrefFile;
     private String m_Text;
+    private View emailView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +63,9 @@ public class MainActivity extends AppCompatActivity
 
         viewPager = (CustomViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
+
+        emailView =  LayoutInflater.from(this).inflate(
+                R.layout.email_dialog_item, null);
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
@@ -258,7 +264,7 @@ public class MainActivity extends AppCompatActivity
 // Set up the input
         final EditText input = new EditText(this);
 // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
-        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        input.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS );
         builder.setView(input);
 
 // Set up the buttons
