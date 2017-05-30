@@ -28,11 +28,11 @@
                     android:text="@string/name" />
 
                 <TextView
+                    android:id="@+id/tvName"
                     style="@style/tvMyAccount"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
-                    android:id="@+id/tvName"
                     android:text="iadfadsf" />
             </LinearLayout>
 
@@ -50,11 +50,11 @@
                     android:text="@string/email" />
 
                 <TextView
+                    android:id="@+id/tvEmail"
                     style="@style/tvMyAccount"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
-                    android:id="@+id/tvEmail"
                     android:text="iadfadsf" />
             </LinearLayout>
             <!--<LinearLayout-->
@@ -93,35 +93,35 @@
                     android:text="@string/city" />
 
                 <TextView
+                    android:id="@+id/tvCity"
                     style="@style/tvMyAccount"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
-                    android:id="@+id/tvCity"
                     android:text="iadfadsf" />
             </LinearLayout>
 
             <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:orientation="horizontal">-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal">-->
 
-                <!--<TextView-->
+            <!--<TextView-->
 
-                    <!--style="@style/tvMyAccount"-->
-                    <!--android:layout_width="0dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="0.4"-->
+            <!--style="@style/tvMyAccount"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.4"-->
 
-                    <!--android:text="@string/address" />-->
+            <!--android:text="@string/address" />-->
 
-                <!--<TextView-->
-                    <!--style="@style/tvMyAccount"-->
-                    <!--android:layout_width="0dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="0.6"-->
-                    <!--android:id="@+id/tvAddress"-->
-                    <!--android:text="iadfadsf" />-->
+            <!--<TextView-->
+            <!--style="@style/tvMyAccount"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.6"-->
+            <!--android:id="@+id/tvAddress"-->
+            <!--android:text="iadfadsf" />-->
             <!--</LinearLayout>-->
 
             <LinearLayout
@@ -138,13 +138,58 @@
                     android:text="@string/mobile_no" />
 
                 <TextView
+                    android:id="@+id/tvMobileNumber"
                     style="@style/tvMyAccount"
                     android:layout_width="0dp"
-                    android:id="@+id/tvMobileNumber"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.6"
                     android:text="iadfadsf" />
             </LinearLayout>
+
+            <!--Payments history details-->
+            <TextView
+                style="@style/tvDetailsHeading"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_history" />
+
+            <ListView
+                android:id="@+id/listPayDetails"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="10dp" />
+
+            <!--SERVICES DETAILS-->
+            <TextView
+                style="@style/tvDetailsHeading"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/service_details" />
+
+            <ListView
+                android:id="@+id/listServicesDetails"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="10dp" />
+
+            <!--FEEDBACK DETAILS-->
+            <TextView
+                style="@style/tvDetailsHeading"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_details" />
+
+            <ListView
+                android:id="@+id/feedbackDetails"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:padding="10dp" />
+
+
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

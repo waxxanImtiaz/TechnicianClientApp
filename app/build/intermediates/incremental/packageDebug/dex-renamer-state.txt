@@ -1,4 +1,4 @@
-#Tue May 30 10:24:44 PKT 2017
+#Tue May 30 12:00:57 PKT 2017
 base.0=E\:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=E\:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
