@@ -2,11 +2,13 @@ package com.example.wassa_000.technician.serverconnetors;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.example.wassa_000.technician.LoginActivity;
+import com.example.wassa_000.technician.MainActivity;
 import com.example.wassa_000.technician.MyAccount;
 import com.example.wassa_000.technician.beans.Complain;
 import com.example.wassa_000.technician.beans.Customer;
@@ -31,10 +33,10 @@ import java.util.List;
 
 public class UserInfoService extends AsyncTask<Void, Void, String> {
 
-    private MyAccount mContext;
+    private MainActivity mContext;
     private ProgressDialog progressDialog2;
 
-    public UserInfoService(final MyAccount context) {
+    public UserInfoService(final MainActivity context) {
         this.mContext = context;
 
     }
@@ -148,8 +150,8 @@ public class UserInfoService extends AsyncTask<Void, Void, String> {
                 }
 
 
-                Toast.makeText(mContext, "Data fetched succesfully", Toast.LENGTH_SHORT).show();
-
+                //  Toast.makeText(mContext, "Data fetched succesfully", Toast.LENGTH_SHORT).show();
+                mContext.startActivity(new Intent(mContext, MyAccount.class));
                 Log.v("data", success + ",,");
 
             }

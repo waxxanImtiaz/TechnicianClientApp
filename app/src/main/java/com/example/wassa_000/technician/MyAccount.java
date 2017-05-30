@@ -43,7 +43,6 @@ public class MyAccount extends AppCompatActivity {
         tvMobileNumber.setText(customer.getMobile());
 //        tvGender.setText(customer.getGender());
 
-        UserInfoService service  = new UserInfoService(this);
-        service.execute();
+
     }
 }

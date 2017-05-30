@@ -31,6 +31,7 @@ import com.example.wassa_000.technician.contentprovider.PreferencesFactory;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.contentprovider.SharedPreferencesDataLoader;
 import com.example.wassa_000.technician.customclass.CustomViewPager;
+import com.example.wassa_000.technician.serverconnetors.UserInfoService;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -199,7 +200,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this, SignUp.class));
             return true;
         } else if (id == R.id.my_account) {
-            startActivity(new Intent(MainActivity.this, MyAccount.class));
+            UserInfoService service  = new UserInfoService(this);
+            service.execute();
             return true;
         } else if (id == R.id.contact_us) {
             tabLayout.getTabAt(2).select();
