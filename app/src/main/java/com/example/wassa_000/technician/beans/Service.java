@@ -4,7 +4,7 @@ package com.example.wassa_000.technician.beans;
  * Created by Admin on 5/29/2017.
  */
 
-public class Complain {
+public class Service {
     private String id;
     private String complain;
     private String date;

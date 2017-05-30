@@ -17,12 +17,12 @@
     <string name="select_city">Select City</string>
     <string name="select_gender">Select Gender</string>
     <string name="rate_us">Rate Us:</string>
-    <string name="complain_text">Please type your complain</string>
+    <string name="complain_text">Please type your service</string>
     <string name="type_message">Enter your message(Optional)</string>
     <string name="type_feed_back">Enter your feedback(Optional)</string>
 
     <!--FRAGMENT NAMES-->
-    <string name="complain">T&amp;C</string>
+    <string name="terms_and_conditions">T&amp;C</string>
     <string name="feedback">Feedback</string>
     <string name="service">Services</string>
     <string name="quote">Please fill following fields</string>
@@ -75,6 +75,9 @@
     <string name="name">Name:</string>
     <string name="email">Email:</string>
     <string name="id">ID</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="complain">Complain</string>
     <string name="model">Model</string>
     <string name="amount_history">Amount History</string>
     <string name="city">City:</string>

@@ -7,17 +7,13 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.wassa_000.technician.LoginActivity;
 import com.example.wassa_000.technician.MainActivity;
 import com.example.wassa_000.technician.MyAccount;
-import com.example.wassa_000.technician.beans.Complain;
-import com.example.wassa_000.technician.beans.Customer;
+import com.example.wassa_000.technician.beans.Service;
 import com.example.wassa_000.technician.beans.Feedback;
 import com.example.wassa_000.technician.beans.PaymentHistory;
-import com.example.wassa_000.technician.builder.LoginFormHandler;
 import com.example.wassa_000.technician.builder.UserInfoHandler;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
-import com.example.wassa_000.technician.controller.UiController;
 import com.example.wassa_000.technician.factory.BeanFactory;
 
 import org.json.JSONArray;
@@ -131,9 +127,9 @@ public class UserInfoService extends AsyncTask<Void, Void, String> {
                 try {
                     //get all payment history
                     array = object.getJSONArray("all_complaints");
-                    List<Complain> com = new ArrayList<>();
+                    List<Service> com = new ArrayList<>();
                     for (int i = 0; i < array.length(); i++) {
-                        Complain f = new Complain();
+                        Service f = new Service();
 
                         JSONObject ob = array.getJSONObject(i);
                         f.setComplain(ob.getString("complain_text"));
@@ -143,7 +139,7 @@ public class UserInfoService extends AsyncTask<Void, Void, String> {
                         com.add(f);
                     }
 
-                    BeanFactory.setComplain(com);
+                    BeanFactory.setService(com);
 
                 } catch (JSONException e) {
                     Log.i("exception", ",," + e.toString());

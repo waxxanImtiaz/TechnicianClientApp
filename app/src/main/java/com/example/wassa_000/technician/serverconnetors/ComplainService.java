@@ -36,10 +36,10 @@ public class ComplainService extends AsyncTask<String, Void, String>  {
     protected void onPostExecute(String result) {
         progressDialog2.dismiss();
          if (result.equalsIgnoreCase("success")){
-             UiController.showDialog("Complain submitted succesffully",mContext);
+             UiController.showDialog("Service submitted succesffully",mContext);
          }else
 
-             UiController.showDialog( "Complain not submitted",mContext);
+             UiController.showDialog( "Service not submitted",mContext);
         }
 
     @Override

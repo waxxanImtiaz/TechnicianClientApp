@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ServiceFragment(), getResources().getString(R.string.service));
-        adapter.addFragment(new ComplainFragment(), getResources().getString(R.string.complain));
+        adapter.addFragment(new ComplainFragment(), getResources().getString(R.string.terms_and_conditions));
         adapter.addFragment(new FeedBackFragment(), getResources().getString(R.string.feedback));
         viewPager.setAdapter(adapter);
     }

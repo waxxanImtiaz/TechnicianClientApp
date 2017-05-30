@@ -51,7 +51,7 @@
         <!--android:inputType="textMultiLine"-->
         <!--android:padding="10dp"-->
         <!--android:scrollbars="vertical"-->
-        <!--android:id="@+id/complain"-->
+        <!--android:id="@+id/service"-->
         <!--android:hint="@string/complain_text"-->
         <!--android:background="@drawable/et_search"-->
         <!--android:minLines="5"-->

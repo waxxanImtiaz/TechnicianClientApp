@@ -1,6 +1,6 @@
 package com.example.wassa_000.technician.factory;
 
-import com.example.wassa_000.technician.beans.Complain;
+import com.example.wassa_000.technician.beans.Service;
 import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.beans.Feedback;
 import com.example.wassa_000.technician.beans.PaymentHistory;
@@ -14,7 +14,7 @@ import java.util.List;
 public class BeanFactory {
     private static Customer customer = new Customer();
     private static List<Feedback> feedbacks = new ArrayList<>();
-    private static List<Complain> complain = new ArrayList<>();
+    private static List<Service> service = new ArrayList<>();
     private static List<PaymentHistory> paymentHistories = new ArrayList<>();
 
     public static Customer getCustomer() {
@@ -37,14 +37,14 @@ public class BeanFactory {
         BeanFactory.feedbacks = feedbacks;
     }
 
-    public static List<Complain> getComplain() {
-        if (complain == null)
+    public static List<Service> getService() {
+        if (service == null)
             return new ArrayList<>();
-        return complain;
+        return service;
     }
 
-    public static void setComplain(List<Complain> complain) {
-        BeanFactory.complain = complain;
+    public static void setService(List<Service> service) {
+        BeanFactory.service = service;
     }
 
     public static List<PaymentHistory> getPaymentHistories() {

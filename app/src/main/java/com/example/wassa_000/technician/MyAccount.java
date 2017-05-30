@@ -7,17 +7,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.wassa_000.technician.adapter.PymentHistoryAdapter;
-import com.example.wassa_000.technician.beans.Complain;
+import com.example.wassa_000.technician.adapter.ServiceDetailsAdapter;
+import com.example.wassa_000.technician.beans.Service;
 import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.beans.Feedback;
 import com.example.wassa_000.technician.beans.PaymentHistory;
-import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.factory.BeanFactory;
-import com.example.wassa_000.technician.serverconnetors.UserInfoService;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class MyAccount extends AppCompatActivity {
 
@@ -29,10 +26,11 @@ public class MyAccount extends AppCompatActivity {
     private TextView tvMobileNumber;
     private Customer customer;
     private List<Feedback> feedbacks;
-    private List<Complain> complain;
+    private List<Service> service;
     private List<PaymentHistory> paymentHistories;
 
     private ListView listPayDetails;
+    private ListView listServicesDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +46,7 @@ public class MyAccount extends AppCompatActivity {
 
 
         listPayDetails = (ListView) findViewById(R.id.listPayDetails);
+        listServicesDetails = (ListView) findViewById(R.id.listServicesDetails);
         customer = BeanFactory.getCustomer();
 
         tvEmail.setText(customer.getEmail());
@@ -60,7 +59,7 @@ public class MyAccount extends AppCompatActivity {
 //        tvGender.setText(customer.getGender());
 
         feedbacks = BeanFactory.getFeedbacks();
-        complain = BeanFactory.getComplain();
+        service = BeanFactory.getService();
         paymentHistories = BeanFactory.getPaymentHistories();
 
         List<PaymentHistory> paymentHistories = BeanFactory.getPaymentHistories();
@@ -72,6 +71,17 @@ public class MyAccount extends AppCompatActivity {
             PymentHistoryAdapter adapter = new PymentHistoryAdapter(MyAccount.this, paymentHistories);
 
             listPayDetails.setAdapter(adapter);
+        }
+
+        List<Service> services = BeanFactory.getService();
+        if (services == null || services.size()<=0){
+            findViewById(R.id.tvServiceDetails).setVisibility(View.GONE);
+            listServicesDetails.setVisibility(View.GONE);
+        }
+        else
+        {
+            ServiceDetailsAdapter adapter = new ServiceDetailsAdapter(MyAccount.this,BeanFactory.getService());
+            listServicesDetails.setAdapter(adapter);
         }
 
     }

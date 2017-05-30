@@ -149,11 +149,11 @@
 
             <!--Payments history details-->
             <TextView
-                style="@style/tvDetailsHeading"
+                android:id="@+id/tvPaymentHistory"
 
+                style="@style/tvDetailsHeading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvPaymentHistory"
                 android:text="@string/payment_history" />
 
             <ListView
@@ -165,7 +165,7 @@
             <!--SERVICES DETAILS-->
             <TextView
                 style="@style/tvDetailsHeading"
-
+                android:id="@+id/tvServiceDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/service_details" />
@@ -189,7 +189,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:padding="10dp" />
-
 
 
         </LinearLayout>
