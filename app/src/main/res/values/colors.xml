@@ -24,4 +24,6 @@
     <color name="teal">#B2DFDB</color>
     <color name="green">#7dac20</color>
 
+    <color name="details_row_sep">#00A695</color>
+
 </resources>

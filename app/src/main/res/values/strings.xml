@@ -74,6 +74,9 @@
     <!--Sign up-->
     <string name="name">Name:</string>
     <string name="email">Email:</string>
+    <string name="id">ID</string>
+    <string name="model">Model</string>
+    <string name="amount_history">Amount History</string>
     <string name="city">City:</string>
     <string name="email_hint">Email</string>
     <string name="dob">Birthday</string>

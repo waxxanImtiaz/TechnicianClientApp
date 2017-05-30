@@ -2,8 +2,11 @@ package com.example.wassa_000.technician;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.wassa_000.technician.adapter.PymentHistoryAdapter;
 import com.example.wassa_000.technician.beans.Complain;
 import com.example.wassa_000.technician.beans.Customer;
 import com.example.wassa_000.technician.beans.Feedback;
@@ -29,6 +32,8 @@ public class MyAccount extends AppCompatActivity {
     private List<Complain> complain;
     private List<PaymentHistory> paymentHistories;
 
+    private ListView listPayDetails;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +46,8 @@ public class MyAccount extends AppCompatActivity {
         tvCity = (TextView) findViewById(R.id.tvCity);
         tvMobileNumber = (TextView) findViewById(R.id.tvMobileNumber);
 
+
+        listPayDetails = (ListView) findViewById(R.id.listPayDetails);
         customer = BeanFactory.getCustomer();
 
         tvEmail.setText(customer.getEmail());
@@ -55,5 +62,17 @@ public class MyAccount extends AppCompatActivity {
         feedbacks = BeanFactory.getFeedbacks();
         complain = BeanFactory.getComplain();
         paymentHistories = BeanFactory.getPaymentHistories();
+
+        List<PaymentHistory> paymentHistories = BeanFactory.getPaymentHistories();
+
+        if (paymentHistories == null || paymentHistories.size() <= 0) {
+            findViewById(R.id.tvPaymentHistory).setVisibility(View.GONE);
+            listPayDetails.setVisibility(View.GONE);
+        } else {
+            PymentHistoryAdapter adapter = new PymentHistoryAdapter(MyAccount.this, paymentHistories);
+
+            listPayDetails.setAdapter(adapter);
+        }
+
     }
 }

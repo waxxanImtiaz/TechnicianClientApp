@@ -1,10 +1,17 @@
 package com.example.wassa_000.technician.adapter;
 
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import com.example.wassa_000.technician.R;
+import com.example.wassa_000.technician.beans.PaymentHistory;
+
+import java.util.List;
 
 /**
  * Created by Admin on 5/30/2017.
@@ -12,24 +19,44 @@ import com.example.wassa_000.technician.R;
 
 public class PymentHistoryAdapter  extends BaseAdapter {
 
+    private LayoutInflater inflater;
+    private List<PaymentHistory> paymentHistories;
+    private Activity context;
+    public PymentHistoryAdapter(Activity context, List<PaymentHistory> paymentHistories){
+        this.context = context;
+        this.paymentHistories = paymentHistories;
+        inflater = context.getLayoutInflater();
+    }
     @Override
     public int getCount() {
-        return 0;
+        return paymentHistories.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return paymentHistories.get(i);
     }
 
     @Override
     public long getItemId(int i) {
-        return 0;
+        return i;
     }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        //view = inflter.inflate(R.layout.activity_gridview, null);//set layout for displaying items
-        return null;
+        view = inflater.inflate(R.layout.payment_history_item, null);//set layout for displaying items
+
+        TextView tvId = (TextView)view.findViewById(R.id.tvId);
+        TextView tvModel = (TextView)view.findViewById(R.id.tvModel);
+        TextView tvPaymentHistory = (TextView)view.findViewById(R.id.tvPaymentHistory);
+
+
+        PaymentHistory history = paymentHistories.get(i);
+        tvId.setText(history.getId());
+
+        tvModel.setText(history.getModel());
+        tvPaymentHistory.setText(history.getAmountRecieved());
+
+        return view;
     }
 }
