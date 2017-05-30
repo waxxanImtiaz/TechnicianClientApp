@@ -4,11 +4,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.wassa_000.technician.beans.Complain;
 import com.example.wassa_000.technician.beans.Customer;
+import com.example.wassa_000.technician.beans.Feedback;
+import com.example.wassa_000.technician.beans.PaymentHistory;
 import com.example.wassa_000.technician.contentprovider.SharedFields;
 import com.example.wassa_000.technician.factory.BeanFactory;
 import com.example.wassa_000.technician.serverconnetors.UserInfoService;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class MyAccount extends AppCompatActivity {
@@ -20,17 +25,21 @@ public class MyAccount extends AppCompatActivity {
     private TextView tvCity;
     private TextView tvMobileNumber;
     private Customer customer;
+    private List<Feedback> feedbacks;
+    private List<Complain> complain;
+    private List<PaymentHistory> paymentHistories;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_account);
 
-        tvEmail = (TextView)findViewById(R.id.tvEmail);
-        tvName = (TextView)findViewById(R.id.tvName);
+        tvEmail = (TextView) findViewById(R.id.tvEmail);
+        tvName = (TextView) findViewById(R.id.tvName);
 //        tvAddress = (TextView)findViewById(R.id.tvAddress);
 //        tvGender = (TextView)findViewById(R.id.tvGender);
-        tvCity = (TextView)findViewById(R.id.tvCity);
-        tvMobileNumber = (TextView)findViewById(R.id.tvMobileNumber);
+        tvCity = (TextView) findViewById(R.id.tvCity);
+        tvMobileNumber = (TextView) findViewById(R.id.tvMobileNumber);
 
         customer = BeanFactory.getCustomer();
 
@@ -38,7 +47,7 @@ public class MyAccount extends AppCompatActivity {
         tvName.setText(customer.getName());
 //        tvAddress.setText(customer.getAddress());
 //        for (Map.Entry e : SharedFields.cities) {
-            tvCity.setText(customer.getCity());
+        tvCity.setText(customer.getCity());
 //        }
         tvMobileNumber.setText(customer.getMobile());
 //        tvGender.setText(customer.getGender());
