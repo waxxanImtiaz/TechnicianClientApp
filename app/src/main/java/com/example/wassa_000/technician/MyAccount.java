@@ -52,6 +52,8 @@ public class MyAccount extends AppCompatActivity {
         tvMobileNumber.setText(customer.getMobile());
 //        tvGender.setText(customer.getGender());
 
-
+        feedbacks = BeanFactory.getFeedbacks();
+        complain = BeanFactory.getComplain();
+        paymentHistories = BeanFactory.getPaymentHistories();
     }
 }
