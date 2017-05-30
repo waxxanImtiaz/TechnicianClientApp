@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue May 30 13:58:17 PKT 2017
+#Tue May 30 14:39:28 PKT 2017
 210.set=ANDROID_RESOURCE
 282.file=E\:\\New folder\\TechnicianClientApp\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\com_facebook_smart_device_dialog_fragment.xml
 14.set=ANDROID_RESOURCE

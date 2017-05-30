@@ -2,6 +2,7 @@ package com.example.wassa_000.technician;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -74,6 +75,8 @@ public class MyAccount extends AppCompatActivity {
         }
 
         List<Service> services = BeanFactory.getService();
+
+        Log.i("services","services size="+services.size());
         if (services == null || services.size()<=0){
             findViewById(R.id.tvServiceDetails).setVisibility(View.GONE);
             listServicesDetails.setVisibility(View.GONE);
