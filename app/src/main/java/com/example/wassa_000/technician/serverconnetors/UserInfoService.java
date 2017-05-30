@@ -83,65 +83,78 @@ public class UserInfoService extends AsyncTask<Void, Void, String> {
         try {
             if (success != null && !success.isEmpty()) {
                 JSONObject object = new JSONObject(success);
+                JSONArray array;
+                try {
 
-                //get all feedbacks
-                JSONArray array = object.getJSONArray("all_feedback");
-                List<Feedback> fb = new ArrayList<>();
-                for (int i = 0; i < array.length(); i++) {
-                    Feedback f = new Feedback();
+                    //get all feedbacks
+                    array = object.getJSONArray("all_feedback");
+                    List<Feedback> fb = new ArrayList<>();
+                    for (int i = 0; i < array.length(); i++) {
+                        Feedback f = new Feedback();
 
-                    JSONObject ob = array.getJSONObject(i);
-                    f.setDate(ob.getString("submitted_at"));
-                    f.setId(ob.getString("id"));
-                    f.setFeedback(ob.getString("feedback"));
-                    f.setRecomended(ob.getString("recommend"));
-                    fb.add(f);
+                        JSONObject ob = array.getJSONObject(i);
+                        f.setDate(ob.getString("submitted_at"));
+                        f.setId(ob.getString("id"));
+                        f.setFeedback(ob.getString("feedback"));
+                        f.setRecomended(ob.getString("recommend"));
+                        fb.add(f);
+                    }
+
+                    BeanFactory.setFeedbacks(fb);
+                } catch (JSONException e) {
+                    Log.i("exception", "," + e.toString());
                 }
 
-                BeanFactory.setFeedbacks(fb);
+                try {
 
 
+                    //get all payment history
+                    array = object.getJSONArray("payment_history");
+                    List<PaymentHistory> ph = new ArrayList<>();
+                    for (int i = 0; i < array.length(); i++) {
+                        PaymentHistory f = new PaymentHistory();
 
-                //get all payment history
-                array  = object.getJSONArray("payment_history");
-                List<PaymentHistory> ph = new ArrayList<>();
-                for (int i = 0; i < array.length(); i++) {
-                    PaymentHistory f = new PaymentHistory();
+                        JSONObject ob = array.getJSONObject(i);
+                        f.setAmountRecieved(ob.getString("amount_received"));
+                        f.setId(ob.getString("id"));
+                        f.setModel(ob.getString("model"));
+                        ph.add(f);
+                    }
 
-                    JSONObject ob = array.getJSONObject(i);
-                    f.setAmountRecieved(ob.getString("amount_received"));
-                    f.setId(ob.getString("id"));
-                    f.setModel(ob.getString("model"));
-                    ph.add(f);
+                    BeanFactory.setPaymentHistories(ph);
+
+                } catch (JSONException e) {
+                    Log.i("exception", ",," + e.toString());
+                }
+                try {
+                    //get all payment history
+                    array = object.getJSONArray("all_complaints");
+                    List<Complain> com = new ArrayList<>();
+                    for (int i = 0; i < array.length(); i++) {
+                        Complain f = new Complain();
+
+                        JSONObject ob = array.getJSONObject(i);
+                        f.setComplain(ob.getString("complain_text"));
+                        f.setId(ob.getString("id"));
+                        f.setDate(ob.getString("submitted_at"));
+                        f.setStatus(ob.getString("status"));
+                        com.add(f);
+                    }
+
+                    BeanFactory.setComplain(com);
+
+                } catch (JSONException e) {
+                    Log.i("exception", ",," + e.toString());
                 }
 
-                BeanFactory.setPaymentHistories(ph);
 
-
-                //get all payment history
-                array = object.getJSONArray("all_complaints");
-                List<Complain> com = new ArrayList<>();
-                for (int i = 0; i < array.length(); i++) {
-                    Complain f = new Complain();
-
-                    JSONObject ob = array.getJSONObject(i);
-                    f.setComplain(ob.getString("complain_text"));
-                    f.setId(ob.getString("id"));
-                    f.setDate(ob.getString("submitted_at"));
-                    f.setStatus(ob.getString("status"));
-                    com.add(f);
-                }
-
-                BeanFactory.setComplain(com);
-
-
-
+                Toast.makeText(mContext, "Data fetched succesfully", Toast.LENGTH_SHORT).show();
 
                 Log.v("data", success + ",,");
-                Toast.makeText(mContext, "Data fetched succesfully,size="+fb.size(), Toast.LENGTH_SHORT).show();
 
             }
         } catch (Exception e) {
+            Log.i("exception", e.toString() + ",,");
         }
 
 
