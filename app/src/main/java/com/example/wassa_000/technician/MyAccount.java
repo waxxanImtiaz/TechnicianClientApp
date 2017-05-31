@@ -64,6 +64,7 @@ public class MyAccount extends AppCompatActivity {
         paymentHistories = BeanFactory.getPaymentHistories();
 
         List<PaymentHistory> paymentHistories = BeanFactory.getPaymentHistories();
+        Log.i("paymentHistories","paymentHistories size="+paymentHistories.size());
 
         if (paymentHistories == null || paymentHistories.size() <= 0) {
             findViewById(R.id.tvPaymentHistory).setVisibility(View.GONE);
