@@ -77,7 +77,9 @@
     <string name="id">ID</string>
     <string name="date">Date</string>
     <string name="status">Status</string>
+    <string name="recomended">Recomended</string>
     <string name="complain">Complain</string>
+
     <string name="model">Model</string>
     <string name="amount_history">Amount History</string>
     <string name="city">City:</string>
